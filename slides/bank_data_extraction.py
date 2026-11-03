@@ -48,20 +48,31 @@ def _():
 
 @app.cell(hide_code=True)
 def _(REF, TIDY, pl):
-    ba900 = pl.read_parquet(TIDY / "ba900.parquet")
-    ba900_h = pl.read_parquet(TIDY / "ba900_headlines.parquet")
-    ba900_chk = pl.read_parquet(TIDY / "ba900_internal_checks.parquet")
-    ind = {rt: pl.read_parquet(TIDY / f"industry_{rt}.parquet") for rt in ["ba100", "ba110", "ba120", "ba700"]}
-    inv = pl.read_csv(TIDY / "report_inventory.csv")
+    from bankdata.config import MIN_FISCAL_YEAR, fiscal_year_expr  # installed by `uv sync`
+
+    # The pipeline applies the FY2014+ window; filtering again here keeps the slides correct
+    # even when the tidy files were built before the window was introduced.
+    def _fy_months(df, date_col="month_end"):
+        return df.filter(fiscal_year_expr("bank", date_col) >= MIN_FISCAL_YEAR)
+
+    def _fy(df, col="fiscal_year"):
+        return df.filter(pl.col(col) >= MIN_FISCAL_YEAR)
+
+    ba900 = _fy_months(pl.read_parquet(TIDY / "ba900.parquet"))
+    ba900_h = _fy_months(pl.read_parquet(TIDY / "ba900_headlines.parquet"))
+    ba900_chk = _fy_months(pl.read_parquet(TIDY / "ba900_internal_checks.parquet"))
+    ind = {rt: _fy_months(pl.read_parquet(TIDY / f"industry_{rt}.parquet")) for rt in ["ba100", "ba110", "ba120", "ba700"]}
+    inv = pl.read_csv(TIDY / "report_inventory.csv").filter(
+        pl.coalesce("detected_fy", pl.col("fy_hint").cast(pl.Int64)) >= MIN_FISCAL_YEAR)
     cat = pl.read_csv(REF / "report_catalogue.csv")
-    xlog = pl.read_csv(TIDY / "report_extraction_log.csv")
-    rs = pl.read_parquet(TIDY / "report_statements.parquet")
-    fs = pl.read_parquet(TIDY / "financial_statements.parquet")
-    rwa_h = pl.read_parquet(TIDY / "rwa_headline.parquet")
-    ov1 = pl.read_parquet(TIDY / "rwa_ov1.parquet")
-    recon = pl.read_parquet(TIDY / "recon_ba900_vs_reports.parquet")
-    recon_rwa = pl.read_parquet(TIDY / "recon_rwa_sources.parquet")
-    vint = pl.read_parquet(TIDY / "recon_vintage_consistency.parquet")
+    xlog = _fy(pl.read_csv(TIDY / "report_extraction_log.csv"))
+    rs = _fy(pl.read_parquet(TIDY / "report_statements.parquet"), "report_year").filter(pl.col("column_year") >= MIN_FISCAL_YEAR)
+    fs = _fy(pl.read_parquet(TIDY / "financial_statements.parquet"))
+    rwa_h = _fy(pl.read_parquet(TIDY / "rwa_headline.parquet"))
+    ov1 = _fy(pl.read_parquet(TIDY / "rwa_ov1.parquet"), "column_year")
+    recon = _fy(pl.read_parquet(TIDY / "recon_ba900_vs_reports.parquet"))
+    recon_rwa = _fy(pl.read_parquet(TIDY / "recon_rwa_sources.parquet"))
+    vint = _fy(pl.read_parquet(TIDY / "recon_vintage_consistency.parquet"))
     return (
         ba900,
         ba900_chk,
@@ -95,7 +106,7 @@ def _(ba900, fmt, fs, inv, mo, rs, rwa_h):
 | Risk-weighted assets and capital: annual reports and Pillar 3 | FY{rwa_h['fiscal_year'].min()} – FY{rwa_h['fiscal_year'].max()} | {fmt(rs.filter(rs['statement'].is_in(['rwa', 'ov1'])).height)} |
 | Source documents downloaded and parsed | {inv.height} PDFs | {fmt(int(inv['pages'].sum()))} pages |
 
-The deck walks through the sources, the extraction method, the retrieved statements and the reconciliation of BA900 against the published financial statements.
+The deck walks through the sources, the extraction method, the retrieved statements and the reconciliation of BA900 against the published financial statements. It ends with the asset mix by product and credit quality: credit loss ratios, impairment allowances and industry non-performing loans.
 """
     )
     return
@@ -110,14 +121,14 @@ def _(ind, mo):
 
 | Source | Entity level | Frequency | Used for |
 |---|---|---|---|
-| **SARB BA900** (IFData API) | Per bank (solo, as submitted to the SARB) | Monthly, Jan 2008 onwards | Granular balance sheet (tables 1–14), off-balance sheet (table 15), securitisation and repo detail (tables 17–19) |
-| **SARB BA100 / BA110 / BA120 / BA700** | **Industry total only** ("TOTAL BANKS") | Monthly, {_p['ba120'][0]:%b %Y} – {_p['ba120'][1]:%b %Y} | Sector context only: income statement (BA120), capital and RWA (BA700) |
+| **SARB BA900** (IFData API) | Per bank (solo, as submitted to the SARB) | Monthly, FY2014 onwards (from Mar 2013 for Capitec, Jan 2014 for the others) | Granular balance sheet (tables 1–14), off-balance sheet (table 15), securitisation and repo detail (tables 17–19) |
+| **SARB BA100 / BA110 / BA120 / BA200 / BA700** | **Industry total only** ("TOTAL BANKS") | Monthly, {_p['ba120'][0]:%b %Y} – {_p['ba120'][1]:%b %Y} | Sector context only: income statement (BA120), non-performing loans (BA200), capital and RWA (BA700) |
 | **Bank annual financial statements / annual reports** | Bank entity: consolidated and separate | Annual | Statement of financial position, income statement, capital note |
 | **Pillar 3 disclosures** | Bank entity and holding group | Annual (year end) | RWA by risk type (OV1), cross-check of total RWA |
 
 **Finding on point 2 of the brief:** BA120 (income statement) and BA700 (capital adequacy) *do* exist in the SARB API, but they are published only as the all-banks total.
 Per-bank income statements and RWA therefore come from the banks' own reports, as anticipated.
-The four banks' BA900 institution codes are stable for the whole 2008–2026 history: Capitec 333107, Absa 34118, Nedbank 416088, SBSA 416061.
+The four banks' BA900 institution codes are stable over the whole analysis window: Capitec 333107, Absa 34118, Nedbank 416088, SBSA 416061.
 """
     )
     return
@@ -141,7 +152,12 @@ flowchart LR
   J --> K[build.py\\ntidy statements, RWA, OV1]
   E --> L[reconciliation]
   K --> L
+  E --> N[credit.py
+product mix, CLR,
+allowance and NPL ratios]
+  K --> N
   L --> M[[Marimo slides]]
+  N --> M
 """
         ),
         mo.md(
@@ -199,7 +215,7 @@ def _(ba900, mo, pl):
             "## BA900: the form, kept at full granularity\n"
             "Each return is XML with *tables → rows (items) → columns*. Every value becomes one tidy row keyed by "
             "bank, month, table, item and column, with the form's own descriptions kept. "
-            "Item numbers are stable from 2008 to 2026; only cosmetic description changes occur."
+            "Item numbers are stable across the window; only cosmetic description changes occur."
         ),
         mo.ui.table(_t, selection=None, page_size=20, show_column_summaries=False),
     ])
@@ -251,7 +267,7 @@ def _(alt, ba900_h, bank_scale, mo, pl, short):
               .facet(facet=alt.Facet("Metric:N", title=None), columns=2)
               .resolve_scale(y="independent"))
     mo.vstack([
-        mo.md("## BA900 balance sheet, monthly since 2008\n"
+        mo.md("## BA900 balance sheet, monthly from FY2014\n"
               "Headline items from the full return: total assets (item 277), gross loans (items 110 + 194), deposits (item 1) and equity (item 96)."),
         mo.ui.altair_chart(_chart),
     ])
@@ -344,7 +360,7 @@ def _(BANK_SHORT, cat, inv, mo, pl):
     mo.vstack([
         mo.md("## Published reports retrieved\n"
               "The catalogue in `data/reference/report_catalogue.csv` lists every document with its URL. "
-              "Official bank sites were used throughout, except for SBSA 2010–2017, which comes from the sharedata and thevault mirrors because standardbank.com no longer hosts those years. "
+              "Official bank sites were used throughout, except for SBSA 2015–2017, which comes from the sharedata and thevault mirrors because standardbank.com no longer hosts those years. "
               "Each PDF's SHA-256 hash and detected financial year are recorded in `report_inventory.csv`."),
         mo.hstack([mo.ui.table(_c, selection=None, show_column_summaries=False),
                    mo.vstack([mo.md("**Excluded after checking the content** (wrong entity or duplicate)"),
@@ -519,9 +535,9 @@ def _(BANK_SHORT, alt, mo, pl, recon):
         mo.ui.altair_chart(_c),
         mo.md(
             """
-* **Capitec** ties to BA900 within about R1m in every year from FY2013. This independently confirms both the SARB data and the PDF parser.
-* **Absa** is within ±0.3% since 2016. Before 2016 the gap is 0.5–2.5%, and BA900's *total assets prior to netting* (item 284) closes most of it.
-* **SBSA** is 3–6% above BA900. Netting (item 284 vs 277) explains about 2 points, and the rest is IFRS vs regulatory scope.
+* **Capitec** ties to BA900 within about R1m in every year from FY2014. This independently confirms both the SARB data and the PDF parser.
+* **Absa** is within ±0.3% since 2016. In 2014–2015 the gap is about 0.5%.
+* **SBSA** is 2–6% above BA900. Netting (item 284 vs 277) explains about 2 points, and the rest is IFRS vs regulatory scope.
 * **Nedbank** consolidated is 1–6% above solo BA900, as expected from its subsidiaries.
 """
         ),
@@ -566,24 +582,399 @@ def _(BANK_SHORT, mo, pl, recon_rwa, vint):
 
 
 @app.cell(hide_code=True)
+def _(TIDY, alt, pl):
+    from bankdata.config import MIN_FISCAL_YEAR as _MIN
+    from bankdata.credit import PRODUCTS
+
+    prod = pl.read_parquet(TIDY / "ba900_products.parquet").filter(pl.col("fiscal_year") >= _MIN)
+    npl = pl.read_parquet(TIDY / "industry_npl.parquet").filter(pl.col("fiscal_year") >= _MIN)
+    cq = pl.read_parquet(TIDY / "credit_quality.parquet").filter(pl.col("fiscal_year") >= _MIN)
+
+    # Display groups for the stacked charts. Loan groups take palette slots 1-7 in a fixed order
+    # (validated for adjacent pairs); interbank takes slot 8 and the remaining assets a neutral grey.
+    PRODUCT_GROUP = {
+        "Residential mortgages": "Residential mortgages",
+        "Commercial and farm mortgages": "Commercial and farm mortgages",
+        "Instalment sales and leases": "Instalment sales and leases",
+        "Credit cards": "Credit cards",
+        "Overdrafts": "Overdrafts",
+        "Term and other loans": "Term, public-sector and other loans",
+        "Public-sector loans": "Term, public-sector and other loans",
+        "Foreign-currency loans": "Foreign-currency loans",
+        "Interbank and repo": "Interbank and repo",
+        "Cash and central bank": "Cash, investments and other assets",
+        "Investments and securities": "Cash, investments and other assets",
+        "Other and non-financial assets": "Cash, investments and other assets",
+    }
+    GROUP_COLOURS = {
+        "Residential mortgages": "#2a78d6",
+        "Commercial and farm mortgages": "#eb6834",
+        "Instalment sales and leases": "#1baf7a",
+        "Credit cards": "#eda100",
+        "Overdrafts": "#e87ba4",
+        "Term, public-sector and other loans": "#008300",
+        "Foreign-currency loans": "#6250d6",
+        "Interbank and repo": "#e34948",
+        "Cash, investments and other assets": "#b5b3ad",
+    }
+    GROUP_ORDER = list(GROUP_COLOURS)
+    group_scale = alt.Scale(domain=GROUP_ORDER, range=list(GROUP_COLOURS.values()))
+    LOAN_GROUPS = GROUP_ORDER[:7]
+    loan_scale = alt.Scale(domain=LOAN_GROUPS, range=[GROUP_COLOURS[g] for g in LOAN_GROUPS])
+    prod_g = prod.filter(pl.col("product") != "Credit impairments").with_columns(
+        pl.col("product").replace_strict(PRODUCT_GROUP).alias("Product group"),
+        pl.col("product").replace_strict(PRODUCT_GROUP).replace_strict({g: i for i, g in enumerate(GROUP_ORDER)}).alias("group_order"),
+    )
+    return GROUP_ORDER, LOAN_GROUPS, PRODUCTS, cq, group_scale, loan_scale, npl, prod, prod_g
+
+
+@app.cell(hide_code=True)
+def _(PRODUCTS, mo, pl, prod):
+    _chk = prod.group_by("bank", "month_end").agg(pl.col("value_rm").sum(), pl.col("total_assets_rm").first())
+    _ok = _chk.filter((pl.col("value_rm") - pl.col("total_assets_rm")).abs() <= 0.05).height
+    _defs = pl.DataFrame([
+        {"Product": p, "BA900 items (column 5)": ", ".join(map(str, s["items"])),
+         "Customer loan": "yes" if s["loan"] else ""} for p, s in PRODUCTS.items()])
+    mo.hstack([
+        mo.md(
+            "## Asset mix by product: definitions\n"
+            "Each BA900 asset item belongs to exactly one product, read from column 5 (domestic plus foreign). "
+            "Credit impairments (item 194) are a negative line, so the products add back to total assets (item 277).\n\n"
+            f"**Check:** {_ok:,} of {_chk.height:,} bank-months add back to item 277 to within R0.05m.\n\n"
+            "**Gross customer loans** are the eight lending products. They exclude interbank placements, "
+            "reverse repos and preference-share investments. They are the denominator for the credit ratios that follow.\n\n"
+            "Annual charts use the financial-year-end month: February for Capitec and December for the other banks."
+        ),
+        mo.ui.table(_defs, selection=None, show_column_summaries=False, page_size=13),
+    ], widths=[1, 1])
+    return
+
+
+@app.cell(hide_code=True)
+def _(BANK_SHORT, GROUP_ORDER, alt, group_scale, mo, pl, prod_g):
+    _d = (prod_g.filter(pl.col("is_fy_end"), pl.col("bank") != "industry_total")
+          .group_by("bank", "fiscal_year", "Product group", "group_order")
+          .agg((pl.col("value_rm").sum() / 1e3).alias("Rbn"), pl.col("total_assets_rm").first())
+          .with_columns(pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"),
+                        pl.col("bank").replace_strict({b: i for i, b in enumerate(BANK_SHORT)}).alias("bank_order"),
+                        (100 * pl.col("Rbn") * 1e3 / pl.col("total_assets_rm")).alias("Share %")))
+    _c = (alt.Chart(_d.to_pandas()).mark_bar(stroke="#fcfcfb", strokeWidth=1).encode(
+        x=alt.X("fiscal_year:O", title=None),
+        y=alt.Y("Rbn:Q", title="R billion"),
+        color=alt.Color("Product group:N", scale=group_scale, sort=GROUP_ORDER,
+                        legend=alt.Legend(orient="right", title=None, labelLimit=260)),
+        order=alt.Order("group_order:Q", sort="ascending"),
+        tooltip=["Bank", alt.Tooltip("fiscal_year:O", title="FY"), "Product group",
+                 alt.Tooltip("Rbn:Q", format=",.1f", title="R bn"), alt.Tooltip("Share %:Q", format=".1f")],
+    ).properties(width=330, height=170)
+        .facet(facet=alt.Facet("Bank:N", title=None, sort=alt.EncodingSortField("bank_order", op="min")), columns=2)
+        .resolve_scale(x="independent", y="independent"))
+    mo.vstack([
+        mo.md("## Total assets by product, each financial year-end\n"
+              "Gross of credit impairments, so each bar is total assets plus the impairment allowance. "
+              "Each bank has its own scale: Capitec's balance sheet is about a tenth of the others. "
+              "Hover for the value and the share of total assets."),
+        mo.ui.altair_chart(_c),
+    ])
+    return
+
+
+@app.cell(hide_code=True)
+def _(BANK_SHORT, LOAN_GROUPS, alt, loan_scale, mo, pl, prod_g):
+    _d = (prod_g.filter(pl.col("is_fy_end"), pl.col("is_customer_loan"))
+          .group_by("bank", "fiscal_year", "Product group", "group_order")
+          .agg((pl.col("value_rm").sum() / 1e3).alias("Rbn"), pl.col("gross_customer_loans_rm").first())
+          .with_columns(pl.col("bank").replace_strict(BANK_SHORT | {"industry_total": "Industry"}).alias("Bank"),
+                        pl.col("bank").replace_strict({b: i for i, b in enumerate([*BANK_SHORT, "industry_total"])}).alias("bank_order"),
+                        (100 * pl.col("Rbn") * 1e3 / pl.col("gross_customer_loans_rm")).alias("Share %")))
+    _c = (alt.Chart(_d.to_pandas()).mark_bar(stroke="#fcfcfb", strokeWidth=1).encode(
+        x=alt.X("fiscal_year:O", title=None),
+        y=alt.Y("Rbn:Q", stack="normalize", title="Share of gross customer loans", axis=alt.Axis(format="%")),
+        color=alt.Color("Product group:N", scale=loan_scale, sort=LOAN_GROUPS,
+                        legend=alt.Legend(orient="top", title=None, columns=4, labelLimit=260)),
+        order=alt.Order("group_order:Q", sort="ascending"),
+        tooltip=["Bank", alt.Tooltip("fiscal_year:O", title="FY"), "Product group",
+                 alt.Tooltip("Rbn:Q", format=",.1f", title="R bn"), alt.Tooltip("Share %:Q", format=".1f")],
+    ).properties(width=245, height=230)
+        .facet(column=alt.Column("Bank:N", title=None, sort=alt.EncodingSortField("bank_order", op="min")))
+        .resolve_scale(x="independent"))
+    mo.vstack([
+        mo.md("## Customer loan mix by product\n"
+              "Share of gross customer loans at each financial year-end, with the BA900 all-banks total for comparison. "
+              "Hover for the balance and share of each product."),
+        mo.ui.altair_chart(_c),
+    ])
+    return
+
+
+@app.cell(hide_code=True)
+def _(BANK_SHORT, PRODUCTS, alt, bank_scale, fmt, mo, pl, prod):
+    def product_slide(product: str):
+        """One slide per product: balances, share of the industry and growth, at each financial year-end."""
+        _fy = prod.filter(pl.col("is_fy_end"))
+        if product == "Gross customer loans":
+            _s = _fy.group_by("bank", "fiscal_year", "month_end").agg(
+                pl.col("gross_customer_loans_rm").first().alias("Rm"), pl.col("total_assets_rm").first())
+            _items = "the eight customer-loan products"
+        else:
+            _s = _fy.filter(pl.col("product") == product).select(
+                "bank", "fiscal_year", "month_end", pl.col("value_rm").alias("Rm"), "total_assets_rm")
+            _items = "BA900 item" + ("s " if len(PRODUCTS[product]["items"]) > 1 else " ") + \
+                ", ".join(map(str, PRODUCTS[product]["items"]))
+        _ind = _s.filter(pl.col("bank") == "industry_total").select("month_end", pl.col("Rm").alias("ind_rm"))
+        _b = (_s.filter(pl.col("bank") != "industry_total").join(_ind, on="month_end", how="left")
+              .with_columns(pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"), (pl.col("Rm") / 1e3).alias("Rbn"),
+                            (100 * pl.col("Rm") / pl.col("ind_rm")).alias("Share of industry %"),
+                            (100 * pl.col("Rm") / pl.col("total_assets_rm")).alias("Share of own assets %")))
+        _enc = dict(x=alt.X("fiscal_year:O", title="Financial year"),
+                    color=alt.Color("Bank:N", scale=bank_scale, legend=alt.Legend(orient="top", title=None)))
+        _tt = ["Bank", alt.Tooltip("fiscal_year:O", title="FY"), alt.Tooltip("Rbn:Q", format=",.1f", title="R bn"),
+               alt.Tooltip("Share of industry %:Q", format=".1f"), alt.Tooltip("Share of own assets %:Q", format=".1f")]
+        _c1 = alt.Chart(_b.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
+            y=alt.Y("Rbn:Q", title="R billion"), tooltip=_tt, **_enc).properties(
+            width=400, height=230, title="Balance at financial year-end, R billion")
+        _c2 = alt.Chart(_b.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
+            y=alt.Y("Share of industry %:Q", title="% of BA900 all-banks total"), tooltip=_tt, **_enc).properties(
+            width=400, height=230, title="Share of the banking industry")
+        _rows = []
+        for _bank in BANK_SHORT:
+            _x = _b.filter(pl.col("bank") == _bank).sort("fiscal_year")
+            if _x.is_empty():
+                continue
+            _f, _l = _x.row(0, named=True), _x.row(-1, named=True)
+            _n = _l["fiscal_year"] - _f["fiscal_year"]
+            _cagr = (((_l["Rm"] / _f["Rm"]) ** (1 / _n) - 1) * 100
+                     if _n > 0 and (_f["Rm"] or 0) > 0 and (_l["Rm"] or 0) > 0 else None)
+            _rows.append({"Bank": BANK_SHORT[_bank], "First FY": _f["fiscal_year"], "R bn (first)": fmt(_f["Rbn"], 1),
+                          "Latest FY": _l["fiscal_year"], "R bn (latest)": fmt(_l["Rbn"], 1), "CAGR %": fmt(_cagr, 1),
+                          "Industry share % (latest)": fmt(_l["Share of industry %"], 1),
+                          "% of own assets (latest)": fmt(_l["Share of own assets %"], 1)})
+        _latest = _b.sort("fiscal_year").group_by("bank").last()
+        _top = _latest.sort("Rm", descending=True).row(0, named=True) if not _latest.is_empty() else None
+        _four = _latest["Share of industry %"].sum()
+        _lead = (f"The largest book is {_top['Bank']}'s at R{_top['Rbn']:,.1f} billion in FY{_top['fiscal_year']}, "
+                 f"{_top['Share of industry %']:.1f}% of the industry. "
+                 f"At their latest year-ends the four banks together hold {_four:.0f}% of the industry total."
+                 if _top and _top["Rm"] else "")
+        return mo.vstack([
+            mo.md(f"## {product}\nFrom {_items}, column 5 (domestic plus foreign). {_lead} "
+                  "Industry share uses the BA900 all-banks total in the same month."),
+            mo.hstack([mo.ui.altair_chart(_c1), mo.ui.altair_chart(_c2)]),
+            mo.ui.table(pl.DataFrame(_rows), selection=None, show_column_summaries=False),
+        ])
+    return (product_slide,)
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Gross customer loans")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Residential mortgages")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Commercial and farm mortgages")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Instalment sales and leases")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Credit cards")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Overdrafts")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Term and other loans")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Public-sector loans")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Foreign-currency loans")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Interbank and repo")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Cash and central bank")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Investments and securities")
+    return
+
+
+@app.cell(hide_code=True)
+def _(product_slide):
+    product_slide("Other and non-financial assets")
+    return
+
+
+@app.cell(hide_code=True)
+def _(BANK_SHORT, alt, bank_scale, cq, mo, pl):
+    _d = cq.filter(pl.col("bank") != "industry_total", pl.col("clr_pct").is_not_null()).with_columns(
+        pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"))
+    _tt = ["Bank", alt.Tooltip("fiscal_year:O", title="FY"), alt.Tooltip("clr_pct:Q", format=".2f", title="CLR %"),
+           alt.Tooltip("impairment_charge_rm:Q", format=",.0f", title="Charge Rm"),
+           alt.Tooltip("avg_gross_customer_loans_rm:Q", format=",.0f", title="Avg loans Rm"),
+           "impairment_line", "impairment_basis"]
+
+    def _line(df, title, legend):
+        _banks = [b for b in bank_scale.domain if b in set(df["Bank"].to_list())]
+        _sc = alt.Scale(domain=_banks, range=[bank_scale.range[bank_scale.domain.index(b)] for b in _banks])
+        return alt.Chart(df.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
+            x=alt.X("fiscal_year:O", title="Financial year"), y=alt.Y("clr_pct:Q", title="Credit loss ratio, %"),
+            color=alt.Color("Bank:N", scale=_sc, legend=alt.Legend(orient="top", title=None) if legend else None),
+            tooltip=_tt).properties(width=400, height=240, title=title)
+
+    _c1 = _line(_d.filter(pl.col("bank") != "capitec"), "Absa, Nedbank and SBSA", True)
+    _c2 = _line(_d.filter(pl.col("bank") == "capitec"), "Capitec (unsecured lender, own scale)", False)
+    _t = (_d.select("Bank", "fiscal_year", "clr_pct").with_columns(pl.col("clr_pct").round(2))
+          .pivot(on="Bank", index="fiscal_year", values="clr_pct").sort("fiscal_year")
+          .rename({"fiscal_year": "FY"}))
+    mo.vstack([
+        mo.md("## Credit loss ratio (CLR)\n"
+              "CLR is the income-statement credit impairment charge divided by average gross customer loans. "
+              "The average uses the BA900 month-ends in the year plus the prior year-end. "
+              "The charge comes from the separate statements where they are published. Nedbank publishes consolidated statements only, "
+              "so its charge is consolidated while its loans are bank-solo."),
+        mo.hstack([mo.ui.altair_chart(_c1), mo.ui.altair_chart(_c2)]),
+        mo.hstack([
+            mo.ui.table(_t, selection=None, show_column_summaries=False, page_size=13),
+            mo.md("**Check against reported ratios**\n\n"
+                  "- Nedbank's reported CLR on banking advances is within 0.05 points of this measure in every year from 2014 to 2025.\n"
+                  "- Capitec's reported CLR is within about 0.2 points, except FY2021 at 0.5 points.\n"
+                  "- SBSA's reported ratio is 0.1 to 0.25 points lower, because it uses a wider loan base.\n\n"
+                  "The 2020 rise is COVID-19 provisioning, which shows in Capitec's FY2021 because its year ends in February."),
+        ], widths=[1, 1]),
+    ])
+    return
+
+
+@app.cell(hide_code=True)
+def _(alt, mo, npl, pl, prod):
+    _labels = {"npl_ratio_pct": "Impaired advances (NPLs), BA200",
+               "specific_to_loans_pct": "Specific impairments, BA200"}
+    _m = npl.filter(pl.col("metric").is_in(list(_labels))).with_columns(
+        pl.col("metric").replace_strict(_labels).alias("Measure"))
+    _a = (prod.filter(pl.col("bank") == "industry_total", pl.col("product") == "Credit impairments")
+          .select("month_end", (-100 * pl.col("value_rm") / pl.col("gross_customer_loans_rm")).alias("value"))
+          .with_columns(pl.lit("Impairment allowance, BA900").alias("Measure")))
+    _d = pl.concat([_m.select("month_end", "value", "Measure"), _a])
+    _scale = alt.Scale(domain=[*_labels.values(), "Impairment allowance, BA900"], range=["#6250d6", "#e87ba4", "#898781"])
+    _c1 = alt.Chart(_d.to_pandas()).mark_line(strokeWidth=2).encode(
+        x=alt.X("month_end:T", title=None), y=alt.Y("value:Q", title="% of loans"),
+        color=alt.Color("Measure:N", scale=_scale, legend=alt.Legend(orient="top", title=None, columns=1, labelLimit=300)),
+        strokeDash=alt.condition(alt.datum.Measure == "Impairment allowance, BA900", alt.value([4, 3]), alt.value([1, 0])),
+        tooltip=["Measure", alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("value:Q", format=".2f", title="%")],
+    ).properties(width=420, height=250, title="Banking industry: NPL ratio and impairments")
+    _cov = npl.filter(pl.col("metric") == "specific_coverage_pct")
+    _c2 = alt.Chart(_cov.to_pandas()).mark_line(strokeWidth=2, color="#6250d6").encode(
+        x=alt.X("month_end:T", title=None), y=alt.Y("value:Q", title="% of impaired advances", scale=alt.Scale(zero=False)),
+        tooltip=[alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("value:Q", format=".1f", title="Coverage %")],
+    ).properties(width=420, height=250, title="Specific impairment coverage of NPLs")
+    _dec = (npl.filter(pl.col("metric") == "npl_ratio_pct", pl.col("month_end").dt.month() == 12)
+            .select(pl.col("fiscal_year").alias("Year"), pl.col("value").alias("NPL ratio % (Dec)")))
+    _last = npl.filter(pl.col("metric") == "npl_ratio_pct").sort("month_end").row(-1, named=True)
+    mo.vstack([
+        mo.md("## Non-performing loans: banking industry (BA200)\n"
+              "BA200 is SARB's monthly credit-risk summary. It is published for the all-banks total only, so SARB has no bank-level NPL series. "
+              "Impaired advances are shown as a share of total loans on balance sheet. "
+              f"The latest month is {_last['month_end']:%b %Y}, at {_last['value']:.2f}%. "
+              "The dashed line is the BA900 impairment allowance on gross customer loans, for comparison. "
+              "The step in 2018 is IFRS 9 adoption, and the 2020 rise is COVID-19."),
+        mo.hstack([mo.ui.altair_chart(_c1), mo.ui.altair_chart(_c2)]),
+        mo.ui.table(_dec.sort("Year"), selection=None, show_column_summaries=False, page_size=12),
+    ])
+    return
+
+
+@app.cell(hide_code=True)
+def _(BANK_SHORT, alt, mo, npl, pl, prod):
+    _d = (prod.filter(pl.col("product") == "Credit impairments")
+          .select("bank", "month_end", (-100 * pl.col("value_rm") / pl.col("gross_customer_loans_rm")).alias("Ratio %"))
+          .with_columns(pl.col("bank").replace_strict(BANK_SHORT | {"industry_total": "Industry allowance"}).alias("Series")))
+    _npl = (npl.filter(pl.col("metric") == "npl_ratio_pct")
+            .select("month_end", pl.col("value").alias("Ratio %")).with_columns(pl.lit("Industry NPL ratio (BA200)").alias("Series")))
+    _big = pl.concat([_d.filter(pl.col("bank") != "capitec").drop("bank"), _npl])
+    # Banks keep their deck colours; the industry series are neutral grey and violet
+    _scale = alt.Scale(domain=["Absa", "Nedbank", "SBSA", "Industry allowance", "Industry NPL ratio (BA200)"],
+                       range=["#eb6834", "#1baf7a", "#eda100", "#898781", "#6250d6"])
+    _tt = ["Series", alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("Ratio %:Q", format=".2f")]
+    _c1 = alt.Chart(_big.to_pandas()).mark_line(strokeWidth=2).encode(
+        x=alt.X("month_end:T", title=None), y=alt.Y("Ratio %:Q", title="% of gross customer loans"),
+        color=alt.Color("Series:N", scale=_scale, legend=alt.Legend(orient="top", title=None, columns=3, labelLimit=260)),
+        strokeDash=alt.condition(alt.datum.Series == "Industry NPL ratio (BA200)", alt.value([4, 3]), alt.value([1, 0])),
+        tooltip=_tt).properties(width=420, height=250, title="Impairment allowance ratio: Absa, Nedbank, SBSA")
+    _c2 = alt.Chart(_d.filter(pl.col("bank") == "capitec").to_pandas()).mark_line(strokeWidth=2).encode(
+        x=alt.X("month_end:T", title=None), y=alt.Y("Ratio %:Q", title="% of gross customer loans"),
+        color=alt.value("#2a78d6"),
+        tooltip=_tt).properties(width=420, height=250, title="Capitec (own scale)")
+    mo.vstack([
+        mo.md("## Bank-level credit quality: BA900 impairment allowance\n"
+              "BA900 does not report non-performing loans, but item 194 gives each bank's credit impairment allowance every month. "
+              "Divided by gross customer loans, it is the closest bank-level measure that SARB publishes. "
+              "The dashed violet line is the industry NPL ratio from BA200. "
+              "An allowance ratio is not an NPL ratio: it also covers performing loans (IFRS 9 stages 1 and 2), and it depends on collateral. "
+              "Capitec's unsecured book carries an allowance of about 20% of loans."),
+        mo.hstack([mo.ui.altair_chart(_c1), mo.ui.altair_chart(_c2)]),
+    ])
+    return
+
+
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         """
 ## Gaps, caveats and next steps
 
 **Gaps that could not be filled from public sources**
-- BA900 starts in January 2008. The predecessor DI900 (1993–2007) is out of scope by choice.
-- Capitec: there are no bank-level reports before FY2014, so FY2013 comes from comparatives. FY2026 RWA awaits the February 2026 Pillar 3 report.
-- Nedbank Limited: FY2013 and earlier come only from comparatives and the ten-year review (supplementary tables). Separate (solo) statements are not published in its AFS.
-- Absa: RWA for 2010–2012 is missing, and there is no year-end Pillar 3 OV1 for Absa Bank.
+- The analysis window is FY2014 onwards by design (`MIN_FISCAL_YEAR` in `config.py`). Capitec's FY2014 starts in March 2013.
+- Capitec: FY2026 RWA awaits the February 2026 Pillar 3 report.
+- Nedbank Limited: separate (solo) statements are not published in its AFS.
+- Absa: there is no year-end Pillar 3 OV1 for Absa Bank, so only total RWA is available.
 - SBSA: the RWA risk-type split is available only from 2022 (OV1) and from the annual reports' Basel tables.
+- Bank-level NPL ratios: BA900 has no NPL item and BA200 is industry-only. The reports print NPL or stage 3 figures in inconsistent tables, so the deck uses the BA900 impairment allowance ratio as the bank-level measure.
 
 **Caveats**
 - Sign conventions follow each bank's presentation. Nedbank, for example, shows expenses as positive numbers. Values are kept as printed, and `value_rm` only rescales units.
-- `unspecified` basis means the page did not say whether it was consolidated or separate. Capitec FY2013–2018 had no subsidiaries, so it is effectively solo.
+- `unspecified` basis means the page did not say whether it was consolidated or separate. Capitec FY2014–2018 had no subsidiaries, so it is effectively solo.
 - Absa 2024: the capital note prints qualifying capital as *R199 683m*, which is inconsistent with the stated 17.1% ratio on R699bn RWA. This is likely a typo in the source, and the value is kept as printed.
 
-**Next steps**: map published line items to BA900 items for loans, deposits and investments; add interim (June/August) reports; harmonise income statement lines across banks into a common chart of accounts.
+**Next steps**: map published line items to BA900 items for loans, deposits and investments; add interim (June/August) reports; harmonise income statement lines across banks into a common chart of accounts; extract stage 3 loans from each bank's credit-risk note or Pillar 3 CR1 table for a bank-level NPL ratio.
 """
     )
     return
@@ -598,7 +989,7 @@ def _(mo):
 | File | Grain | Notes |
 |---|---|---|
 | `ba900` | bank × month × table × item × column | every BA900 value (R'000), including the industry total |
-| `industry_ba100/110/120/700` | month × table × item × column | all-banks totals only |
+| `industry_ba100/110/120/200/700` | month × table × item × column | all-banks totals only |
 | `ba900_internal_checks` | bank × month × subtotal × column | stated-formula and balance-identity checks |
 | `ba900_headlines` | bank × month × metric | total assets, loans, deposits, equity, off-balance-sheet items |
 | `report_statements` | document × table × column × line | every extracted value, all vintages, primary and supplementary |
@@ -607,6 +998,9 @@ def _(mo):
 | `recon_ba900_vs_reports` | bank × basis × FY × metric | published vs BA900 (item 277 and pre-netting item 284) |
 | `recon_rwa_sources`, `recon_vintage_consistency` | bank × FY (× line) | RWA source agreement; first-published vs comparative |
 | `report_inventory`, `report_extraction_log` | document / candidate page | provenance: URL, hash, pages, validation outcome |
+| `ba900_products` | bank × month × product | BA900 assets grouped into 13 products that add back to total assets |
+| `industry_npl` | month × metric | BA200 impaired advances, specific impairments and ratios |
+| `credit_quality` | bank × FY | impairment charge, average gross customer loans, CLR, allowance ratio, industry NPL ratio |
 """
     )
     return

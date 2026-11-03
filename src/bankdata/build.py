@@ -17,7 +17,7 @@ from datetime import date
 
 import polars as pl
 
-from .config import BANKS, TIDY
+from .config import BANKS, MIN_FISCAL_YEAR, TIDY
 
 FYE_MONTH = {"capitec": 2, "absa": 12, "nedbank": 12, "sbsa": 12}
 DEFAULT_UNIT = {"capitec": "R'000", "absa": "Rm", "nedbank": "Rm", "sbsa": "Rm"}
@@ -57,6 +57,10 @@ def period_end(bank: str, year: int) -> date:
 
 def report_statements() -> pl.DataFrame:
     df = pl.read_parquet(TIDY / "report_statements_raw.parquet")
+    # Analysis window: FY2014 onwards, applied to both the report and the period of each column
+    # (drops comparatives and multi-year-review columns before FY2014). Every downstream
+    # dataset (canonical statements, RWA, reconciliations) is built from this table.
+    df = df.filter(pl.col("fiscal_year") >= MIN_FISCAL_YEAR, pl.col("column_year") >= MIN_FISCAL_YEAR)
     df = df.with_columns(
         pl.when(pl.col("page_title").str.contains("(?i)" + SUPPLEMENTARY.pattern) | (pl.col("table_kind") == "review"))
         .then(pl.lit("supplementary")).otherwise(pl.lit("primary")).alias("table_kind"),

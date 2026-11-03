@@ -1,15 +1,13 @@
 bank,report_year,fiscal_year,period_end,metric,value,unit,line_label,basis_raw,table_id,page,doc_type,path,column_header,vintage_lag,n_reports_agreeing,source_table
-absa,2014,2013,2013-12-31,cet1_ratio_pct,11.0,%,Common Equity Tier,,rwa-p147,147,afs,data/reports/absa/afs_2014_e1d2f746.pdf,2013,1,2,annual_report
 absa,2015,2014,2014-12-31,cet1_ratio_pct,10.3,%,Common Equity Tier,,rwa-p147,147,afs,data/reports/absa/afs_2015_645f002a.pdf,2014,1,3,annual_report
-absa,2016,2015,2015-12-31,cet1_ratio_pct,10.5,%,Common Equity Tier,,rwa-p149,149,afs,data/reports/absa/afs_2016_77485dba.pdf,2015,1,3,annual_report
+absa,2016,2015,2015-12-31,cet1_ratio_pct,10.3,%,Common Equity Tier,,rwa-p149,149,afs,data/reports/absa/afs_2016_77485dba.pdf,2015,1,3,annual_report
 absa,2018,2017,2017-12-31,cet1_ratio_pct,10.0,%,Common Equity Tier 1 12. 3 13.4 10.0 – 11.5 7.,,rwa-p171,171,afs,data/reports/absa/afs_2018_350395fc.pdf,2017,1,1,annual_report
 absa,2020,2019,2019-12-31,cet1_ratio_pct,12.0,%,Common Equity Tier,,rwa-p166,166,afs,data/reports/absa/afs_unknown_8acdcfa2.pdf,2019,1,3,annual_report
 absa,2021,2020,2020-12-31,cet1_ratio_pct,7.5,%,Common Equity Tier 1 12.4 10.6 10.5 - 12.0 8.0 11.0-12.,,rwa-p153,153,afs,data/reports/absa/afs_unknown_8eeb3e77.pdf,2020,1,1,annual_report
-absa,2022,2021,2021-12-31,cet1_ratio_pct,12.5,%,Common Equity Tier,,rwa-p155,155,afs,data/reports/absa/afs_2022_ce229631.pdf,2021,1,4,annual_report
-absa,2023,2022,2022-12-31,cet1_ratio_pct,12.0,%,Common Equity Tier,,rwa-p167,167,afs,data/reports/absa/afs_2023_919ed5cf.pdf,2022,1,4,annual_report
-absa,2024,2023,2023-12-31,cet1_ratio_pct,10.5,%,Common Equity Tier,,rwa-p194,194,afs,data/reports/absa/afs_2024_4227b63f.pdf,2023,1,2,annual_report
+absa,2022,2021,2021-12-31,cet1_ratio_pct,12.4,%,Common Equity Tier,,rwa-p155,155,afs,data/reports/absa/afs_2022_ce229631.pdf,2021,1,4,annual_report
+absa,2023,2022,2022-12-31,cet1_ratio_pct,11.9,%,Common Equity Tier,,rwa-p167,167,afs,data/reports/absa/afs_2023_919ed5cf.pdf,2022,1,4,annual_report
+absa,2024,2023,2023-12-31,cet1_ratio_pct,8.5,%,Common Equity Tier,,rwa-p194,194,afs,data/reports/absa/afs_2024_4227b63f.pdf,2023,1,2,annual_report
 absa,2025,2024,2024-12-31,cet1_ratio_pct,8.5,%,Common Equity Tier,,rwa-p211,211,afs,data/reports/absa/afs_2025_4c662e59.pdf,2024,1,2,annual_report
-absa,2014,2013,2013-12-31,qualifying_capital,63292.0,Rm,Qualifying capital,,rwa-p147,147,afs,data/reports/absa/afs_2014_e1d2f746.pdf,2013,1,1,annual_report
 absa,2014,2014,2014-12-31,qualifying_capital,60762.0,Rm,Qualifying capital,,rwa-p147,147,afs,data/reports/absa/afs_2014_e1d2f746.pdf,2014,0,2,annual_report
 absa,2015,2015,2015-12-31,qualifying_capital,66059.0,Rm,Qualifying capital,,rwa-p147,147,afs,data/reports/absa/afs_2015_645f002a.pdf,2015,0,2,annual_report
 absa,2016,2016,2016-12-31,qualifying_capital,77769.0,Rm,Qualifying capital,,rwa-p149,149,afs,data/reports/absa/afs_2016_77485dba.pdf,2016,0,1,annual_report
@@ -22,19 +20,15 @@ absa,2022,2022,2022-12-31,qualifying_capital,116433.0,Rm,Qualifying capital,,rwa
 absa,2023,2023,2023-12-31,qualifying_capital,110468.0,Rm,Qualifying capital,,rwa-p167,167,afs,data/reports/absa/afs_2023_919ed5cf.pdf,2023,0,2,annual_report
 absa,2024,2024,2024-12-31,qualifying_capital,199683.0,Rm,Qualifying capital,,rwa-p194,194,afs,data/reports/absa/afs_2024_4227b63f.pdf,2024,0,2,annual_report
 absa,2025,2025,2025-12-31,qualifying_capital,127694.0,Rm,Qualifying capital,,rwa-p211,211,afs,data/reports/absa/afs_2025_4c662e59.pdf,2025,0,1,annual_report
-absa,2010,2009,2009-12-31,tier1_ratio_pct,11.6,%,» Tier,,rwa-p7,7,annual_report,data/reports/absa/annual_report_2010_687dcb21.pdf,we | 20091,1,1,annual_report
-absa,2014,2013,2013-12-31,tier1_ratio_pct,12.0,%,Tier,,rwa-p147,147,afs,data/reports/absa/afs_2014_e1d2f746.pdf,2013,1,2,annual_report
-absa,2015,2014,2014-12-31,tier1_ratio_pct,10.0,%,Tier,,rwa-p147,147,afs,data/reports/absa/afs_2015_645f002a.pdf,2014,1,2,annual_report
+absa,2015,2014,2014-12-31,tier1_ratio_pct,11.0,%,Tier,,rwa-p147,147,afs,data/reports/absa/afs_2015_645f002a.pdf,2014,1,2,annual_report
 absa,2016,2015,2015-12-31,tier1_ratio_pct,11.5,%,Tier,,rwa-p149,149,afs,data/reports/absa/afs_2016_77485dba.pdf,2015,1,3,annual_report
-absa,2018,2017,2017-12-31,tier1_ratio_pct,8.5,%,Tier 1 13. 1 14.1 11.75 – 13.25 8.,,rwa-p171,171,afs,data/reports/absa/afs_2018_350395fc.pdf,2017,1,1,annual_report
+absa,2018,2017,2017-12-31,tier1_ratio_pct,12.5,%,Tier 1 13. 1 14.1 11.75 – 13.25 8.,,rwa-p171,171,afs,data/reports/absa/afs_2018_350395fc.pdf,2017,1,1,annual_report
 absa,2020,2019,2019-12-31,tier1_ratio_pct,11.9,%,Tier,,rwa-p166,166,afs,data/reports/absa/afs_unknown_8acdcfa2.pdf,2019,1,3,annual_report
 absa,2021,2020,2020-12-31,tier1_ratio_pct,9.3,%,Tier 1 14.8 11.9 >12.0 9.5 12.0-13.,,rwa-p153,153,afs,data/reports/absa/afs_unknown_8eeb3e77.pdf,2020,1,1,annual_report
 absa,2022,2021,2021-12-31,tier1_ratio_pct,9.5,%,Tier 1 14.8 14.8 >12.0 10.3 >12.,,rwa-p155,155,afs,data/reports/absa/afs_2022_ce229631.pdf,2021,1,1,annual_report
 absa,2023,2022,2022-12-31,tier1_ratio_pct,10.3,%,Tier 1 14.4 14.8 >12.0 10.3 >12.,,rwa-p167,167,afs,data/reports/absa/afs_2023_919ed5cf.pdf,2022,1,1,annual_report
 absa,2024,2023,2023-12-31,tier1_ratio_pct,10.3,%,Tier 1 15.3 14.4 >12.0 10.3 >12.,,rwa-p194,194,afs,data/reports/absa/afs_2024_4227b63f.pdf,2023,1,1,annual_report
 absa,2025,2024,2024-12-31,tier1_ratio_pct,10.3,%,Tier 1 14.3 15.3 >12.0 10.3 >12.,,rwa-p211,211,afs,data/reports/absa/afs_2025_4c662e59.pdf,2024,1,1,annual_report
-absa,2010,2009,2009-12-31,total_rwa,391735.0,Rm,Risk-weighted assets (Rm),,rwa-p7,7,annual_report,data/reports/absa/annual_report_2010_687dcb21.pdf,we | 20091,1,1,annual_report
-absa,2014,2013,2013-12-31,total_rwa,406010.0,Rm,Total RWA,,rwa-p147,147,afs,data/reports/absa/afs_2014_e1d2f746.pdf,2013,1,1,annual_report
 absa,2014,2014,2014-12-31,total_rwa,443955.0,Rm,Total RWA,,rwa-p147,147,afs,data/reports/absa/afs_2014_e1d2f746.pdf,2014,0,2,annual_report
 absa,2015,2015,2015-12-31,total_rwa,484399.0,Rm,Total RWA,,rwa-p147,147,afs,data/reports/absa/afs_2015_645f002a.pdf,2015,0,2,annual_report
 absa,2016,2016,2016-12-31,total_rwa,515467.0,Rm,Total RWA,,rwa-p149,149,afs,data/reports/absa/afs_2016_77485dba.pdf,2016,0,1,annual_report
@@ -47,19 +41,18 @@ absa,2022,2022,2022-12-31,total_rwa,662093.0,Rm,Total RWA,,rwa-p155,155,afs,data
 absa,2023,2023,2023-12-31,total_rwa,682654.0,Rm,Total RWA,,rwa-p167,167,afs,data/reports/absa/afs_2023_919ed5cf.pdf,2023,0,2,annual_report
 absa,2024,2024,2024-12-31,total_rwa,699168.0,Rm,Total RWA,,rwa-p194,194,afs,data/reports/absa/afs_2024_4227b63f.pdf,2024,0,1,annual_report
 absa,2025,2025,2025-12-31,total_rwa,790352.0,Rm,Total RWA,,rwa-p211,211,afs,data/reports/absa/afs_2025_4c662e59.pdf,2025,0,1,annual_report
-capitec,2023,2022,2022-02-28,cet1_ratio_pct,34.2,%,5 Common Equity Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,30 Nov | 2022,1,2,annual_report
+capitec,2023,2022,2022-02-28,cet1_ratio_pct,34.2,%,5 Common Equity Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,31 Aug | 2022,1,2,annual_report
 capitec,2023,2023,2023-02-28,cet1_ratio_pct,33.6,%,5 Common Equity Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,the prudential regulatory metrics: | 28 Feb | 2023,0,5,annual_report
 capitec,2024,2024,2024-02-29,cet1_ratio_pct,35.5,%,5 Common equity tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2024_233c50a2.pdf,Limited | of the prudential | Feb 2024,0,10,annual_report
-capitec,2025,2025,2025-02-28,cet1_ratio_pct,37.2,%,5 Common equity tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,Limited | of the prudential | Feb 2025,0,2,annual_report
+capitec,2025,2025,2025-02-28,cet1_ratio_pct,37.2,%,Common equity tier 1 (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,Limited | of the prudential | Feb 2025,0,2,annual_report
 capitec,2023,2022,,counterparty_credit_risk_rwa,34.455,Rm,6 Counterparty credit risk,,,8,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,Total RWA | 31 Aug 2022,1,,pillar3_ov1
 capitec,2023,2023,,counterparty_credit_risk_rwa,66.069,Rm,6 Counterparty credit risk,,,8,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,Total RWA | 28 Feb 2023,0,,pillar3_ov1
 capitec,2024,2024,,counterparty_credit_risk_rwa,32.982,Rm,6 Counterparty credit risk (CCR),,,8,pillar3,data/reports/capitec/pillar3_2024_233c50a2.pdf,RWA | Feb | 2024,0,,pillar3_ov1
 capitec,2025,2025,,counterparty_credit_risk_rwa,40.861000000000004,Rm,6 Counterparty credit risk (CCR),,,8,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,RWA | Feb | 2025,0,,pillar3_ov1
-capitec,2014,2013,2013-02-28,credit_risk_rwa,23646.521,Rm,Credit risk,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2013,1,1,annual_report
-capitec,2014,2014,2014-02-28,credit_risk_rwa,2626.626,Rm,Credit risk,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,2,annual_report
+capitec,2014,2014,2014-02-28,credit_risk_rwa,26266.255,Rm,Credit risk,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,2,annual_report
 capitec,2015,2015,2015-02-28,credit_risk_rwa,31860.109,Rm,Credit risk,,rwa-p113,113,annual_report,data/reports/capitec/annual_report_2015_c158ceb9.pdf,2015,0,2,annual_report
-capitec,2016,2016,2016-02-29,credit_risk_rwa,3593.005,Rm,Credit risk,,rwa-p46,46,afs,data/reports/capitec/afs_2016_8cc9a837.pdf,2016,0,1,annual_report
-capitec,2018,2017,2017-02-28,credit_risk_rwa,39307.414000000004,Rm,Credit risk,,rwa-p107,107,annual_report,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,2017,1,1,annual_report
+capitec,2016,2016,2016-02-29,credit_risk_rwa,36851.331,Rm,Credit risk,,rwa-p46,46,afs,data/reports/capitec/afs_2016_8cc9a837.pdf,2016,0,1,annual_report
+capitec,2018,2017,2017-02-28,credit_risk_rwa,4225.5470000000005,Rm,Credit risk,,rwa-p107,107,annual_report,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,2017,1,1,annual_report
 capitec,2019,2018,2018-02-28,credit_risk_rwa,4621.702,Rm,Credit risk,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2018,1,1,annual_report
 capitec,2019,2019,2019-02-28,credit_risk_rwa,49984.411,Rm,Credit risk,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2019,0,2,annual_report
 capitec,2020,2020,2020-02-29,credit_risk_rwa,51865.392,Rm,Credit risk,bank,rwa-p97,97,annual_report,data/reports/capitec/annual_report_2020_2291d03e.pdf,2020,0,2,annual_report
@@ -89,12 +82,11 @@ capitec,2023,2022,,market_risk_rwa,10.273,Rm,20 Market risk,,,8,pillar3,data/rep
 capitec,2023,2023,,market_risk_rwa,33.696,Rm,20 Market risk,,,8,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,Total RWA | 28 Feb 2023,0,,pillar3_ov1
 capitec,2024,2024,,market_risk_rwa,12.765,Rm,20 Market risk,,,8,pillar3,data/reports/capitec/pillar3_2024_233c50a2.pdf,RWA | Feb | 2024,0,,pillar3_ov1
 capitec,2025,2025,,market_risk_rwa,22.238,Rm,20 Market risk,,,8,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,RWA | Feb | 2025,0,,pillar3_ov1
-capitec,2014,2013,2013-02-28,operational_risk_rwa,131.342,Rm,Operational risk,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2013,1,1,annual_report
-capitec,2014,2014,2014-02-28,operational_risk_rwa,197.264,Rm,Operational risk,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,2,annual_report
+capitec,2014,2014,2014-02-28,operational_risk_rwa,1972.642,Rm,Operational risk,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,2,annual_report
 capitec,2015,2015,2015-02-28,operational_risk_rwa,253.273,Rm,Operational risk,,rwa-p113,113,annual_report,data/reports/capitec/annual_report_2015_c158ceb9.pdf,2015,0,2,annual_report
 capitec,2016,2016,2016-02-29,operational_risk_rwa,292.06,Rm,Operational risk,,rwa-p46,46,afs,data/reports/capitec/afs_2016_8cc9a837.pdf,2016,0,1,annual_report
 capitec,2018,2017,2017-02-28,operational_risk_rwa,622.784,Rm,Operational risk,,rwa-p107,107,annual_report,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,2017,1,1,annual_report
-capitec,2019,2018,2018-02-28,operational_risk_rwa,683.0020000000001,Rm,Operational risk,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2018,1,1,annual_report
+capitec,2019,2018,2018-02-28,operational_risk_rwa,6139.3460000000005,Rm,Operational risk,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2018,1,1,annual_report
 capitec,2019,2019,2019-02-28,operational_risk_rwa,7535.845,Rm,Operational risk,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2019,0,2,annual_report
 capitec,2020,2020,2020-02-29,operational_risk_rwa,9275.997,Rm,Operational risk,bank,rwa-p97,97,annual_report,data/reports/capitec/annual_report_2020_2291d03e.pdf,2020,0,2,annual_report
 capitec,2021,2021,2021-02-28,operational_risk_rwa,9354.528,Rm,Operational risk,bank,rwa-p115,115,annual_report,data/reports/capitec/annual_report_2021_03e4d324.pdf,social and | 2021,0,1,annual_report
@@ -102,12 +94,11 @@ capitec,2023,2022,,operational_risk_rwa,11448.819,Rm,24 Operational risk,,,8,pil
 capitec,2023,2023,,operational_risk_rwa,11983.347,Rm,24 Operational risk,,,8,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,Total RWA | 28 Feb 2023,0,,pillar3_ov1
 capitec,2024,2024,,operational_risk_rwa,12625.43,Rm,24 Operational risk,,,8,pillar3,data/reports/capitec/pillar3_2024_233c50a2.pdf,RWA | Feb | 2024,0,,pillar3_ov1
 capitec,2025,2025,,operational_risk_rwa,13524.795,Rm,24 Operational risk,,,8,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,RWA | Feb | 2025,0,,pillar3_ov1
-capitec,2014,2013,2013-02-28,other_assets_rwa,1470.126,Rm,Other assets,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2013,1,1,annual_report
 capitec,2014,2014,2014-02-28,other_assets_rwa,1531.355,Rm,Other assets,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,2,annual_report
-capitec,2015,2015,2015-02-28,other_assets_rwa,1800.93,Rm,Other assets,,rwa-p113,113,annual_report,data/reports/capitec/annual_report_2015_c158ceb9.pdf,2015,0,2,annual_report
+capitec,2015,2015,2015-02-28,other_assets_rwa,180.09300000000002,Rm,Other assets,,rwa-p113,113,annual_report,data/reports/capitec/annual_report_2015_c158ceb9.pdf,2015,0,2,annual_report
 capitec,2016,2016,2016-02-29,other_assets_rwa,204.44400000000002,Rm,Other assets,,rwa-p46,46,afs,data/reports/capitec/afs_2016_8cc9a837.pdf,2016,0,1,annual_report
-capitec,2018,2017,2017-02-28,other_assets_rwa,300.371,Rm,Other assets,,rwa-p107,107,annual_report,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,2017,1,1,annual_report
-capitec,2019,2018,2018-02-28,other_assets_rwa,345.109,Rm,Other assets,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2018,1,1,annual_report
+capitec,2018,2017,2017-02-28,other_assets_rwa,2794.146,Rm,Other assets,,rwa-p107,107,annual_report,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,2017,1,1,annual_report
+capitec,2019,2018,2018-02-28,other_assets_rwa,3102.106,Rm,Other assets,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2018,1,1,annual_report
 capitec,2019,2019,2019-02-28,other_assets_rwa,4857.796,Rm,Other assets,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2019,0,2,annual_report
 capitec,2020,2020,2020-02-29,other_assets_rwa,15515.872000000001,Rm,Other assets,bank,rwa-p97,97,annual_report,data/reports/capitec/annual_report_2020_2291d03e.pdf,2020,0,2,annual_report
 capitec,2021,2021,2021-02-28,other_assets_rwa,11221.979,Rm,Other assets,bank,rwa-p115,115,annual_report,data/reports/capitec/annual_report_2021_03e4d324.pdf,social and | 2021,0,1,annual_report
@@ -125,33 +116,30 @@ capitec,2023,2022,,threshold_deductions_rwa,6949.854,Rm,25 Amounts below the thr
 capitec,2023,2023,,threshold_deductions_rwa,6440.933,Rm,25 Amounts below the thresholds for deduction (subject to 250% risk weight),,,8,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,Total RWA | 28 Feb 2023,0,,pillar3_ov1
 capitec,2024,2024,,threshold_deductions_rwa,6793.448,Rm,25 Amounts below the thresholds for deduction (subject to 250% risk weight),,,8,pillar3,data/reports/capitec/pillar3_2024_233c50a2.pdf,RWA | Feb | 2024,0,,pillar3_ov1
 capitec,2025,2025,,threshold_deductions_rwa,8146.763,Rm,25 Amounts below the thresholds for deduction (subject to 250% risk weight),,,8,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,RWA | Feb | 2025,0,,pillar3_ov1
-capitec,2023,2022,2022-02-28,tier1_ratio_pct,35.4,%,6 Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,28 Feb | 2022,1,2,annual_report
+capitec,2023,2022,2022-02-28,tier1_ratio_pct,34.7,%,6 Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,31 May | 2022,1,2,annual_report
 capitec,2023,2023,2023-02-28,tier1_ratio_pct,33.6,%,6 Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,the prudential regulatory metrics: | 28 Feb | 2023,0,3,annual_report
 capitec,2024,2024,2024-02-29,tier1_ratio_pct,35.5,%,6 Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2024_233c50a2.pdf,Limited | of the prudential | Feb 2024,0,5,annual_report
 capitec,2025,2025,2025-02-28,tier1_ratio_pct,37.2,%,6 Tier 1 ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,Limited | of the prudential | Feb 2025,0,1,annual_report
-capitec,2014,2013,2013-02-28,total_car_pct,41.1,%,Total capital adequacy %,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2013,1,1,annual_report
 capitec,2014,2014,2014-02-28,total_car_pct,39.5,%,Total capital adequacy %,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,2,annual_report
 capitec,2015,2015,2015-02-28,total_car_pct,36.3,%,Total capital adequacy %,,rwa-p113,113,annual_report,data/reports/capitec/annual_report_2015_c158ceb9.pdf,2015,0,1,annual_report
 capitec,2020,2019,2019-02-28,total_car_pct,33.3,%,Total capital adequacy (%),bank,rwa-p97,97,annual_report,data/reports/capitec/annual_report_2020_2291d03e.pdf,2019,1,1,annual_report
 capitec,2020,2020,2020-02-29,total_car_pct,31.7,%,Total capital adequacy (%),bank,rwa-p97,97,annual_report,data/reports/capitec/annual_report_2020_2291d03e.pdf,2020,0,1,annual_report
-capitec,2023,2022,2022-02-28,total_car_pct,35.0,%,7 Total capital ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,30 Nov | 2022,1,2,annual_report
+capitec,2023,2022,2022-02-28,total_car_pct,36.3,%,7 Total capital ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,28 Feb | 2022,1,2,annual_report
 capitec,2023,2023,2023-02-28,total_car_pct,34.4,%,7 Total capital ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,the prudential regulatory metrics: | 28 Feb | 2023,0,2,annual_report
 capitec,2025,2024,2024-02-29,total_car_pct,37.2,%,7 Total capital ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,regulatory | Q4 Nov 2024,1,3,annual_report
 capitec,2025,2025,2025-02-28,total_car_pct,38.0,%,7 Total capital ratio (%),,rwa-p3,3,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,Limited | of the prudential | Feb 2025,0,1,annual_report
-capitec,2014,2013,2013-02-28,total_rwa,26499.191,Rm,Total risk-weighted assets,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2013,1,2,annual_report
-capitec,2014,2014,2014-02-28,total_rwa,29770.252,Rm,Total risk-weighted assets - regulatory,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,4,annual_report
-capitec,2015,2015,2015-02-28,total_rwa,36193.766,Rm,Total risk-weighted assets - regulatory,,rwa-p113,113,annual_report,data/reports/capitec/annual_report_2015_c158ceb9.pdf,2015,0,4,annual_report
-capitec,2016,2016,2016-02-29,total_rwa,41943.684,Rm,Total risk-weighted assets,,rwa-p46,46,afs,data/reports/capitec/afs_2016_8cc9a837.pdf,2016,0,2,annual_report
-capitec,2018,2017,2017-02-28,total_rwa,48277.833,Rm,Total risk-weighted assets,,rwa-p107,107,annual_report,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,2017,1,2,annual_report
+capitec,2014,2014,2014-02-28,total_rwa,29770.252,Rm,Total risk-weighted assets,,rwa-p104,104,annual_report,data/reports/capitec/annual_report_2014_20876e70.pdf,2014,0,4,annual_report
+capitec,2015,2015,2015-02-28,total_rwa,36193.766,Rm,Total risk-weighted assets,,rwa-p113,113,annual_report,data/reports/capitec/annual_report_2015_c158ceb9.pdf,2015,0,4,annual_report
+capitec,2016,2016,2016-02-29,total_rwa,41943.684,Rm,Total risk-weighted assets – regulatory,,rwa-p46,46,afs,data/reports/capitec/afs_2016_8cc9a837.pdf,2016,0,2,annual_report
+capitec,2018,2017,2017-02-28,total_rwa,48277.833,Rm,Total risk-weighted assets – regulatory,,rwa-p107,107,annual_report,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,2017,1,2,annual_report
 capitec,2019,2018,2018-02-28,total_rwa,51161.219000000005,Rm,Total risk-weighted assets,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2018,1,2,annual_report
-capitec,2019,2019,2019-02-28,total_rwa,62798.706,Rm,Total risk-weighted assets,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2019,0,4,annual_report
+capitec,2019,2019,2019-02-28,total_rwa,62798.706,Rm,Total risk-weighted assets - regulatory,bank,rwa-p45,45,annual_report,data/reports/capitec/annual_report_2019_403220a5.pdf,2019,0,4,annual_report
 capitec,2020,2020,2020-02-29,total_rwa,77299.974,Rm,Total risk-weighted assets,bank,rwa-p97,97,annual_report,data/reports/capitec/annual_report_2020_2291d03e.pdf,2020,0,4,annual_report
-capitec,2021,2021,2021-02-28,total_rwa,77954.398,Rm,Total RWA – regulatory,bank,rwa-p115,115,annual_report,data/reports/capitec/annual_report_2021_03e4d324.pdf,social and | 2021,0,2,annual_report
+capitec,2021,2021,2021-02-28,total_rwa,77954.398,Rm,Total RWA,bank,rwa-p115,115,annual_report,data/reports/capitec/annual_report_2021_03e4d324.pdf,social and | 2021,0,2,annual_report
 capitec,2023,2022,2022-02-28,total_rwa,95406.826,Rm,Total risk-weighted assets – regulatory,bank,rwa-p6,6,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,Bank | 31 Aug 2022,1,2,annual_report
 capitec,2023,2023,2023-02-28,total_rwa,99861.225,Rm,Total risk-weighted assets – regulatory,bank,rwa-p6,6,pillar3,data/reports/capitec/pillar3_2023_0061091b.pdf,(continued): | Bank | 28 Feb 2023,0,2,annual_report
 capitec,2024,2024,2024-02-29,total_rwa,105211.92,Rm,Total risk-weighted assets – regulatory,bank,rwa-p6,6,pillar3,data/reports/capitec/pillar3_2024_233c50a2.pdf,Feb | 2024,0,2,annual_report
-capitec,2025,2025,2025-02-28,total_rwa,112706.62700000001,Rm,Total risk-weighted assets – regulatory,bank,rwa-p6,6,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,Feb | 2025,0,2,annual_report
-nedbank,2014,2013,2013-12-31,cet1_ratio_pct,10.7,%,– Common-equity tier 1 %,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2014_82a233d8.pdf,2013,1,1,annual_report
+capitec,2025,2025,2025-02-28,total_rwa,112706.62700000001,Rm,Total risk-weighted assets,bank,rwa-p6,6,pillar3,data/reports/capitec/pillar3_2025_3677a991.pdf,Feb | 2025,0,2,annual_report
 nedbank,2014,2014,2014-12-31,cet1_ratio_pct,11.0,%,– Common-equity tier 1 %,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2014_82a233d8.pdf,2014,0,2,annual_report
 nedbank,2015,2015,2015-12-31,cet1_ratio_pct,10.6,%,– Common equity tier 1 %,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2015_f2c39119.pdf,2015,0,2,annual_report
 nedbank,2016,2016,2016-12-31,cet1_ratio_pct,11.7,%,– Common equity tier 1 %,,rwa-p6,6,annual_report,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,2016,0,2,annual_report
@@ -221,7 +209,6 @@ nedbank,2018,2018,,threshold_deductions_rwa,2167.0,Rm,25 Amounts below the thres
 nedbank,2024,2023,,threshold_deductions_rwa,8399.0,Rm,Amounts below the thresholds for deduction (subject to 250% risk weighting),,,50,pillar3,data/reports/nedbank/pillar3_2024_a00b741e.pdf,management | Dec 2023 | RWA,1,,pillar3_ov1
 nedbank,2024,2024,,threshold_deductions_rwa,7646.0,Rm,Amounts below the thresholds for deduction (subject to 250% risk weighting),,,50,pillar3,data/reports/nedbank/pillar3_2024_a00b741e.pdf,of risk-weighted assets | Dec | RWA,0,,pillar3_ov1
 nedbank,2025,2025,,threshold_deductions_rwa,7681.0,Rm,25 Amounts below the thresholds for deduction (subject to 250% risk weighting),,,55,pillar3,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,of risk-weighted Assets1 | Dec | RWA,0,,pillar3_ov1
-nedbank,2014,2013,2013-12-31,tier1_ratio_pct,12.1,%,– Tier 1 %,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2014_82a233d8.pdf,2013,1,1,annual_report
 nedbank,2014,2014,2014-12-31,tier1_ratio_pct,12.1,%,– Tier 1 %,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2014_82a233d8.pdf,2014,0,2,annual_report
 nedbank,2015,2015,2015-12-31,tier1_ratio_pct,11.5,%,– Tier 1 %,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2015_f2c39119.pdf,2015,0,2,annual_report
 nedbank,2016,2016,2016-12-31,tier1_ratio_pct,12.9,%,– Tier 1 %,,rwa-p6,6,annual_report,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,2016,0,2,annual_report
@@ -235,7 +222,6 @@ nedbank,2023,2023,2023-12-31,tier1_ratio_pct,13.8,%,– Tier 1 %,,rwa-p4,4,afs,d
 nedbank,2024,2024,2024-12-31,tier1_ratio_pct,14.2,%,– Tier 1 %,,rwa-p4,4,afs,data/reports/nedbank/afs_2024_26609c9a.pdf,2024,0,3,annual_report
 nedbank,2025,2025,2025-12-31,tier1_ratio_pct,13.8,%,– Tier 1 %,,rwa-p4,4,afs,data/reports/nedbank/afs_2025_5ee84e33.pdf,2025,0,2,annual_report
 nedbank,2025,2025,2025-12-31,total_car_pct,14.9,%,7 Total capital ratio %,group,rwa-p46-left,46,pillar3,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,Sep 2025,0,1,annual_report
-nedbank,2014,2013,2013-12-31,total_rwa,336858.0,Rm,Total risk-weighted assets Rm,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2014_82a233d8.pdf,2013,1,1,annual_report
 nedbank,2014,2014,2014-12-31,total_rwa,368823.0,Rm,Total risk-weighted assets Rm,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2014_82a233d8.pdf,2014,0,2,annual_report
 nedbank,2015,2015,2015-12-31,total_rwa,415541.0,Rm,Total risk-weighted assets Rm,,rwa-p4,4,annual_report,data/reports/nedbank/annual_report_2015_f2c39119.pdf,2015,0,2,annual_report
 nedbank,2016,2016,2016-12-31,total_rwa,425405.0,Rm,Total risk-weighted assets Rm,,rwa-p6,6,annual_report,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,2016,0,2,annual_report
@@ -248,10 +234,8 @@ nedbank,2022,2022,2022-12-31,total_rwa,522815.0,Rm,Total risk-weighted assets Rm
 nedbank,2023,2023,2023-12-31,total_rwa,610052.0,Rm,Total risk-weighted assets Rm,,rwa-p4,4,afs,data/reports/nedbank/afs_2023_4a4f4d52.pdf,2023,0,2,annual_report
 nedbank,2024,2024,2024-12-31,total_rwa,636355.0,Rm,Total risk-weighted assets Rm,,rwa-p4,4,afs,data/reports/nedbank/afs_2024_26609c9a.pdf,2024,0,2,annual_report
 nedbank,2025,2025,2025-12-31,total_rwa,668060.0,Rm,Total risk-weighted assets Rm,,rwa-p4,4,afs,data/reports/nedbank/afs_2025_5ee84e33.pdf,2025,0,1,annual_report
-sbsa,2024,2023,2023-12-31,cet1_ratio_pct,11.4,%,5 CET 1 ratio (%),,rwa-p116,116,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,"and other risk disclosures relating to SBSA, | 3Q24 1H24 1Q24 2023",1,3,annual_report
-sbsa,2025,2024,2024-12-31,cet1_ratio_pct,10.9,%,5 CET 1 ratio (%),,rwa-p135,135,pillar3,data/reports/sbsa/pillar3_2025_d953dad8.pdf,"risk disclosures relating to SBSA, the largest | 3Q25 1H25 1Q25 2024",1,2,annual_report
-sbsa,2012,2011,2011-12-31,credit_risk_rwa,31845.0,Rm,Credit risk,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,Capital,1,1,annual_report
-sbsa,2012,2012,2012-12-31,credit_risk_rwa,395472.0,Rm,Credit risk,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,continued | and associated capital requirements | Risk- | weighted,0,1,annual_report
+sbsa,2024,2023,2023-12-31,cet1_ratio_pct,11.1,%,5 CET 1 ratio (%),,rwa-p116,116,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,"and other risk disclosures relating to SBSA, | 3Q24 1H24 1Q24 2023",1,3,annual_report
+sbsa,2025,2024,2024-12-31,cet1_ratio_pct,11.8,%,5 CET 1 ratio (%),,rwa-p135,135,pillar3,data/reports/sbsa/pillar3_2025_d953dad8.pdf,"risk disclosures relating to SBSA, the largest | 3Q25 1H25 1Q25 2024",1,2,annual_report
 sbsa,2023,2022,,credit_risk_rwa,619503.0,Rm,Credit risk (excluding CCR),,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2022,1,,pillar3_ov1
 sbsa,2023,2023,,credit_risk_rwa,653053.0,Rm,Credit risk (excluding CCR),,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2023,0,,pillar3_ov1
 sbsa,2024,2024,,credit_risk_rwa,704582.0,Rm,Credit risk (excluding CCR),,,117,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,2024,0,,pillar3_ov1
@@ -259,13 +243,9 @@ sbsa,2023,2022,,cva_rwa,14037.0,Rm,Credit valuation adjustments,,,115,pillar3,da
 sbsa,2023,2023,,cva_rwa,9746.0,Rm,Credit valuation adjustments,,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2023,0,,pillar3_ov1
 sbsa,2024,2024,,cva_rwa,10476.0,Rm,Credit valuation adjustments,,,117,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,2024,0,,pillar3_ov1
 sbsa,2025,2025,,cva_rwa,24005.0,Rm,CVA,,,136,pillar3,data/reports/sbsa/pillar3_2025_d953dad8.pdf,2025,0,,pillar3_ov1
-sbsa,2012,2011,2011-12-31,equity_risk_rwa,1498.0,Rm,Equity risk in the banking book,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,Capital,1,1,annual_report
-sbsa,2012,2012,2012-12-31,equity_risk_rwa,1371.0,Rm,Equity risk in the banking book,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,Capital,0,1,annual_report
 sbsa,2023,2022,,equity_risk_rwa,3419.0,Rm,Equity positions in banking book under market-based approach,,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2022,1,,pillar3_ov1
 sbsa,2023,2023,,equity_risk_rwa,2951.0,Rm,Equity positions in banking book under market-based approach,,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2023,0,,pillar3_ov1
 sbsa,2024,2024,,equity_risk_rwa,1573.0,Rm,Equity positions in banking book under market-based approach,,,117,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,2024,0,,pillar3_ov1
-sbsa,2012,2011,2011-12-31,market_risk_rwa,1427.0,Rm,Market risk,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,Capital,1,1,annual_report
-sbsa,2012,2012,2012-12-31,market_risk_rwa,2005.0,Rm,Market risk,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,Capital,0,1,annual_report
 sbsa,2023,2022,,market_risk_rwa,50675.0,Rm,Market risk,,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2022,1,,pillar3_ov1
 sbsa,2023,2023,,market_risk_rwa,53344.0,Rm,Market risk,,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2023,0,,pillar3_ov1
 sbsa,2024,2024,,market_risk_rwa,64650.0,Rm,Market risk,,,117,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,2024,0,,pillar3_ov1
@@ -274,8 +254,6 @@ sbsa,2023,2022,,operational_risk_rwa,103860.0,Rm,Operational risk,,,115,pillar3,
 sbsa,2023,2023,,operational_risk_rwa,117122.0,Rm,Operational risk,,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2023,0,,pillar3_ov1
 sbsa,2024,2024,,operational_risk_rwa,128978.0,Rm,Operational risk,,,117,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,2024,0,,pillar3_ov1
 sbsa,2025,2025,,operational_risk_rwa,149646.0,Rm,Operational risk,,,136,pillar3,data/reports/sbsa/pillar3_2025_d953dad8.pdf,2025,0,,pillar3_ov1
-sbsa,2012,2011,2011-12-31,other_assets_rwa,1601.0,Rm,Other assets,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,Capital,1,1,annual_report
-sbsa,2012,2012,2012-12-31,other_assets_rwa,13695.0,Rm,Other assets,,rwa-p76,76,annual_report,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,continued | and associated capital requirements | Risk- | weighted,0,1,annual_report
 sbsa,2021,2016,2016-12-31,qualifying_capital,94359.0,Rm,Total qualifying regulatory capital (Rm),,rwa-p219,219,afs,data/reports/sbsa/afs_2021_cb7d2716.pdf,report 2021 | 2016,5,1,annual_report
 sbsa,2022,2017,2017-12-31,qualifying_capital,101606.0,Rm,Total qualifying regulatory capital (Rm),bank,rwa-p198,198,afs,data/reports/sbsa/afs_2022_4664cf5d.pdf,AFRICA | 2022 | 2017,5,1,annual_report
 sbsa,2022,2018,2018-12-31,qualifying_capital,104908.0,Rm,Total qualifying regulatory capital (Rm),bank,rwa-p198,198,afs,data/reports/sbsa/afs_2022_4664cf5d.pdf,OF | Annual | 2018,4,1,annual_report
@@ -294,8 +272,6 @@ sbsa,2023,2022,,threshold_deductions_rwa,18633.0,Rm,Amounts below the thresholds
 sbsa,2023,2023,,threshold_deductions_rwa,20128.0,Rm,Amounts below the thresholds for deduction (subject to 250% risk weight),,,115,pillar3,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,2023,0,,pillar3_ov1
 sbsa,2024,2024,,threshold_deductions_rwa,18852.0,Rm,Amounts below the thresholds for deduction (subject to 250% risk weight),,,117,pillar3,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,2024,0,,pillar3_ov1
 sbsa,2025,2025,,threshold_deductions_rwa,14807.0,Rm,Amounts below the thresholds for deduction (subject to 250% risk weight),,,136,pillar3,data/reports/sbsa/pillar3_2025_d953dad8.pdf,2025,0,,pillar3_ov1
-sbsa,2017,2012,2012-12-31,tier1_ratio_pct,10.6,%,Tier 1 capital adequacy ratio (%),,rwa-p18,18,annual_report,data/reports/sbsa/annual_report_2017_c84a3206.pdf,2012,5,1,annual_report
-sbsa,2017,2013,2013-12-31,tier1_ratio_pct,12.8,%,Tier 1 capital adequacy ratio (%),,rwa-p18,18,annual_report,data/reports/sbsa/annual_report_2017_c84a3206.pdf,2013,4,2,annual_report
 sbsa,2017,2014,2014-12-31,tier1_ratio_pct,12.3,%,Tier 1 capital adequacy ratio (%),,rwa-p18,18,annual_report,data/reports/sbsa/annual_report_2017_c84a3206.pdf,2014,3,2,annual_report
 sbsa,2017,2015,2015-12-31,tier1_ratio_pct,12.1,%,Tier 1 capital adequacy ratio (%),,rwa-p18,18,annual_report,data/reports/sbsa/annual_report_2017_c84a3206.pdf,2015,2,2,annual_report
 sbsa,2017,2016,2016-12-31,tier1_ratio_pct,13.7,%,Tier 1 capital adequacy ratio (%),,rwa-p18,18,annual_report,data/reports/sbsa/annual_report_2017_c84a3206.pdf,2016,1,3,annual_report
@@ -308,16 +284,6 @@ sbsa,2022,2022,2022-12-31,tier1_ratio_pct,12.7,%,Tier 1 capital adequacy ratio (
 sbsa,2023,2023,2023-12-31,tier1_ratio_pct,13.9,%,Tier 1 capital adequacy ratio (%),,rwa-p164,164,afs,data/reports/sbsa/afs_2023_b121ed3d.pdf,Annexure G – Six-year | CAPITAL ADEQUACY | CAGR4 | % 2023,0,3,annual_report
 sbsa,2024,2024,2024-12-31,tier1_ratio_pct,12.7,%,Tier 1 capital adequacy ratio (%),,rwa-p168,168,afs,data/reports/sbsa/afs_2024_8917f4d0.pdf,Annexure G – Six-year | CAGR4 | % 2024,0,1,annual_report
 sbsa,2025,2025,2025-12-31,tier1_ratio_pct,14.4,%,Tier 1 capital adequacy ratio (%),,rwa-p172,172,afs,data/reports/sbsa/afs_2025_2b7139fe.pdf,Annexure G – Six-year review | CAGR | % 2025,0,1,annual_report
-sbsa,2010,2004,2004-12-31,total_car_pct,13.4,%,Total capital adequacy ratio (%),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2004,6,1,annual_report
-sbsa,2010,2005,2005-12-31,total_car_pct,12.5,%,Total capital adequacy ratio (%),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2005,5,1,annual_report
-sbsa,2010,2006,2006-12-31,total_car_pct,12.3,%,Total capital adequacy ratio (%),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2006,4,1,annual_report
-sbsa,2010,2007,2007-12-31,total_car_pct,11.7,%,Total capital adequacy ratio (%),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2007,3,1,annual_report
-sbsa,2010,2008,2008-12-31,total_car_pct,12.2,%,Total capital adequacy ratio (%),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2008,2,1,annual_report
-sbsa,2010,2009,2009-12-31,total_car_pct,14.1,%,Total capital adequacy ratio (%),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2009,1,2,annual_report
-sbsa,2010,2010,2010-12-31,total_car_pct,14.9,%,Total capital adequacy ratio (%),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,annual report 2010 | adequacy¹ | CAGR² | % 2010,0,3,annual_report
-sbsa,2014,2011,2011-12-31,total_car_pct,13.5,%,Total capital adequacy ratio (%),,rwa-p29,29,annual_report,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,2011,3,3,annual_report
-sbsa,2014,2012,2012-12-31,total_car_pct,13.8,%,Total capital adequacy ratio (%),,rwa-p29,29,annual_report,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,2012,2,4,annual_report
-sbsa,2013,2013,2013-12-31,total_car_pct,15.5,%,Total capital adequacy ratio –,,rwa-p54,54,annual_report,data/reports/sbsa/annual_report_2013_110c33cc.pdf,2013 | report > Capital management continued | unappropriated profits | 2013,0,6,annual_report
 sbsa,2019,2014,2014-12-31,total_car_pct,15.8,%,Total capital adequacy ratio (%),bank,rwa-p23,23,annual_report,data/reports/sbsa/annual_report_2019_eb25442e.pdf,AFRICA | report 2019 | 2014,5,1,annual_report
 sbsa,2019,2015,2015-12-31,total_car_pct,15.3,%,Total capital adequacy ratio (%),bank,rwa-p23,23,annual_report,data/reports/sbsa/annual_report_2019_eb25442e.pdf,BANK OF | Annual | 2015,4,2,annual_report
 sbsa,2019,2016,2016-12-31,total_car_pct,16.8,%,Total capital adequacy ratio (%),bank,rwa-p23,23,annual_report,data/reports/sbsa/annual_report_2019_eb25442e.pdf,THE | 2016,3,2,annual_report
@@ -330,16 +296,6 @@ sbsa,2022,2022,2022-12-31,total_car_pct,15.5,%,Total capital adequacy ratio (%),
 sbsa,2023,2023,2023-12-31,total_car_pct,16.7,%,Total capital adequacy ratio (%),,rwa-p164,164,afs,data/reports/sbsa/afs_2023_b121ed3d.pdf,Annexure G – Six-year | CAPITAL ADEQUACY | CAGR4 | % 2023,0,5,annual_report
 sbsa,2025,2024,2024-12-31,total_car_pct,16.2,%,7 Total capital ratio (%),,rwa-p135,135,pillar3,data/reports/sbsa/pillar3_2025_d953dad8.pdf,"risk disclosures relating to SBSA, the largest | 3Q25 1H25 1Q25 2024",1,4,annual_report
 sbsa,2025,2025,2025-12-31,total_car_pct,16.7,%,Total capital adequacy ratio (%),,rwa-p172,172,afs,data/reports/sbsa/afs_2025_2b7139fe.pdf,Annexure G – Six-year review | CAGR | % 2025,0,1,annual_report
-sbsa,2010,2004,2004-12-31,total_rwa,201232.0,Rm,Risk-weighted assets (Rm),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2004,6,1,annual_report
-sbsa,2010,2005,2005-12-31,total_rwa,235540.0,Rm,Risk-weighted assets (Rm),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2005,5,1,annual_report
-sbsa,2010,2006,2006-12-31,total_rwa,306620.0,Rm,Risk-weighted assets (Rm),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2006,4,1,annual_report
-sbsa,2010,2007,2007-12-31,total_rwa,340929.0,Rm,Risk-weighted assets (Rm),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2007,3,1,annual_report
-sbsa,2010,2008,2008-12-31,total_rwa,358752.0,Rm,Risk-weighted assets (Rm),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2008,2,1,annual_report
-sbsa,2010,2009,2009-12-31,total_rwa,367839.0,Rm,Risk-weighted assets (Rm),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,2009,1,2,annual_report
-sbsa,2010,2010,2010-12-31,total_rwa,368262.0,Rm,Risk-weighted assets (Rm),,rwa-p21,21,annual_report,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,annual report 2010 | adequacy¹ | CAGR² | % 2010,0,3,annual_report
-sbsa,2014,2011,2011-12-31,total_rwa,430484.0,Rm,Risk-weighted assets (Rm),,rwa-p29,29,annual_report,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,2011,3,3,annual_report
-sbsa,2014,2012,2012-12-31,total_rwa,528266.0,Rm,Risk-weighted assets (Rm),,rwa-p29,29,annual_report,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,2012,2,4,annual_report
-sbsa,2013,2013,2013-12-31,total_rwa,489045.0,Rm,Total risk-weighted assets,,rwa-p54,54,annual_report,data/reports/sbsa/annual_report_2013_110c33cc.pdf,2013 | report > Capital management continued | unappropriated profits | 2013,0,6,annual_report
 sbsa,2019,2014,2014-12-31,total_rwa,513856.0,Rm,Risk-weighted assets (Rm),bank,rwa-p23,23,annual_report,data/reports/sbsa/annual_report_2019_eb25442e.pdf,AFRICA | report 2019 | 2014,5,1,annual_report
 sbsa,2019,2015,2015-12-31,total_rwa,580944.0,Rm,Risk-weighted assets (Rm),bank,rwa-p23,23,annual_report,data/reports/sbsa/annual_report_2019_eb25442e.pdf,BANK OF | Annual | 2015,4,2,annual_report
 sbsa,2019,2016,2016-12-31,total_rwa,560735.0,Rm,Risk-weighted assets (Rm),bank,rwa-p23,23,annual_report,data/reports/sbsa/annual_report_2019_eb25442e.pdf,THE | 2016,3,2,annual_report

@@ -10,7 +10,7 @@ import httpx
 import pdfplumber
 import polars as pl
 
-from .config import REFERENCE, REPORTS, ROOT, TIDY
+from .config import MIN_FISCAL_YEAR, REFERENCE, REPORTS, ROOT, TIDY
 
 CLIENT = httpx.Client(
     timeout=300, follow_redirects=True, headers={"User-Agent": "industry-analysis-ai/0.1 (research)"}
@@ -51,7 +51,10 @@ def detect_year(path) -> tuple[int | None, int]:
 
 def run(workers: int = 4) -> pl.DataFrame:
     cat = (pl.read_csv(REFERENCE / "report_catalogue.csv", infer_schema_length=0)
-           .filter(pl.col("include") == "true").drop("include", "note").to_dicts())
+           .filter(pl.col("include") == "true")
+           # FY2014+ window; undated catalogue rows are kept and dated from their content below
+           .filter(pl.col("fy_hint").is_null() | (pl.col("fy_hint").cast(pl.Int64) >= MIN_FISCAL_YEAR))
+           .drop("include", "note").to_dicts())
     with ThreadPoolExecutor(workers) as ex:
         rows = list(ex.map(download, cat))
     for r in rows:

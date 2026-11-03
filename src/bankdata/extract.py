@@ -28,7 +28,7 @@ from concurrent.futures import ProcessPoolExecutor
 
 import polars as pl
 
-from .config import ROOT, TIDY
+from .config import MIN_FISCAL_YEAR, ROOT, TIDY
 from .locate import squash
 from .pdftext import page_texts
 from .statements import is_spread, parse_page
@@ -223,6 +223,7 @@ def _safe(row):
 def run(workers: int = 4) -> tuple[pl.DataFrame, pl.DataFrame]:
     inv = pl.read_csv(TIDY / "report_inventory.csv").filter(pl.col("path").is_not_null())
     inv = inv.with_columns(pl.coalesce(pl.col("detected_fy"), pl.col("fy_hint").cast(pl.Int64)).alias("fy"))
+    inv = inv.filter(pl.col("fy") >= MIN_FISCAL_YEAR)  # analysis window: FY2014 onwards
     rows, logs = [], []
     with ProcessPoolExecutor(workers) as ex:
         for r, lg in ex.map(_safe, inv.to_dicts()):

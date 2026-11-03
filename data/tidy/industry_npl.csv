@@ -1,0 +1,967 @@
+bank,month_end,fiscal_year,item_number,item_description,metric,value,unit
+industry_total,2014-01-31,2014,12, Total,gross_credit_exposure,4864060.376,Rm
+industry_total,2014-01-31,2014,27,Impaired advances,impaired_advances,108250.806,Rm
+industry_total,2014-01-31,2014,28,Specific impairments,specific_impairments,49205.043,Rm
+industry_total,2014-01-31,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.45,%
+industry_total,2014-01-31,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.63,%
+industry_total,2014-01-31,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.59,%
+industry_total,2014-01-31,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.23,%
+industry_total,2014-02-28,2014,12, Total,gross_credit_exposure,4777134.742000001,Rm
+industry_total,2014-02-28,2014,27,Impaired advances,impaired_advances,108177.81,Rm
+industry_total,2014-02-28,2014,28,Specific impairments,specific_impairments,49829.663,Rm
+industry_total,2014-02-28,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.06,%
+industry_total,2014-02-28,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.64,%
+industry_total,2014-02-28,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.57,%
+industry_total,2014-02-28,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.26,%
+industry_total,2014-03-31,2014,12, Total,gross_credit_exposure,4779304.346,Rm
+industry_total,2014-03-31,2014,27,Impaired advances,impaired_advances,108389.431,Rm
+industry_total,2014-03-31,2014,28,Specific impairments,specific_impairments,50180.16,Rm
+industry_total,2014-03-31,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.3,%
+industry_total,2014-03-31,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.63,%
+industry_total,2014-03-31,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.51,%
+industry_total,2014-03-31,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.27,%
+industry_total,2014-04-30,2014,12, Total,gross_credit_exposure,4788562.715,Rm
+industry_total,2014-04-30,2014,27,Impaired advances,impaired_advances,108910.21800000001,Rm
+industry_total,2014-04-30,2014,28,Specific impairments,specific_impairments,51051.700000000004,Rm
+industry_total,2014-04-30,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.88,%
+industry_total,2014-04-30,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.66,%
+industry_total,2014-04-30,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.54,%
+industry_total,2014-04-30,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.27,%
+industry_total,2014-05-31,2014,12, Total,gross_credit_exposure,4839402.517,Rm
+industry_total,2014-05-31,2014,27,Impaired advances,impaired_advances,110639.855,Rm
+industry_total,2014-05-31,2014,28,Specific impairments,specific_impairments,52204.392,Rm
+industry_total,2014-05-31,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.18,%
+industry_total,2014-05-31,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.69,%
+industry_total,2014-05-31,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.58,%
+industry_total,2014-05-31,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.29,%
+industry_total,2014-06-30,2014,12, Total,gross_credit_exposure,4900789.626,Rm
+industry_total,2014-06-30,2014,27,Impaired advances,impaired_advances,108609.596,Rm
+industry_total,2014-06-30,2014,28,Specific impairments,specific_impairments,50122.489,Rm
+industry_total,2014-06-30,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.15,%
+industry_total,2014-06-30,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.59,%
+industry_total,2014-06-30,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.44,%
+industry_total,2014-06-30,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.22,%
+industry_total,2014-07-31,2014,12, Total,gross_credit_exposure,4903022.881,Rm
+industry_total,2014-07-31,2014,27,Impaired advances,impaired_advances,108485.959,Rm
+industry_total,2014-07-31,2014,28,Specific impairments,specific_impairments,52430.593,Rm
+industry_total,2014-07-31,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.33,%
+industry_total,2014-07-31,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.67,%
+industry_total,2014-07-31,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.45,%
+industry_total,2014-07-31,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.21,%
+industry_total,2014-08-31,2014,12, Total,gross_credit_exposure,4893679.076,Rm
+industry_total,2014-08-31,2014,27,Impaired advances,impaired_advances,107568.258,Rm
+industry_total,2014-08-31,2014,28,Specific impairments,specific_impairments,53096.466,Rm
+industry_total,2014-08-31,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.36,%
+industry_total,2014-08-31,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.69,%
+industry_total,2014-08-31,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.42,%
+industry_total,2014-08-31,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.2,%
+industry_total,2014-09-30,2014,12, Total,gross_credit_exposure,4986534.834,Rm
+industry_total,2014-09-30,2014,27,Impaired advances,impaired_advances,108895.25,Rm
+industry_total,2014-09-30,2014,28,Specific impairments,specific_impairments,54438.92,Rm
+industry_total,2014-09-30,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.99,%
+industry_total,2014-09-30,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.7,%
+industry_total,2014-09-30,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.39,%
+industry_total,2014-09-30,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.18,%
+industry_total,2014-10-31,2014,12, Total,gross_credit_exposure,5027400.717,Rm
+industry_total,2014-10-31,2014,27,Impaired advances,impaired_advances,106215.05,Rm
+industry_total,2014-10-31,2014,28,Specific impairments,specific_impairments,52756.307,Rm
+industry_total,2014-10-31,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.67,%
+industry_total,2014-10-31,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.66,%
+industry_total,2014-10-31,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.35,%
+industry_total,2014-10-31,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.11,%
+industry_total,2014-11-30,2014,12, Total,gross_credit_exposure,5037180.625,Rm
+industry_total,2014-11-30,2014,27,Impaired advances,impaired_advances,105610.826,Rm
+industry_total,2014-11-30,2014,28,Specific impairments,specific_impairments,51769.585,Rm
+industry_total,2014-11-30,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.02,%
+industry_total,2014-11-30,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.6,%
+industry_total,2014-11-30,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.27,%
+industry_total,2014-11-30,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.1,%
+industry_total,2014-12-31,2014,12, Total,gross_credit_exposure,5062862.318,Rm
+industry_total,2014-12-31,2014,27,Impaired advances,impaired_advances,104990.046,Rm
+industry_total,2014-12-31,2014,28,Specific impairments,specific_impairments,51541.615,Rm
+industry_total,2014-12-31,2014,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.09,%
+industry_total,2014-12-31,2014,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.59,%
+industry_total,2014-12-31,2014,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.24,%
+industry_total,2014-12-31,2014,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.07,%
+industry_total,2015-01-31,2015,12, Total,gross_credit_exposure,5139299.745,Rm
+industry_total,2015-01-31,2015,27,Impaired advances,impaired_advances,106654.255,Rm
+industry_total,2015-01-31,2015,28,Specific impairments,specific_impairments,52131.716,Rm
+industry_total,2015-01-31,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.88,%
+industry_total,2015-01-31,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.6,%
+industry_total,2015-01-31,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.28,%
+industry_total,2015-01-31,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.08,%
+industry_total,2015-02-28,2015,12, Total,gross_credit_exposure,5140404.525,Rm
+industry_total,2015-02-28,2015,27,Impaired advances,impaired_advances,106753.399,Rm
+industry_total,2015-02-28,2015,28,Specific impairments,specific_impairments,52221.474,Rm
+industry_total,2015-02-28,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.92,%
+industry_total,2015-02-28,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.58,%
+industry_total,2015-02-28,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.23,%
+industry_total,2015-02-28,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.08,%
+industry_total,2015-03-31,2015,12, Total,gross_credit_exposure,5289580.263,Rm
+industry_total,2015-03-31,2015,27,Impaired advances,impaired_advances,108020.439,Rm
+industry_total,2015-03-31,2015,28,Specific impairments,specific_impairments,53133.932,Rm
+industry_total,2015-03-31,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.19,%
+industry_total,2015-03-31,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.58,%
+industry_total,2015-03-31,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.21,%
+industry_total,2015-03-31,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.04,%
+industry_total,2015-04-30,2015,12, Total,gross_credit_exposure,5289596.9860000005,Rm
+industry_total,2015-04-30,2015,27,Impaired advances,impaired_advances,108276.208,Rm
+industry_total,2015-04-30,2015,28,Specific impairments,specific_impairments,53003.563,Rm
+industry_total,2015-04-30,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.95,%
+industry_total,2015-04-30,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.58,%
+industry_total,2015-04-30,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.22,%
+industry_total,2015-04-30,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.05,%
+industry_total,2015-05-31,2015,12, Total,gross_credit_exposure,5303355.984,Rm
+industry_total,2015-05-31,2015,27,Impaired advances,impaired_advances,110434.90000000001,Rm
+industry_total,2015-05-31,2015,28,Specific impairments,specific_impairments,52926.405,Rm
+industry_total,2015-05-31,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.93,%
+industry_total,2015-05-31,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.56,%
+industry_total,2015-05-31,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.26,%
+industry_total,2015-05-31,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.08,%
+industry_total,2015-06-30,2015,12, Total,gross_credit_exposure,5347465.944,Rm
+industry_total,2015-06-30,2015,27,Impaired advances,impaired_advances,114046.827,Rm
+industry_total,2015-06-30,2015,28,Specific impairments,specific_impairments,52059.068,Rm
+industry_total,2015-06-30,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.65,%
+industry_total,2015-06-30,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.51,%
+industry_total,2015-06-30,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.31,%
+industry_total,2015-06-30,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.13,%
+industry_total,2015-07-31,2015,12, Total,gross_credit_exposure,5367207.316000001,Rm
+industry_total,2015-07-31,2015,27,Impaired advances,impaired_advances,114770.75200000001,Rm
+industry_total,2015-07-31,2015,28,Specific impairments,specific_impairments,51910.43,Rm
+industry_total,2015-07-31,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.23,%
+industry_total,2015-07-31,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.51,%
+industry_total,2015-07-31,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.33,%
+industry_total,2015-07-31,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.14,%
+industry_total,2015-08-31,2015,12, Total,gross_credit_exposure,5435295.441000001,Rm
+industry_total,2015-08-31,2015,27,Impaired advances,impaired_advances,114096.304,Rm
+industry_total,2015-08-31,2015,28,Specific impairments,specific_impairments,52911.563,Rm
+industry_total,2015-08-31,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.37,%
+industry_total,2015-08-31,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.52,%
+industry_total,2015-08-31,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.27,%
+industry_total,2015-08-31,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.1,%
+industry_total,2015-09-30,2015,12, Total,gross_credit_exposure,5536874.024,Rm
+industry_total,2015-09-30,2015,27,Impaired advances,impaired_advances,113053.527,Rm
+industry_total,2015-09-30,2015,28,Specific impairments,specific_impairments,53614.12,Rm
+industry_total,2015-09-30,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.42,%
+industry_total,2015-09-30,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.52,%
+industry_total,2015-09-30,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.2,%
+industry_total,2015-09-30,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.04,%
+industry_total,2015-10-31,2015,12, Total,gross_credit_exposure,5501235.323,Rm
+industry_total,2015-10-31,2015,27,Impaired advances,impaired_advances,113322.769,Rm
+industry_total,2015-10-31,2015,28,Specific impairments,specific_impairments,54539.32,Rm
+industry_total,2015-10-31,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.13,%
+industry_total,2015-10-31,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.56,%
+industry_total,2015-10-31,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.25,%
+industry_total,2015-10-31,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.06,%
+industry_total,2015-11-30,2015,12, Total,gross_credit_exposure,5613966.096,Rm
+industry_total,2015-11-30,2015,27,Impaired advances,impaired_advances,110071.784,Rm
+industry_total,2015-11-30,2015,28,Specific impairments,specific_impairments,53757.015,Rm
+industry_total,2015-11-30,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.84,%
+industry_total,2015-11-30,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.5,%
+industry_total,2015-11-30,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.08,%
+industry_total,2015-11-30,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.96,%
+industry_total,2015-12-31,2015,12, Total,gross_credit_exposure,5824418.25,Rm
+industry_total,2015-12-31,2015,27,Impaired advances,impaired_advances,112409.494,Rm
+industry_total,2015-12-31,2015,28,Specific impairments,specific_impairments,53717.441,Rm
+industry_total,2015-12-31,2015,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.79,%
+industry_total,2015-12-31,2015,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.49,%
+industry_total,2015-12-31,2015,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.12,%
+industry_total,2015-12-31,2015,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.93,%
+industry_total,2016-01-31,2016,12, Total,gross_credit_exposure,5860939.506,Rm
+industry_total,2016-01-31,2016,27,Impaired advances,impaired_advances,113384.954,Rm
+industry_total,2016-01-31,2016,28,Specific impairments,specific_impairments,54197.25,Rm
+industry_total,2016-01-31,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.8,%
+industry_total,2016-01-31,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.48,%
+industry_total,2016-01-31,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.09,%
+industry_total,2016-01-31,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.93,%
+industry_total,2016-02-29,2016,12, Total,gross_credit_exposure,5886182.7700000005,Rm
+industry_total,2016-02-29,2016,27,Impaired advances,impaired_advances,117703.117,Rm
+industry_total,2016-02-29,2016,28,Specific impairments,specific_impairments,54053.664000000004,Rm
+industry_total,2016-02-29,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.92,%
+industry_total,2016-02-29,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.45,%
+industry_total,2016-02-29,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.15,%
+industry_total,2016-02-29,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.0,%
+industry_total,2016-03-31,2016,12, Total,gross_credit_exposure,5834703.089,Rm
+industry_total,2016-03-31,2016,27,Impaired advances,impaired_advances,114548.235,Rm
+industry_total,2016-03-31,2016,28,Specific impairments,specific_impairments,53647.73,Rm
+industry_total,2016-03-31,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.83,%
+industry_total,2016-03-31,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.44,%
+industry_total,2016-03-31,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.08,%
+industry_total,2016-03-31,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.96,%
+industry_total,2016-04-30,2016,12, Total,gross_credit_exposure,5730198.798,Rm
+industry_total,2016-04-30,2016,27,Impaired advances,impaired_advances,103503.17,Rm
+industry_total,2016-04-30,2016,28,Specific impairments,specific_impairments,45058.742,Rm
+industry_total,2016-04-30,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.53,%
+industry_total,2016-04-30,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.24,%
+industry_total,2016-04-30,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.84,%
+industry_total,2016-04-30,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.81,%
+industry_total,2016-05-31,2016,12, Total,gross_credit_exposure,5828199.387,Rm
+industry_total,2016-05-31,2016,27,Impaired advances,impaired_advances,105190.891,Rm
+industry_total,2016-05-31,2016,28,Specific impairments,specific_impairments,45556.627,Rm
+industry_total,2016-05-31,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.31,%
+industry_total,2016-05-31,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.24,%
+industry_total,2016-05-31,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.86,%
+industry_total,2016-05-31,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.8,%
+industry_total,2016-06-30,2016,12, Total,gross_credit_exposure,5782983.22,Rm
+industry_total,2016-06-30,2016,27,Impaired advances,impaired_advances,106934.388,Rm
+industry_total,2016-06-30,2016,28,Specific impairments,specific_impairments,45855.154,Rm
+industry_total,2016-06-30,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.88,%
+industry_total,2016-06-30,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.24,%
+industry_total,2016-06-30,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.89,%
+industry_total,2016-06-30,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.85,%
+industry_total,2016-07-31,2016,12, Total,gross_credit_exposure,5763641.545,Rm
+industry_total,2016-07-31,2016,27,Impaired advances,impaired_advances,106704.738,Rm
+industry_total,2016-07-31,2016,28,Specific impairments,specific_impairments,45734.403,Rm
+industry_total,2016-07-31,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.86,%
+industry_total,2016-07-31,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.25,%
+industry_total,2016-07-31,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.92,%
+industry_total,2016-07-31,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.85,%
+industry_total,2016-08-31,2016,12, Total,gross_credit_exposure,5807320.44,Rm
+industry_total,2016-08-31,2016,27,Impaired advances,impaired_advances,106919.243,Rm
+industry_total,2016-08-31,2016,28,Specific impairments,specific_impairments,45961.359000000004,Rm
+industry_total,2016-08-31,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.99,%
+industry_total,2016-08-31,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.24,%
+industry_total,2016-08-31,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.88,%
+industry_total,2016-08-31,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.84,%
+industry_total,2016-09-30,2016,12, Total,gross_credit_exposure,5766535.266,Rm
+industry_total,2016-09-30,2016,27,Impaired advances,impaired_advances,108590.55900000001,Rm
+industry_total,2016-09-30,2016,28,Specific impairments,specific_impairments,46515.338,Rm
+industry_total,2016-09-30,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.84,%
+industry_total,2016-09-30,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.26,%
+industry_total,2016-09-30,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.94,%
+industry_total,2016-09-30,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.88,%
+industry_total,2016-10-31,2016,12, Total,gross_credit_exposure,5780533.625,Rm
+industry_total,2016-10-31,2016,27,Impaired advances,impaired_advances,107948.864,Rm
+industry_total,2016-10-31,2016,28,Specific impairments,specific_impairments,46357.193,Rm
+industry_total,2016-10-31,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.94,%
+industry_total,2016-10-31,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.25,%
+industry_total,2016-10-31,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.91,%
+industry_total,2016-10-31,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.87,%
+industry_total,2016-11-30,2016,12, Total,gross_credit_exposure,5799950.249,Rm
+industry_total,2016-11-30,2016,27,Impaired advances,impaired_advances,105636.678,Rm
+industry_total,2016-11-30,2016,28,Specific impairments,specific_impairments,46226.794,Rm
+industry_total,2016-11-30,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.76,%
+industry_total,2016-11-30,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.25,%
+industry_total,2016-11-30,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.85,%
+industry_total,2016-11-30,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.82,%
+industry_total,2016-12-31,2016,12, Total,gross_credit_exposure,5769064.691000001,Rm
+industry_total,2016-12-31,2016,27,Impaired advances,impaired_advances,105957.261,Rm
+industry_total,2016-12-31,2016,28,Specific impairments,specific_impairments,46489.561,Rm
+industry_total,2016-12-31,2016,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.88,%
+industry_total,2016-12-31,2016,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.25,%
+industry_total,2016-12-31,2016,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.86,%
+industry_total,2016-12-31,2016,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.84,%
+industry_total,2017-01-31,2017,12, Total,gross_credit_exposure,5786913.305,Rm
+industry_total,2017-01-31,2017,27,Impaired advances,impaired_advances,107526.528,Rm
+industry_total,2017-01-31,2017,28,Specific impairments,specific_impairments,46915.166,Rm
+industry_total,2017-01-31,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.63,%
+industry_total,2017-01-31,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.26,%
+industry_total,2017-01-31,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.89,%
+industry_total,2017-01-31,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.86,%
+industry_total,2017-02-28,2017,12, Total,gross_credit_exposure,5779586.681,Rm
+industry_total,2017-02-28,2017,27,Impaired advances,impaired_advances,106070.007,Rm
+industry_total,2017-02-28,2017,28,Specific impairments,specific_impairments,47107.711,Rm
+industry_total,2017-02-28,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.41,%
+industry_total,2017-02-28,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.26,%
+industry_total,2017-02-28,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.84,%
+industry_total,2017-02-28,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.84,%
+industry_total,2017-03-31,2017,12, Total,gross_credit_exposure,5852009.405,Rm
+industry_total,2017-03-31,2017,27,Impaired advances,impaired_advances,107626.09,Rm
+industry_total,2017-03-31,2017,28,Specific impairments,specific_impairments,47573.083,Rm
+industry_total,2017-03-31,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.2,%
+industry_total,2017-03-31,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.26,%
+industry_total,2017-03-31,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.84,%
+industry_total,2017-03-31,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.84,%
+industry_total,2017-04-30,2017,12, Total,gross_credit_exposure,5799147.586,Rm
+industry_total,2017-04-30,2017,27,Impaired advances,impaired_advances,108243.629,Rm
+industry_total,2017-04-30,2017,28,Specific impairments,specific_impairments,47625.493,Rm
+industry_total,2017-04-30,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.0,%
+industry_total,2017-04-30,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.27,%
+industry_total,2017-04-30,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.89,%
+industry_total,2017-04-30,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.87,%
+industry_total,2017-05-31,2017,12, Total,gross_credit_exposure,5834870.193,Rm
+industry_total,2017-05-31,2017,27,Impaired advances,impaired_advances,109155.958,Rm
+industry_total,2017-05-31,2017,28,Specific impairments,specific_impairments,47984.218,Rm
+industry_total,2017-05-31,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.96,%
+industry_total,2017-05-31,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.28,%
+industry_total,2017-05-31,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.9,%
+industry_total,2017-05-31,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.87,%
+industry_total,2017-06-30,2017,12, Total,gross_credit_exposure,5819397.797,Rm
+industry_total,2017-06-30,2017,27,Impaired advances,impaired_advances,109359.7,Rm
+industry_total,2017-06-30,2017,28,Specific impairments,specific_impairments,48255.269,Rm
+industry_total,2017-06-30,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.13,%
+industry_total,2017-06-30,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.28,%
+industry_total,2017-06-30,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.9,%
+industry_total,2017-06-30,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.88,%
+industry_total,2017-07-31,2017,12, Total,gross_credit_exposure,5934431.717,Rm
+industry_total,2017-07-31,2017,27,Impaired advances,impaired_advances,108553.114,Rm
+industry_total,2017-07-31,2017,28,Specific impairments,specific_impairments,47847.8,Rm
+industry_total,2017-07-31,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.08,%
+industry_total,2017-07-31,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.26,%
+industry_total,2017-07-31,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.85,%
+industry_total,2017-07-31,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.83,%
+industry_total,2017-08-31,2017,12, Total,gross_credit_exposure,5889580.326,Rm
+industry_total,2017-08-31,2017,27,Impaired advances,impaired_advances,107117.435,Rm
+industry_total,2017-08-31,2017,28,Specific impairments,specific_impairments,47384.685,Rm
+industry_total,2017-08-31,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.24,%
+industry_total,2017-08-31,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.25,%
+industry_total,2017-08-31,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.83,%
+industry_total,2017-08-31,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.82,%
+industry_total,2017-09-30,2017,12, Total,gross_credit_exposure,5985727.453,Rm
+industry_total,2017-09-30,2017,27,Impaired advances,impaired_advances,107044.359,Rm
+industry_total,2017-09-30,2017,28,Specific impairments,specific_impairments,46723.71,Rm
+industry_total,2017-09-30,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.65,%
+industry_total,2017-09-30,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.21,%
+industry_total,2017-09-30,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.77,%
+industry_total,2017-09-30,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.79,%
+industry_total,2017-10-31,2017,12, Total,gross_credit_exposure,5994376.401000001,Rm
+industry_total,2017-10-31,2017,27,Impaired advances,impaired_advances,107558.34700000001,Rm
+industry_total,2017-10-31,2017,28,Specific impairments,specific_impairments,46485.218,Rm
+industry_total,2017-10-31,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.22,%
+industry_total,2017-10-31,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.21,%
+industry_total,2017-10-31,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.79,%
+industry_total,2017-10-31,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.79,%
+industry_total,2017-11-30,2017,12, Total,gross_credit_exposure,5979138.045,Rm
+industry_total,2017-11-30,2017,27,Impaired advances,impaired_advances,108024.372,Rm
+industry_total,2017-11-30,2017,28,Specific impairments,specific_impairments,46040.639,Rm
+industry_total,2017-11-30,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.62,%
+industry_total,2017-11-30,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.2,%
+industry_total,2017-11-30,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.81,%
+industry_total,2017-11-30,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.81,%
+industry_total,2017-12-31,2017,12, Total,gross_credit_exposure,5983737.163,Rm
+industry_total,2017-12-31,2017,27,Impaired advances,impaired_advances,108013.514,Rm
+industry_total,2017-12-31,2017,28,Specific impairments,specific_impairments,45997.898,Rm
+industry_total,2017-12-31,2017,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.59,%
+industry_total,2017-12-31,2017,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.21,%
+industry_total,2017-12-31,2017,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,2.84,%
+industry_total,2017-12-31,2017,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,1.81,%
+industry_total,2018-01-31,2018,12, Total,gross_credit_exposure,5987715.309,Rm
+industry_total,2018-01-31,2018,27,Impaired advances,impaired_advances,124032.706,Rm
+industry_total,2018-01-31,2018,28,Specific impairments,specific_impairments,51470.742,Rm
+industry_total,2018-01-31,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,41.5,%
+industry_total,2018-01-31,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.35,%
+industry_total,2018-01-31,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.26,%
+industry_total,2018-01-31,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.07,%
+industry_total,2018-02-28,2018,12, Total,gross_credit_exposure,6027607.908,Rm
+industry_total,2018-02-28,2018,27,Impaired advances,impaired_advances,125536.254,Rm
+industry_total,2018-02-28,2018,28,Specific impairments,specific_impairments,51592.717000000004,Rm
+industry_total,2018-02-28,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,41.1,%
+industry_total,2018-02-28,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.34,%
+industry_total,2018-02-28,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.25,%
+industry_total,2018-02-28,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.08,%
+industry_total,2018-03-31,2018,12, Total,gross_credit_exposure,5986701.204,Rm
+industry_total,2018-03-31,2018,27,Impaired advances,impaired_advances,128242.697,Rm
+industry_total,2018-03-31,2018,28,Specific impairments,specific_impairments,53766.119,Rm
+industry_total,2018-03-31,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,41.93,%
+industry_total,2018-03-31,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.39,%
+industry_total,2018-03-31,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.31,%
+industry_total,2018-03-31,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.14,%
+industry_total,2018-04-30,2018,12, Total,gross_credit_exposure,6040278.654,Rm
+industry_total,2018-04-30,2018,27,Impaired advances,impaired_advances,131850.897,Rm
+industry_total,2018-04-30,2018,28,Specific impairments,specific_impairments,55707.077000000005,Rm
+industry_total,2018-04-30,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.25,%
+industry_total,2018-04-30,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.43,%
+industry_total,2018-04-30,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.39,%
+industry_total,2018-04-30,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.18,%
+industry_total,2018-05-31,2018,12, Total,gross_credit_exposure,6029928.97,Rm
+industry_total,2018-05-31,2018,27,Impaired advances,impaired_advances,132974.12900000002,Rm
+industry_total,2018-05-31,2018,28,Specific impairments,specific_impairments,57375.03,Rm
+industry_total,2018-05-31,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.15,%
+industry_total,2018-05-31,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.49,%
+industry_total,2018-05-31,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.44,%
+industry_total,2018-05-31,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.21,%
+industry_total,2018-06-30,2018,12, Total,gross_credit_exposure,6197637.437,Rm
+industry_total,2018-06-30,2018,27,Impaired advances,impaired_advances,137742.39800000002,Rm
+industry_total,2018-06-30,2018,28,Specific impairments,specific_impairments,58545.358,Rm
+industry_total,2018-06-30,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.5,%
+industry_total,2018-06-30,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.49,%
+industry_total,2018-06-30,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.51,%
+industry_total,2018-06-30,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.22,%
+industry_total,2018-07-31,2018,12, Total,gross_credit_exposure,6164666.709,Rm
+industry_total,2018-07-31,2018,27,Impaired advances,impaired_advances,141787.141,Rm
+industry_total,2018-07-31,2018,28,Specific impairments,specific_impairments,62052.798,Rm
+industry_total,2018-07-31,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.76,%
+industry_total,2018-07-31,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.58,%
+industry_total,2018-07-31,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.61,%
+industry_total,2018-07-31,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.3,%
+industry_total,2018-08-31,2018,12, Total,gross_credit_exposure,6327185.8440000005,Rm
+industry_total,2018-08-31,2018,27,Impaired advances,impaired_advances,143584.263,Rm
+industry_total,2018-08-31,2018,28,Specific impairments,specific_impairments,64484.461,Rm
+industry_total,2018-08-31,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.91,%
+industry_total,2018-08-31,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.61,%
+industry_total,2018-08-31,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.58,%
+industry_total,2018-08-31,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.27,%
+industry_total,2018-09-30,2018,12, Total,gross_credit_exposure,6300937.066000001,Rm
+industry_total,2018-09-30,2018,27,Impaired advances,impaired_advances,147144.263,Rm
+industry_total,2018-09-30,2018,28,Specific impairments,specific_impairments,66487.582,Rm
+industry_total,2018-09-30,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.19,%
+industry_total,2018-09-30,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.65,%
+industry_total,2018-09-30,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.66,%
+industry_total,2018-09-30,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.34,%
+industry_total,2018-10-31,2018,12, Total,gross_credit_exposure,6414059.373,Rm
+industry_total,2018-10-31,2018,27,Impaired advances,impaired_advances,149550.15600000002,Rm
+industry_total,2018-10-31,2018,28,Specific impairments,specific_impairments,67802.93000000001,Rm
+industry_total,2018-10-31,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.34,%
+industry_total,2018-10-31,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.69,%
+industry_total,2018-10-31,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.72,%
+industry_total,2018-10-31,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.33,%
+industry_total,2018-11-30,2018,12, Total,gross_credit_exposure,6361270.614,Rm
+industry_total,2018-11-30,2018,27,Impaired advances,impaired_advances,150168.442,Rm
+industry_total,2018-11-30,2018,28,Specific impairments,specific_impairments,67878.224,Rm
+industry_total,2018-11-30,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.2,%
+industry_total,2018-11-30,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.69,%
+industry_total,2018-11-30,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.74,%
+industry_total,2018-11-30,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.36,%
+industry_total,2018-12-31,2018,12, Total,gross_credit_exposure,6362956.042,Rm
+industry_total,2018-12-31,2018,27,Impaired advances,impaired_advances,151557.878,Rm
+industry_total,2018-12-31,2018,28,Specific impairments,specific_impairments,70541.95,Rm
+industry_total,2018-12-31,2018,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.54,%
+industry_total,2018-12-31,2018,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.71,%
+industry_total,2018-12-31,2018,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.68,%
+industry_total,2018-12-31,2018,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.38,%
+industry_total,2019-01-31,2019,12, Total,gross_credit_exposure,6365479.116,Rm
+industry_total,2019-01-31,2019,27,Impaired advances,impaired_advances,156456.979,Rm
+industry_total,2019-01-31,2019,28,Specific impairments,specific_impairments,71719.323,Rm
+industry_total,2019-01-31,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.84,%
+industry_total,2019-01-31,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.77,%
+industry_total,2019-01-31,2019,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.85,%
+industry_total,2019-01-31,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.46,%
+industry_total,2019-02-28,2019,12, Total,gross_credit_exposure,6378636.872,Rm
+industry_total,2019-02-28,2019,27,Impaired advances,impaired_advances,157268.044,Rm
+industry_total,2019-02-28,2019,28,Specific impairments,specific_impairments,72358.774,Rm
+industry_total,2019-02-28,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.01,%
+industry_total,2019-02-28,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.75,%
+industry_total,2019-02-28,2019,31, Impair adv : Tot loans on BS (%),npl_ratio_pct,3.81,%
+industry_total,2019-02-28,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.47,%
+industry_total,2019-03-31,2019,12,Total,gross_credit_exposure,6432376.546,Rm
+industry_total,2019-03-31,2019,27,Impaired advances,impaired_advances,158968.624,Rm
+industry_total,2019-03-31,2019,28,Specific impairments,specific_impairments,73059.803,Rm
+industry_total,2019-03-31,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.96,%
+industry_total,2019-03-31,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.73,%
+industry_total,2019-03-31,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.77,%
+industry_total,2019-03-31,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.47,%
+industry_total,2019-04-30,2019,12,Total,gross_credit_exposure,6500182.363,Rm
+industry_total,2019-04-30,2019,27,Impaired advances,impaired_advances,161120.986,Rm
+industry_total,2019-04-30,2019,28,Specific impairments,specific_impairments,73863.496,Rm
+industry_total,2019-04-30,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.84,%
+industry_total,2019-04-30,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.74,%
+industry_total,2019-04-30,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.79,%
+industry_total,2019-04-30,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.48,%
+industry_total,2019-05-31,2019,12,Total,gross_credit_exposure,6545688.992000001,Rm
+industry_total,2019-05-31,2019,27,Impaired advances,impaired_advances,163611.92,Rm
+industry_total,2019-05-31,2019,28,Specific impairments,specific_impairments,75335.952,Rm
+industry_total,2019-05-31,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.05,%
+industry_total,2019-05-31,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.76,%
+industry_total,2019-05-31,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.83,%
+industry_total,2019-05-31,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.5,%
+industry_total,2019-06-30,2019,12,Total,gross_credit_exposure,6560654.714,Rm
+industry_total,2019-06-30,2019,27,Impaired advances,impaired_advances,159223.377,Rm
+industry_total,2019-06-30,2019,28,Specific impairments,specific_impairments,72144.624,Rm
+industry_total,2019-06-30,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.31,%
+industry_total,2019-06-30,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.69,%
+industry_total,2019-06-30,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.73,%
+industry_total,2019-06-30,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.43,%
+industry_total,2019-07-31,2019,12,Total,gross_credit_exposure,6592995.799000001,Rm
+industry_total,2019-07-31,2019,27,Impaired advances,impaired_advances,159537.427,Rm
+industry_total,2019-07-31,2019,28,Specific impairments,specific_impairments,72072.849,Rm
+industry_total,2019-07-31,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.18,%
+industry_total,2019-07-31,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.69,%
+industry_total,2019-07-31,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.73,%
+industry_total,2019-07-31,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.42,%
+industry_total,2019-08-31,2019,12,Total,gross_credit_exposure,6673285.414,Rm
+industry_total,2019-08-31,2019,27,Impaired advances,impaired_advances,162760.737,Rm
+industry_total,2019-08-31,2019,28,Specific impairments,specific_impairments,73991.274,Rm
+industry_total,2019-08-31,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.46,%
+industry_total,2019-08-31,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.73,%
+industry_total,2019-08-31,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.8,%
+industry_total,2019-08-31,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.44,%
+industry_total,2019-09-30,2019,12,Total,gross_credit_exposure,6703389.691000001,Rm
+industry_total,2019-09-30,2019,27,Impaired advances,impaired_advances,164717.895,Rm
+industry_total,2019-09-30,2019,28,Specific impairments,specific_impairments,74372.462,Rm
+industry_total,2019-09-30,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.15,%
+industry_total,2019-09-30,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.73,%
+industry_total,2019-09-30,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.83,%
+industry_total,2019-09-30,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.46,%
+industry_total,2019-10-31,2019,12,Total,gross_credit_exposure,6668479.042,Rm
+industry_total,2019-10-31,2019,27,Impaired advances,impaired_advances,163453.812,Rm
+industry_total,2019-10-31,2019,28,Specific impairments,specific_impairments,74381.642,Rm
+industry_total,2019-10-31,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.51,%
+industry_total,2019-10-31,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.71,%
+industry_total,2019-10-31,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.76,%
+industry_total,2019-10-31,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.45,%
+industry_total,2019-11-30,2019,12,Total,gross_credit_exposure,6648449.001,Rm
+industry_total,2019-11-30,2019,27,Impaired advances,impaired_advances,163606.736,Rm
+industry_total,2019-11-30,2019,28,Specific impairments,specific_impairments,74296.86,Rm
+industry_total,2019-11-30,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.41,%
+industry_total,2019-11-30,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.72,%
+industry_total,2019-11-30,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.79,%
+industry_total,2019-11-30,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.46,%
+industry_total,2019-12-31,2019,12,Total,gross_credit_exposure,6664893.527,Rm
+industry_total,2019-12-31,2019,27,Impaired advances,impaired_advances,166711.45,Rm
+industry_total,2019-12-31,2019,28,Specific impairments,specific_impairments,75402.125,Rm
+industry_total,2019-12-31,2019,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.23,%
+industry_total,2019-12-31,2019,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.76,%
+industry_total,2019-12-31,2019,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.89,%
+industry_total,2019-12-31,2019,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.5,%
+industry_total,2020-01-31,2020,12,Total,gross_credit_exposure,6689054.1680000005,Rm
+industry_total,2020-01-31,2020,27,Impaired advances,impaired_advances,172592.994,Rm
+industry_total,2020-01-31,2020,28,Specific impairments,specific_impairments,76965.03,Rm
+industry_total,2020-01-31,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.59,%
+industry_total,2020-01-31,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.77,%
+industry_total,2020-01-31,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.98,%
+industry_total,2020-01-31,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.58,%
+industry_total,2020-02-29,2020,12,Total,gross_credit_exposure,6835073.551,Rm
+industry_total,2020-02-29,2020,27,Impaired advances,impaired_advances,174553.876,Rm
+industry_total,2020-02-29,2020,28,Specific impairments,specific_impairments,76690.095,Rm
+industry_total,2020-02-29,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.93,%
+industry_total,2020-02-29,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.74,%
+industry_total,2020-02-29,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,3.95,%
+industry_total,2020-02-29,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.55,%
+industry_total,2020-03-31,2020,12,Total,gross_credit_exposure,7361464.598,Rm
+industry_total,2020-03-31,2020,27,Impaired advances,impaired_advances,186054.848,Rm
+industry_total,2020-03-31,2020,28,Specific impairments,specific_impairments,80821.616,Rm
+industry_total,2020-03-31,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.44,%
+industry_total,2020-03-31,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.75,%
+industry_total,2020-03-31,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.04,%
+industry_total,2020-03-31,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.53,%
+industry_total,2020-04-30,2020,12,Total,gross_credit_exposure,7364132.102,Rm
+industry_total,2020-04-30,2020,27,Impaired advances,impaired_advances,197203.265,Rm
+industry_total,2020-04-30,2020,28,Specific impairments,specific_impairments,86209.601,Rm
+industry_total,2020-04-30,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.72,%
+industry_total,2020-04-30,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,1.87,%
+industry_total,2020-04-30,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.28,%
+industry_total,2020-04-30,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.68,%
+industry_total,2020-05-31,2020,12,Total,gross_credit_exposure,7351985.119,Rm
+industry_total,2020-05-31,2020,27,Impaired advances,impaired_advances,209399.127,Rm
+industry_total,2020-05-31,2020,28,Specific impairments,specific_impairments,91313.053,Rm
+industry_total,2020-05-31,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.61,%
+industry_total,2020-05-31,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.0,%
+industry_total,2020-05-31,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.59,%
+industry_total,2020-05-31,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.85,%
+industry_total,2020-06-30,2020,12,Total,gross_credit_exposure,7338536.581,Rm
+industry_total,2020-06-30,2020,27,Impaired advances,impaired_advances,220104.177,Rm
+industry_total,2020-06-30,2020,28,Specific impairments,specific_impairments,94996.73300000001,Rm
+industry_total,2020-06-30,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.16,%
+industry_total,2020-06-30,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.08,%
+industry_total,2020-06-30,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.81,%
+industry_total,2020-06-30,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.0,%
+industry_total,2020-07-31,2020,12,Total,gross_credit_exposure,7346557.854,Rm
+industry_total,2020-07-31,2020,27,Impaired advances,impaired_advances,228960.366,Rm
+industry_total,2020-07-31,2020,28,Specific impairments,specific_impairments,97200.25600000001,Rm
+industry_total,2020-07-31,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,42.45,%
+industry_total,2020-07-31,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.13,%
+industry_total,2020-07-31,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.01,%
+industry_total,2020-07-31,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.12,%
+industry_total,2020-08-31,2020,12,Total,gross_credit_exposure,7328582.6110000005,Rm
+industry_total,2020-08-31,2020,27,Impaired advances,impaired_advances,228922.528,Rm
+industry_total,2020-08-31,2020,28,Specific impairments,specific_impairments,98765.566,Rm
+industry_total,2020-08-31,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.14,%
+industry_total,2020-08-31,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.15,%
+industry_total,2020-08-31,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.99,%
+industry_total,2020-08-31,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.12,%
+industry_total,2020-09-30,2020,12,Total,gross_credit_exposure,7332474.407000001,Rm
+industry_total,2020-09-30,2020,27,Impaired advances,impaired_advances,229131.502,Rm
+industry_total,2020-09-30,2020,28,Specific impairments,specific_impairments,100245.007,Rm
+industry_total,2020-09-30,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.75,%
+industry_total,2020-09-30,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.21,%
+industry_total,2020-09-30,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.05,%
+industry_total,2020-09-30,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.12,%
+industry_total,2020-10-31,2020,12,Total,gross_credit_exposure,7361757.056,Rm
+industry_total,2020-10-31,2020,27,Impaired advances,impaired_advances,229855.36800000002,Rm
+industry_total,2020-10-31,2020,28,Specific impairments,specific_impairments,101454.219,Rm
+industry_total,2020-10-31,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.14,%
+industry_total,2020-10-31,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.22,%
+industry_total,2020-10-31,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.03,%
+industry_total,2020-10-31,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.12,%
+industry_total,2020-11-30,2020,12,Total,gross_credit_exposure,7365244.794,Rm
+industry_total,2020-11-30,2020,27,Impaired advances,impaired_advances,229543.687,Rm
+industry_total,2020-11-30,2020,28,Specific impairments,specific_impairments,99699.459,Rm
+industry_total,2020-11-30,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.43,%
+industry_total,2020-11-30,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.19,%
+industry_total,2020-11-30,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.03,%
+industry_total,2020-11-30,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.12,%
+industry_total,2020-12-31,2020,12,Total,gross_credit_exposure,7395133.884000001,Rm
+industry_total,2020-12-31,2020,27,Impaired advances,impaired_advances,236520.153,Rm
+industry_total,2020-12-31,2020,28,Specific impairments,specific_impairments,102657.447,Rm
+industry_total,2020-12-31,2020,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.4,%
+industry_total,2020-12-31,2020,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.25,%
+industry_total,2020-12-31,2020,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.17,%
+industry_total,2020-12-31,2020,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.2,%
+industry_total,2021-01-31,2021,12,Total,gross_credit_exposure,7193530.6450000005,Rm
+industry_total,2021-01-31,2021,27,Impaired advances,impaired_advances,239816.567,Rm
+industry_total,2021-01-31,2021,28,Specific impairments,specific_impairments,103541.224,Rm
+industry_total,2021-01-31,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.18,%
+industry_total,2021-01-31,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.26,%
+industry_total,2021-01-31,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.25,%
+industry_total,2021-01-31,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.33,%
+industry_total,2021-02-28,2021,12,Total,gross_credit_exposure,7168403.426,Rm
+industry_total,2021-02-28,2021,27,Impaired advances,impaired_advances,238313.518,Rm
+industry_total,2021-02-28,2021,28,Specific impairments,specific_impairments,103211.17,Rm
+industry_total,2021-02-28,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.31,%
+industry_total,2021-02-28,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.25,%
+industry_total,2021-02-28,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.19,%
+industry_total,2021-02-28,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.32,%
+industry_total,2021-03-31,2021,12,Total,gross_credit_exposure,7138965.143,Rm
+industry_total,2021-03-31,2021,27,Impaired advances,impaired_advances,235907.347,Rm
+industry_total,2021-03-31,2021,28,Specific impairments,specific_impairments,102070.873,Rm
+industry_total,2021-03-31,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.27,%
+industry_total,2021-03-31,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.22,%
+industry_total,2021-03-31,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.13,%
+industry_total,2021-03-31,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.3,%
+industry_total,2021-04-30,2021,12,Total,gross_credit_exposure,7123514.498000001,Rm
+industry_total,2021-04-30,2021,27,Impaired advances,impaired_advances,237041.085,Rm
+industry_total,2021-04-30,2021,28,Specific impairments,specific_impairments,102436.876,Rm
+industry_total,2021-04-30,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,43.21,%
+industry_total,2021-04-30,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.25,%
+industry_total,2021-04-30,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.2,%
+industry_total,2021-04-30,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.33,%
+industry_total,2021-05-31,2021,12,Total,gross_credit_exposure,7178222.296,Rm
+industry_total,2021-05-31,2021,27,Impaired advances,impaired_advances,236524.729,Rm
+industry_total,2021-05-31,2021,28,Specific impairments,specific_impairments,109075.907,Rm
+industry_total,2021-05-31,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.12,%
+industry_total,2021-05-31,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.39,%
+industry_total,2021-05-31,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.19,%
+industry_total,2021-05-31,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.3,%
+industry_total,2021-06-30,2021,12,Total,gross_credit_exposure,7180390.072,Rm
+industry_total,2021-06-30,2021,27,Impaired advances,impaired_advances,233709.859,Rm
+industry_total,2021-06-30,2021,28,Specific impairments,specific_impairments,108698.923,Rm
+industry_total,2021-06-30,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.51,%
+industry_total,2021-06-30,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.37,%
+industry_total,2021-06-30,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.1,%
+industry_total,2021-06-30,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.25,%
+industry_total,2021-07-31,2021,12,Total,gross_credit_exposure,7185123.2020000005,Rm
+industry_total,2021-07-31,2021,27,Impaired advances,impaired_advances,229141.799,Rm
+industry_total,2021-07-31,2021,28,Specific impairments,specific_impairments,107998.155,Rm
+industry_total,2021-07-31,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.13,%
+industry_total,2021-07-31,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.34,%
+industry_total,2021-07-31,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.97,%
+industry_total,2021-07-31,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.19,%
+industry_total,2021-08-31,2021,12,Total,gross_credit_exposure,7202317.907000001,Rm
+industry_total,2021-08-31,2021,27,Impaired advances,impaired_advances,227050.986,Rm
+industry_total,2021-08-31,2021,28,Specific impairments,specific_impairments,107630.342,Rm
+industry_total,2021-08-31,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.4,%
+industry_total,2021-08-31,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.3,%
+industry_total,2021-08-31,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.85,%
+industry_total,2021-08-31,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.15,%
+industry_total,2021-09-30,2021,12,Total,gross_credit_exposure,7234997.114,Rm
+industry_total,2021-09-30,2021,27,Impaired advances,impaired_advances,222965.679,Rm
+industry_total,2021-09-30,2021,28,Specific impairments,specific_impairments,106347.121,Rm
+industry_total,2021-09-30,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.7,%
+industry_total,2021-09-30,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.26,%
+industry_total,2021-09-30,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.74,%
+industry_total,2021-09-30,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.08,%
+industry_total,2021-10-31,2021,12,Total,gross_credit_exposure,7235634.987,Rm
+industry_total,2021-10-31,2021,27,Impaired advances,impaired_advances,220540.83800000002,Rm
+industry_total,2021-10-31,2021,28,Specific impairments,specific_impairments,105263.046,Rm
+industry_total,2021-10-31,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.73,%
+industry_total,2021-10-31,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.25,%
+industry_total,2021-10-31,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.71,%
+industry_total,2021-10-31,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.05,%
+industry_total,2021-11-30,2021,12,Total,gross_credit_exposure,7418557.865,Rm
+industry_total,2021-11-30,2021,27,Impaired advances,impaired_advances,217875.54,Rm
+industry_total,2021-11-30,2021,28,Specific impairments,specific_impairments,104827.927,Rm
+industry_total,2021-11-30,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.11,%
+industry_total,2021-11-30,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.18,%
+industry_total,2021-11-30,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.54,%
+industry_total,2021-11-30,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.94,%
+industry_total,2021-12-31,2021,12,Total,gross_credit_exposure,7453980.298,Rm
+industry_total,2021-12-31,2021,27,Impaired advances,impaired_advances,212650.342,Rm
+industry_total,2021-12-31,2021,28,Specific impairments,specific_impairments,104352.678,Rm
+industry_total,2021-12-31,2021,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.07,%
+industry_total,2021-12-31,2021,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.19,%
+industry_total,2021-12-31,2021,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.46,%
+industry_total,2021-12-31,2021,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.85,%
+industry_total,2022-01-31,2022,12,Total,gross_credit_exposure,7355984.144,Rm
+industry_total,2022-01-31,2022,27,Impaired advances,impaired_advances,212662.547,Rm
+industry_total,2022-01-31,2022,28,Specific impairments,specific_impairments,104859.405,Rm
+industry_total,2022-01-31,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.31,%
+industry_total,2022-01-31,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.2,%
+industry_total,2022-01-31,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.47,%
+industry_total,2022-01-31,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.89,%
+industry_total,2022-02-28,2022,12,Total,gross_credit_exposure,7388658.317,Rm
+industry_total,2022-02-28,2022,27,Impaired advances,impaired_advances,215123.389,Rm
+industry_total,2022-02-28,2022,28,Specific impairments,specific_impairments,104737.524,Rm
+industry_total,2022-02-28,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.69,%
+industry_total,2022-02-28,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.19,%
+industry_total,2022-02-28,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.5,%
+industry_total,2022-02-28,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.91,%
+industry_total,2022-03-31,2022,12,Total,gross_credit_exposure,7535686.598,Rm
+industry_total,2022-03-31,2022,27,Impaired advances,impaired_advances,215026.668,Rm
+industry_total,2022-03-31,2022,28,Specific impairments,specific_impairments,106211.469,Rm
+industry_total,2022-03-31,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.39,%
+industry_total,2022-03-31,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.19,%
+industry_total,2022-03-31,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.43,%
+industry_total,2022-03-31,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.85,%
+industry_total,2022-04-30,2022,12,Total,gross_credit_exposure,7532088.058,Rm
+industry_total,2022-04-30,2022,27,Impaired advances,impaired_advances,218988.726,Rm
+industry_total,2022-04-30,2022,28,Specific impairments,specific_impairments,106981.303,Rm
+industry_total,2022-04-30,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.85,%
+industry_total,2022-04-30,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.2,%
+industry_total,2022-04-30,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.49,%
+industry_total,2022-04-30,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.91,%
+industry_total,2022-05-31,2022,12,Total,gross_credit_exposure,7591635.921,Rm
+industry_total,2022-05-31,2022,27,Impaired advances,impaired_advances,219717.375,Rm
+industry_total,2022-05-31,2022,28,Specific impairments,specific_impairments,108909.54000000001,Rm
+industry_total,2022-05-31,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.57,%
+industry_total,2022-05-31,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.21,%
+industry_total,2022-05-31,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.45,%
+industry_total,2022-05-31,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.89,%
+industry_total,2022-06-30,2022,12,Total,gross_credit_exposure,7780894.365,Rm
+industry_total,2022-06-30,2022,27,Impaired advances,impaired_advances,223152.615,Rm
+industry_total,2022-06-30,2022,28,Specific impairments,specific_impairments,109725.401,Rm
+industry_total,2022-06-30,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,49.17,%
+industry_total,2022-06-30,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.19,%
+industry_total,2022-06-30,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.46,%
+industry_total,2022-06-30,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.87,%
+industry_total,2022-07-31,2022,12,Total,gross_credit_exposure,7754750.006,Rm
+industry_total,2022-07-31,2022,27,Impaired advances,impaired_advances,223077.707,Rm
+industry_total,2022-07-31,2022,28,Specific impairments,specific_impairments,109273.335,Rm
+industry_total,2022-07-31,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.98,%
+industry_total,2022-07-31,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.19,%
+industry_total,2022-07-31,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.47,%
+industry_total,2022-07-31,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.88,%
+industry_total,2022-08-31,2022,12,Total,gross_credit_exposure,7786782.319,Rm
+industry_total,2022-08-31,2022,27,Impaired advances,impaired_advances,233558.37900000002,Rm
+industry_total,2022-08-31,2022,28,Specific impairments,specific_impairments,110292.087,Rm
+industry_total,2022-08-31,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.22,%
+industry_total,2022-08-31,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.2,%
+industry_total,2022-08-31,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.66,%
+industry_total,2022-08-31,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.0,%
+industry_total,2022-09-30,2022,12,Total,gross_credit_exposure,8012814.46,Rm
+industry_total,2022-09-30,2022,27,Impaired advances,impaired_advances,237723.191,Rm
+industry_total,2022-09-30,2022,28,Specific impairments,specific_impairments,112453.893,Rm
+industry_total,2022-09-30,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.3,%
+industry_total,2022-09-30,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.2,%
+industry_total,2022-09-30,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.66,%
+industry_total,2022-09-30,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.97,%
+industry_total,2022-10-31,2022,12,Total,gross_credit_exposure,8067954.319,Rm
+industry_total,2022-10-31,2022,27,Impaired advances,impaired_advances,239003.52300000002,Rm
+industry_total,2022-10-31,2022,28,Specific impairments,specific_impairments,115048.088,Rm
+industry_total,2022-10-31,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.14,%
+industry_total,2022-10-31,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.23,%
+industry_total,2022-10-31,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.63,%
+industry_total,2022-10-31,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.96,%
+industry_total,2022-11-30,2022,12,Total,gross_credit_exposure,8085331.715,Rm
+industry_total,2022-11-30,2022,27,Impaired advances,impaired_advances,239646.99300000002,Rm
+industry_total,2022-11-30,2022,28,Specific impairments,specific_impairments,114155.2,Rm
+industry_total,2022-11-30,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.63,%
+industry_total,2022-11-30,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.21,%
+industry_total,2022-11-30,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.64,%
+industry_total,2022-11-30,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.96,%
+industry_total,2022-12-31,2022,12,Total,gross_credit_exposure,8098124.605,Rm
+industry_total,2022-12-31,2022,27,Impaired advances,impaired_advances,242462.75100000002,Rm
+industry_total,2022-12-31,2022,28,Specific impairments,specific_impairments,114256.101,Rm
+industry_total,2022-12-31,2022,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.12,%
+industry_total,2022-12-31,2022,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.2,%
+industry_total,2022-12-31,2022,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.67,%
+industry_total,2022-12-31,2022,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,2.99,%
+industry_total,2023-01-31,2023,12,Total,gross_credit_exposure,8097295.215,Rm
+industry_total,2023-01-31,2023,27,Impaired advances,impaired_advances,247788.747,Rm
+industry_total,2023-01-31,2023,28,Specific impairments,specific_impairments,117528.818,Rm
+industry_total,2023-01-31,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.43,%
+industry_total,2023-01-31,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.25,%
+industry_total,2023-01-31,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.73,%
+industry_total,2023-01-31,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.06,%
+industry_total,2023-02-28,2023,12,Total,gross_credit_exposure,8216573.729,Rm
+industry_total,2023-02-28,2023,27,Impaired advances,impaired_advances,252853.453,Rm
+industry_total,2023-02-28,2023,28,Specific impairments,specific_impairments,118932.249,Rm
+industry_total,2023-02-28,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.04,%
+industry_total,2023-02-28,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.23,%
+industry_total,2023-02-28,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.74,%
+industry_total,2023-02-28,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.08,%
+industry_total,2023-03-31,2023,12,Total,gross_credit_exposure,8115624.463,Rm
+industry_total,2023-03-31,2023,27,Impaired advances,impaired_advances,257546.96,Rm
+industry_total,2023-03-31,2023,28,Specific impairments,specific_impairments,120711.05500000001,Rm
+industry_total,2023-03-31,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.87,%
+industry_total,2023-03-31,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.3,%
+industry_total,2023-03-31,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.9,%
+industry_total,2023-03-31,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.17,%
+industry_total,2023-04-30,2023,12,Total,gross_credit_exposure,8235473.234,Rm
+industry_total,2023-04-30,2023,27,Impaired advances,impaired_advances,265664.971,Rm
+industry_total,2023-04-30,2023,28,Specific impairments,specific_impairments,123193.479,Rm
+industry_total,2023-04-30,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.37,%
+industry_total,2023-04-30,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.31,%
+industry_total,2023-04-30,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,4.98,%
+industry_total,2023-04-30,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.23,%
+industry_total,2023-05-31,2023,12,Total,gross_credit_exposure,8462928.733000001,Rm
+industry_total,2023-05-31,2023,27,Impaired advances,impaired_advances,272809.641,Rm
+industry_total,2023-05-31,2023,28,Specific impairments,specific_impairments,125581.431,Rm
+industry_total,2023-05-31,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.03,%
+industry_total,2023-05-31,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.34,%
+industry_total,2023-05-31,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.08,%
+industry_total,2023-05-31,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.22,%
+industry_total,2023-06-30,2023,12,Total,gross_credit_exposure,8356261.8040000005,Rm
+industry_total,2023-06-30,2023,27,Impaired advances,impaired_advances,278277.727,Rm
+industry_total,2023-06-30,2023,28,Specific impairments,specific_impairments,127580.748,Rm
+industry_total,2023-06-30,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.85,%
+industry_total,2023-06-30,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.38,%
+industry_total,2023-06-30,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.2,%
+industry_total,2023-06-30,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.33,%
+industry_total,2023-07-31,2023,12,Total,gross_credit_exposure,8313719.5600000005,Rm
+industry_total,2023-07-31,2023,27,Impaired advances,impaired_advances,286023.68,Rm
+industry_total,2023-07-31,2023,28,Specific impairments,specific_impairments,129921.73700000001,Rm
+industry_total,2023-07-31,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.42,%
+industry_total,2023-07-31,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.44,%
+industry_total,2023-07-31,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.37,%
+industry_total,2023-07-31,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.44,%
+industry_total,2023-08-31,2023,12,Total,gross_credit_exposure,8349076.825,Rm
+industry_total,2023-08-31,2023,27,Impaired advances,impaired_advances,289349.09,Rm
+industry_total,2023-08-31,2023,28,Specific impairments,specific_impairments,131881.063,Rm
+industry_total,2023-08-31,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.58,%
+industry_total,2023-08-31,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.46,%
+industry_total,2023-08-31,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.39,%
+industry_total,2023-08-31,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.47,%
+industry_total,2023-09-30,2023,12,Total,gross_credit_exposure,8414665.767,Rm
+industry_total,2023-09-30,2023,27,Impaired advances,impaired_advances,290406.435,Rm
+industry_total,2023-09-30,2023,28,Specific impairments,specific_impairments,131949.114,Rm
+industry_total,2023-09-30,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.44,%
+industry_total,2023-09-30,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.44,%
+industry_total,2023-09-30,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.37,%
+industry_total,2023-09-30,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.45,%
+industry_total,2023-10-31,2023,12,Total,gross_credit_exposure,8399477.198,Rm
+industry_total,2023-10-31,2023,27,Impaired advances,impaired_advances,292639.103,Rm
+industry_total,2023-10-31,2023,28,Specific impairments,specific_impairments,133356.164,Rm
+industry_total,2023-10-31,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.57,%
+industry_total,2023-10-31,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.49,%
+industry_total,2023-10-31,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.47,%
+industry_total,2023-10-31,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.48,%
+industry_total,2023-11-30,2023,12,Total,gross_credit_exposure,8460064.223,Rm
+industry_total,2023-11-30,2023,27,Impaired advances,impaired_advances,293026.995,Rm
+industry_total,2023-11-30,2023,28,Specific impairments,specific_impairments,131516.423,Rm
+industry_total,2023-11-30,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,44.88,%
+industry_total,2023-11-30,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.43,%
+industry_total,2023-11-30,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.41,%
+industry_total,2023-11-30,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.46,%
+industry_total,2023-12-31,2023,12,Total,gross_credit_exposure,8469483.712,Rm
+industry_total,2023-12-31,2023,27,Impaired advances,impaired_advances,295586.53500000003,Rm
+industry_total,2023-12-31,2023,28,Specific impairments,specific_impairments,133702.335,Rm
+industry_total,2023-12-31,2023,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.23,%
+industry_total,2023-12-31,2023,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.46,%
+industry_total,2023-12-31,2023,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.44,%
+industry_total,2023-12-31,2023,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.49,%
+industry_total,2024-01-31,2024,12,Total,gross_credit_exposure,8593191.989,Rm
+industry_total,2024-01-31,2024,27,Impaired advances,impaired_advances,293529.93700000003,Rm
+industry_total,2024-01-31,2024,28,Specific impairments,specific_impairments,134534.221,Rm
+industry_total,2024-01-31,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.83,%
+industry_total,2024-01-31,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.47,%
+industry_total,2024-01-31,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.38,%
+industry_total,2024-01-31,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.42,%
+industry_total,2024-02-29,2024,12,Total,gross_credit_exposure,8546440.005,Rm
+industry_total,2024-02-29,2024,27,Impaired advances,impaired_advances,297463.489,Rm
+industry_total,2024-02-29,2024,28,Specific impairments,specific_impairments,136676.293,Rm
+industry_total,2024-02-29,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,45.95,%
+industry_total,2024-02-29,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.48,%
+industry_total,2024-02-29,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.4,%
+industry_total,2024-02-29,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.48,%
+industry_total,2024-03-31,2024,12,Total,gross_credit_exposure,8636858.579,Rm
+industry_total,2024-03-31,2024,27,Impaired advances,impaired_advances,297971.565,Rm
+industry_total,2024-03-31,2024,28,Specific impairments,specific_impairments,137987.949,Rm
+industry_total,2024-03-31,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.31,%
+industry_total,2024-03-31,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.47,%
+industry_total,2024-03-31,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.34,%
+industry_total,2024-03-31,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.45,%
+industry_total,2024-04-30,2024,12,Total,gross_credit_exposure,8803739.931,Rm
+industry_total,2024-04-30,2024,27,Impaired advances,impaired_advances,298788.00800000003,Rm
+industry_total,2024-04-30,2024,28,Specific impairments,specific_impairments,139011.935,Rm
+industry_total,2024-04-30,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.53,%
+industry_total,2024-04-30,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.5,%
+industry_total,2024-04-30,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.38,%
+industry_total,2024-04-30,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.39,%
+industry_total,2024-05-31,2024,12,Total,gross_credit_exposure,8796113.528,Rm
+industry_total,2024-05-31,2024,27,Impaired advances,impaired_advances,303529.811,Rm
+industry_total,2024-05-31,2024,28,Specific impairments,specific_impairments,141626.418,Rm
+industry_total,2024-05-31,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.66,%
+industry_total,2024-05-31,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.56,%
+industry_total,2024-05-31,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.49,%
+industry_total,2024-05-31,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.45,%
+industry_total,2024-06-30,2024,12,Total,gross_credit_exposure,8749546.252,Rm
+industry_total,2024-06-30,2024,27,Impaired advances,impaired_advances,304403.467,Rm
+industry_total,2024-06-30,2024,28,Specific impairments,specific_impairments,140381.31,Rm
+industry_total,2024-06-30,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.12,%
+industry_total,2024-06-30,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.52,%
+industry_total,2024-06-30,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.47,%
+industry_total,2024-06-30,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.48,%
+industry_total,2024-07-31,2024,12,Total,gross_credit_exposure,8876886.757,Rm
+industry_total,2024-07-31,2024,27,Impaired advances,impaired_advances,303554.161,Rm
+industry_total,2024-07-31,2024,28,Specific impairments,specific_impairments,142458.35,Rm
+industry_total,2024-07-31,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,46.93,%
+industry_total,2024-07-31,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.53,%
+industry_total,2024-07-31,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.39,%
+industry_total,2024-07-31,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.42,%
+industry_total,2024-08-31,2024,12,Total,gross_credit_exposure,8866280.007,Rm
+industry_total,2024-08-31,2024,27,Impaired advances,impaired_advances,301220.022,Rm
+industry_total,2024-08-31,2024,28,Specific impairments,specific_impairments,142590.01,Rm
+industry_total,2024-08-31,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.34,%
+industry_total,2024-08-31,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.51,%
+industry_total,2024-08-31,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.31,%
+industry_total,2024-08-31,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.4,%
+industry_total,2024-09-30,2024,12,Total,gross_credit_exposure,9026867.598,Rm
+industry_total,2024-09-30,2024,27,Impaired advances,impaired_advances,300880.335,Rm
+industry_total,2024-09-30,2024,28,Specific impairments,specific_impairments,143766.566,Rm
+industry_total,2024-09-30,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.78,%
+industry_total,2024-09-30,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.5,%
+industry_total,2024-09-30,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.23,%
+industry_total,2024-09-30,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.33,%
+industry_total,2024-10-31,2024,12,Total,gross_credit_exposure,8982914.289,Rm
+industry_total,2024-10-31,2024,27,Impaired advances,impaired_advances,302783.525,Rm
+industry_total,2024-10-31,2024,28,Specific impairments,specific_impairments,145387.147,Rm
+industry_total,2024-10-31,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.02,%
+industry_total,2024-10-31,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.54,%
+industry_total,2024-10-31,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.3,%
+industry_total,2024-10-31,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.37,%
+industry_total,2024-11-30,2024,12,Total,gross_credit_exposure,9054905.878,Rm
+industry_total,2024-11-30,2024,27,Impaired advances,impaired_advances,302035.873,Rm
+industry_total,2024-11-30,2024,28,Specific impairments,specific_impairments,145197.185,Rm
+industry_total,2024-11-30,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.07,%
+industry_total,2024-11-30,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.52,%
+industry_total,2024-11-30,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.25,%
+industry_total,2024-11-30,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.34,%
+industry_total,2024-12-31,2024,12,Total,gross_credit_exposure,9295772.596,Rm
+industry_total,2024-12-31,2024,27,Impaired advances,impaired_advances,300370.201,Rm
+industry_total,2024-12-31,2024,28,Specific impairments,specific_impairments,143050.06100000002,Rm
+industry_total,2024-12-31,2024,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.62,%
+industry_total,2024-12-31,2024,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.46,%
+industry_total,2024-12-31,2024,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.18,%
+industry_total,2024-12-31,2024,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.23,%
+industry_total,2025-01-31,2025,12,Total,gross_credit_exposure,9256108.402,Rm
+industry_total,2025-01-31,2025,27,Impaired advances,impaired_advances,304832.18,Rm
+industry_total,2025-01-31,2025,28,Specific impairments,specific_impairments,144763.414,Rm
+industry_total,2025-01-31,2025,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.49,%
+industry_total,2025-01-31,2025,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.48,%
+industry_total,2025-01-31,2025,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.22,%
+industry_total,2025-01-31,2025,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.29,%
+industry_total,2025-02-28,2025,12,Total,gross_credit_exposure,9225914.6,Rm
+industry_total,2025-02-28,2025,27,Impaired advances,impaired_advances,306203.869,Rm
+industry_total,2025-02-28,2025,28,Specific impairments,specific_impairments,146511.77300000002,Rm
+industry_total,2025-02-28,2025,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.85,%
+industry_total,2025-02-28,2025,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.51,%
+industry_total,2025-02-28,2025,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.24,%
+industry_total,2025-02-28,2025,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.32,%
+industry_total,2025-03-31,2025,12,Total,gross_credit_exposure,9282016.063000001,Rm
+industry_total,2025-03-31,2025,27,Impaired advances,impaired_advances,308285.026,Rm
+industry_total,2025-03-31,2025,28,Specific impairments,specific_impairments,147434.909,Rm
+industry_total,2025-03-31,2025,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.82,%
+industry_total,2025-03-31,2025,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.51,%
+industry_total,2025-03-31,2025,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.25,%
+industry_total,2025-03-31,2025,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.32,%
+industry_total,2025-04-30,2025,12,Total,gross_credit_exposure,9385209.525,Rm
+industry_total,2025-04-30,2025,27,Impaired advances,impaired_advances,311352.533,Rm
+industry_total,2025-04-30,2025,28,Specific impairments,specific_impairments,149507.385,Rm
+industry_total,2025-04-30,2025,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.02,%
+industry_total,2025-04-30,2025,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.54,%
+industry_total,2025-04-30,2025,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.29,%
+industry_total,2025-04-30,2025,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.32,%
+industry_total,2025-05-31,2025,12,Total,gross_credit_exposure,9392963.184,Rm
+industry_total,2025-05-31,2025,27,Impaired advances,impaired_advances,308224.143,Rm
+industry_total,2025-05-31,2025,28,Specific impairments,specific_impairments,148112.757,Rm
+industry_total,2025-05-31,2025,29,Specific Imp : Impair adv (%),specific_coverage_pct,48.05,%
+industry_total,2025-05-31,2025,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.52,%
+industry_total,2025-05-31,2025,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.25,%
+industry_total,2025-05-31,2025,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.28,%
+industry_total,2025-06-30,2025,12,Total,gross_credit_exposure,9468207.694,Rm
+industry_total,2025-06-30,2025,27,Impaired advances,impaired_advances,306529.552,Rm
+industry_total,2025-06-30,2025,28,Specific impairments,specific_impairments,146923.706,Rm
+industry_total,2025-06-30,2025,29,Specific Imp : Impair adv (%),specific_coverage_pct,47.93,%
+industry_total,2025-06-30,2025,30,Specific Imp : Tot loans on BS (%),specific_to_loans_pct,2.47,%
+industry_total,2025-06-30,2025,31,Impair adv : Tot loans on BS (%),npl_ratio_pct,5.14,%
+industry_total,2025-06-30,2025,32,Impair adv : Tot credit exp (%),npl_to_credit_exposure_pct,3.24,%

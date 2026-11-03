@@ -1,4 +1,4 @@
-"""Run the full extraction: SARB API -> tidy BA900 -> reports -> statements -> reconciliation.
+"""Run the full extraction: SARB API -> tidy BA900 -> reports -> statements -> reconciliation -> credit ratios.
 
     uv run python -m bankdata.pipeline            # everything (cached steps are skipped)
     uv run python -m bankdata.pipeline --no-sarb  # skip the SARB download/refresh
@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import sys
 
-from . import ba900, build, extract, reports, sarb
+from . import ba900, build, credit, extract, reports, sarb
 
 
 def main(argv: list[str]) -> None:
@@ -18,6 +18,7 @@ def main(argv: list[str]) -> None:
     reports.run()
     extract.run()
     build.main()
+    credit.main()  # product mix, industry NPLs, credit loss ratios
 
 
 if __name__ == "__main__":

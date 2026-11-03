@@ -15,7 +15,8 @@ from pathlib import Path
 import httpx
 import polars as pl
 
-from .config import BANKS, BA900_TOTAL_ID, INDUSTRY_RETURNS, INDUSTRY_TOTAL_ID, RAW, SARB_BASE, TIDY
+from .config import (BANKS, BA900_TOTAL_ID, INDUSTRY_RETURNS, INDUSTRY_TOTAL_ID, MIN_FISCAL_YEAR, MIN_MONTH, RAW,
+                     SARB_BASE, TIDY, fiscal_year_expr)
 
 CLIENT = httpx.Client(timeout=120, headers={"User-Agent": "industry-analysis-ai/0.1"})
 
@@ -108,14 +109,24 @@ def _int(v):
         return None
 
 
-def download_all(workers: int = 6) -> list[Path]:
+def _in_window(period: str, first: tuple[int, int] = MIN_MONTH) -> bool:
+    """API period strings start with YYYY-MM (the day part varies by year)."""
+    return (int(period[:4]), int(period[5:7])) >= first
+
+
+def download_all(workers: int = 6, returns: list[str] | None = None) -> list[Path]:
+    """Download every return in the analysis window; ``returns`` limits the return types."""
+    returns = returns or ["BA900", *INDUSTRY_RETURNS]
     jobs = []
-    for p in periods("BA900"):
+    for p in periods("BA900") if "BA900" in returns else []:
+        if not _in_window(p):
+            continue
         for inst in [*BANKS, BA900_TOTAL_ID]:
             jobs.append(("BA900", p, inst))
-    for rt in INDUSTRY_RETURNS:
+    for rt in [r for r in INDUSTRY_RETURNS if r in returns]:
         for p in periods(rt):
-            jobs.append((rt, p, INDUSTRY_TOTAL_ID))
+            if _in_window(p, (MIN_FISCAL_YEAR, 1)):  # industry totals: calendar years
+                jobs.append((rt, p, INDUSTRY_TOTAL_ID))
     paths, failed = [], []
     with ThreadPoolExecutor(workers) as ex:
         futs = {ex.submit(fetch, *j): j for j in jobs}
@@ -133,10 +144,10 @@ def download_all(workers: int = 6) -> list[Path]:
     return paths
 
 
-def build_tidy() -> dict[str, pl.DataFrame]:
+def build_tidy(returns: list[str] | None = None) -> dict[str, pl.DataFrame]:
     TIDY.mkdir(parents=True, exist_ok=True)
     out = {}
-    for rt in ["BA900", *INDUSTRY_RETURNS]:
+    for rt in returns or ["BA900", *INDUSTRY_RETURNS]:
         files = sorted((RAW / rt).rglob("*.json"))
         recs = [r for f in files for r in parse(f)]
         df = pl.DataFrame(recs, infer_schema_length=None)
@@ -144,8 +155,12 @@ def build_tidy() -> dict[str, pl.DataFrame]:
         df = df.with_columns(
             pl.col("institution_id").replace_strict(bank_map, default="industry_total").alias("bank"),
             pl.col("period").dt.month_end().alias("month_end"),
-            pl.lit("R'000").alias("unit"),
-        ).sort(["bank", "period", "table_number", "row_number", "column_number"])
+            # BA200 publishes some ratios, flagged '(%)' in the item description
+            pl.when(pl.col("item_description").str.contains(r"\(%\)")).then(pl.lit("%")).otherwise(pl.lit("R'000")).alias("unit"),
+        ).with_columns(fiscal_year_expr("bank", "month_end").alias("fiscal_year"))
+        # Analysis window: FY2014 onwards (cached raw files outside the window are ignored)
+        df = df.filter(pl.col("fiscal_year") >= MIN_FISCAL_YEAR).sort(
+            ["bank", "period", "table_number", "row_number", "column_number"])
         name = "ba900" if rt == "BA900" else f"industry_{rt.lower()}"
         df.write_parquet(TIDY / f"{name}.parquet")
         df.write_csv(TIDY / f"{name}.csv")
@@ -155,5 +170,8 @@ def build_tidy() -> dict[str, pl.DataFrame]:
 
 
 if __name__ == "__main__":
-    download_all()
-    build_tidy()
+    import sys
+
+    only = sys.argv[1:] or None  # e.g. `python -m bankdata.sarb BA200`
+    download_all(returns=only)
+    build_tidy(only)
