@@ -1,7 +1,7 @@
 import marimo
 
 __generated_with = "0.25.2"
-app = marimo.App(width="full", layout_file="layouts/bank_data_extraction.slides.json")
+app = marimo.App(width="full", css_file="tnp_theme.css", layout_file="layouts/bank_data_extraction.slides.json")
 
 
 @app.cell(hide_code=True)
@@ -22,9 +22,59 @@ def _():
         "sbsa": "The Standard Bank of South Africa Limited",
     }
     BANK_SHORT = {"capitec": "Capitec", "absa": "Absa", "nedbank": "Nedbank", "sbsa": "SBSA"}
-    # Fixed categorical order (validated reference palette, slots 1-4): colour follows the bank, never its rank
-    BANK_COLOURS = {"Capitec": "#2a78d6", "Absa": "#eb6834", "Nedbank": "#1baf7a", "SBSA": "#eda100"}
+
+    # True North Partners look (tnp.eu): navy, gold accent, slate grey, Karla typeface.
+    # The categorical palette is brand-led and validated (lightness band, chroma, colour-blind separation);
+    # slots 1-4 also pass every pair, so they carry the four banks. Colour follows the bank, never its rank.
+    TNP = {"navy": "#142457", "navy_deep": "#182141", "gold": "#f2b636", "slate": "#878c9b",
+           "slate_light": "#b9bcc6", "mist": "#f7f7f7", "ink": "#1f2433", "grid": "#e6e8ee", "axis": "#c4c8d2"}
+    TNP_CATEGORICAL = ["#2f55a4", "#e3a21a", "#1f9e89", "#d65a3a", "#5fa2dd", "#8a56b0", "#6f9a2a", "#c74f7f"]
+    # Bank series use brand colours: Absa's logo crimson, Nedbank green and Standard Bank blue (most-used brand
+    # colours in the banks' website stylesheets). Capitec uses the light-blue accent from its logo (Wikimedia Commons,
+    # because capitecbank.co.za blocks automated requests); its dark-blue wordmark colour was too close to SBSA blue.
+    # Absa red and Nedbank green still merge for red-green colour-blind readers, so line dash and marker shape
+    # also identify each bank. Capitec's light blue is below 3:1 contrast on white; tooltips and tables carry values.
+    BANK_COLOURS = {"Capitec": "#00b6f1", "Absa": "#af144b", "Nedbank": "#008533", "SBSA": "#0033aa"}
+    BANK_DASH = {"Capitec": [1, 0], "Absa": [1, 0], "Nedbank": [6, 3], "SBSA": [6, 3]}
+    BANK_SHAPE = {"Capitec": "circle", "Absa": "square", "Nedbank": "triangle-up", "SBSA": "diamond"}
     bank_scale = alt.Scale(domain=list(BANK_COLOURS), range=list(BANK_COLOURS.values()))
+
+    def bank_style(legend=True, banks=None, field="Bank:N", shapes=True):
+        """Colour, dash and marker shape for bank series; they merge into one legend.
+
+        Use ``shapes=False`` on monthly lines without point markers, where a shape channel would draw a symbol
+        at every month.
+        """
+        _b = [b for b in BANK_COLOURS if banks is None or b in banks]
+        _lg = alt.Legend(orient="top", title=None) if legend else None
+        _enc = dict(
+            color=alt.Color(field, scale=alt.Scale(domain=_b, range=[BANK_COLOURS[b] for b in _b]), legend=_lg),
+            strokeDash=alt.StrokeDash(field, scale=alt.Scale(domain=_b, range=[BANK_DASH[b] for b in _b]), legend=_lg),
+        )
+        if shapes:
+            _enc["shape"] = alt.Shape(field, scale=alt.Scale(domain=_b, range=[BANK_SHAPE[b] for b in _b]), legend=_lg)
+        return _enc
+    _font = "Karla, 'Helvetica Neue', Arial, sans-serif"
+
+    @alt.theme.register("tnp", enable=True)
+    def _tnp_theme():
+        return alt.theme.ThemeConfig({"config": {
+            "background": "#ffffff",
+            "font": _font,
+            "padding": 8,
+            "view": {"stroke": None},
+            "title": {"font": _font, "color": TNP["navy"], "fontSize": 14, "fontWeight": 700, "anchor": "start"},
+            "axis": {"labelFont": _font, "titleFont": _font, "labelColor": "#4b5163", "titleColor": TNP["navy"],
+                     "titleFontWeight": 700, "gridColor": TNP["grid"], "domainColor": TNP["axis"],
+                     "tickColor": TNP["axis"], "labelFontSize": 11, "titleFontSize": 12},
+            "legend": {"labelFont": _font, "titleFont": _font, "labelColor": TNP["ink"], "titleColor": TNP["navy"],
+                       "labelFontSize": 12, "symbolType": "circle"},
+            "header": {"labelFont": _font, "titleFont": _font, "labelColor": TNP["navy"], "labelFontWeight": 700,
+                       "labelFontSize": 13},
+            "range": {"category": TNP_CATEGORICAL},
+            "line": {"strokeWidth": 2},
+            "bar": {"stroke": "#ffffff", "strokeWidth": 1},
+        }})
 
     def short(df, col="bank"):
         return df.with_columns(pl.col(col).replace_strict(BANK_SHORT, default=pl.col(col)).alias("Bank"))
@@ -34,11 +84,16 @@ def _():
     return (
         BANKS,
         BANK_NAMES,
+        BANK_COLOURS,
+        BANK_DASH,
         BANK_SHORT,
         REF,
         TIDY,
+        TNP,
+        TNP_CATEGORICAL,
         alt,
         bank_scale,
+        bank_style,
         fmt,
         mo,
         pl,
@@ -93,7 +148,8 @@ def _(REF, TIDY, pl):
 
 @app.cell(hide_code=True)
 def _(ba900, fmt, fs, inv, mo, rs, rwa_h):
-    mo.md(
+    _logo = mo.notebook_dir() / "assets" / "tnp-logo.jpg"
+    _title = mo.md(
         f"""
 # South African banks: financial data extraction
 
@@ -109,6 +165,11 @@ def _(ba900, fmt, fs, inv, mo, rs, rwa_h):
 The deck walks through the sources, the extraction method, the retrieved statements and the reconciliation of BA900 against the published financial statements. It ends with the asset mix by product and credit quality: credit loss ratios, impairment allowances and industry non-performing loans.
 """
     )
+    mo.vstack([
+        mo.image(src=_logo, alt="True North Partners", width=320) if _logo.exists() else mo.md(""),
+        _title,
+        mo.Html('<p class="tnp-strapline">True North Partners · Finance | Risk | Strategy</p>'),
+    ])
     return
 
 
@@ -140,6 +201,9 @@ def _(mo):
         mo.md("## Pipeline"),
         mo.mermaid(
             """
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Karla, Arial, sans-serif",
+  "primaryColor": "#eef1f8", "primaryBorderColor": "#142457", "primaryTextColor": "#142457",
+  "lineColor": "#878c9b", "secondaryColor": "#fdf3dc", "tertiaryColor": "#f7f7f7"}}}%%
 flowchart LR
   A[SARB IFData API] -->|GetPeriods / GetInstitutionData| B[(raw JSON + XML\\n1,960 returns)]
   B --> C[sarb.py\\nflatten XML to tidy]
@@ -252,19 +316,19 @@ def _(BANKS, BANK_SHORT, ba900_chk, fmt, mo, pl):
 
 
 @app.cell(hide_code=True)
-def _(alt, ba900_h, bank_scale, mo, pl, short):
+def _(alt, ba900_h, bank_style, mo, pl, short):
     _d = short(ba900_h.filter(pl.col("bank") != "industry_total",
                               pl.col("metric").is_in(["total_assets", "loans_and_advances_gross", "deposits", "total_equity"])))
     _d = _d.with_columns((pl.col("value") / 1e6).alias("Rbn"), pl.col("metric").str.replace_all("_", " ").str.to_titlecase().alias("Metric"))
     _base = alt.Chart(_d.to_pandas()).encode(
         x=alt.X("month_end:T", title=None),
         y=alt.Y("Rbn:Q", title="R billion"),
-        color=alt.Color("Bank:N", scale=bank_scale, legend=alt.Legend(orient="top", title=None)),
+        **bank_style(shapes=False),
         tooltip=["Bank", alt.Tooltip("month_end:T", title="Month"), "Metric", alt.Tooltip("Rbn:Q", format=",.1f")],
     )
     _chart = (_base.mark_line(strokeWidth=2)
-              .properties(width=330, height=200)
-              .facet(facet=alt.Facet("Metric:N", title=None), columns=2)
+              .properties(width=235, height=240)
+              .facet(facet=alt.Facet("Metric:N", title=None), columns=4)
               .resolve_scale(y="independent"))
     mo.vstack([
         mo.md("## BA900 balance sheet, monthly from FY2014\n"
@@ -302,13 +366,13 @@ def _(ba900, ba_bank, ba_month, ba_table, mo, pl):
 
 
 @app.cell(hide_code=True)
-def _(alt, ba900, bank_scale, mo, pl, short):
+def _(alt, ba900, bank_style, mo, pl, short):
     _obs = (ba900.filter(pl.col("table_number") == 15, pl.col("bank") != "industry_total", pl.col("item_number") != 294)
             .with_columns((pl.col("value").fill_null(0) / 1e6).alias("Rbn")))
     _tot = short(_obs.group_by("bank", "month_end").agg(pl.col("Rbn").sum()))
     _line = alt.Chart(_tot.to_pandas()).mark_line(strokeWidth=2).encode(
         x=alt.X("month_end:T", title=None), y=alt.Y("Rbn:Q", title="R billion"),
-        color=alt.Color("Bank:N", scale=bank_scale, legend=alt.Legend(orient="top", title=None)),
+        **bank_style(shapes=False),
         tooltip=["Bank", alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("Rbn:Q", format=",.1f")],
     ).properties(width=420, height=260, title="Total off-balance-sheet exposures, table 15 (items 285–293, 295)")
     _latest = short(_obs.filter(pl.col("month_end") == _obs["month_end"].max()))
@@ -329,7 +393,7 @@ def _(alt, ba900_h, ind, mo, pl, rwa_h):
              .sort("month_end").with_columns((pl.col("value").rolling_sum(12).over("Line") / 1e6).alias("Rbn (rolling 12m)")))
     _c1 = alt.Chart(_b120.drop_nulls("Rbn (rolling 12m)").to_pandas()).mark_line(strokeWidth=2).encode(
         x=alt.X("month_end:T", title=None), y=alt.Y("Rbn (rolling 12m):Q", title="R billion, rolling 12 months"),
-        color=alt.Color("Line:N", scale=alt.Scale(range=["#2a78d6", "#eb6834", "#1baf7a"]), legend=alt.Legend(orient="top", title=None)),
+        color=alt.Color("Line:N", scale=alt.Scale(range=["#142457", "#b07d0f", "#878c9b"]), legend=alt.Legend(orient="top", title=None)),
         tooltip=["Line", alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("Rbn (rolling 12m):Q", format=",.1f")],
     ).properties(width=420, height=240, title="BA120 industry income statement (all banks)")
     _b700 = ind["ba700"].filter(pl.col("item_number") == 6).select("month_end", (pl.col("value") / 1e6).alias("Industry RWA"))
@@ -447,11 +511,11 @@ def _(fs, pl):
 
 
 @app.cell(hide_code=True)
-def _(alt, bank_scale, headline_fs, mo, pl, short):
+def _(alt, bank_style, headline_fs, mo, pl, short):
     _d = short(headline_fs.filter(pl.col("Line").is_in(["Net interest income", "Profit for the year"])))
     _c = (alt.Chart(_d.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
         x=alt.X("fiscal_year:O", title="Financial year"), y=alt.Y("Rbn:Q", title="R billion"),
-        color=alt.Color("Bank:N", scale=bank_scale, legend=alt.Legend(orient="top", title=None)),
+        **bank_style(),
         tooltip=["Bank", "fiscal_year", "Line", "basis", alt.Tooltip("Rbn:Q", format=",.2f"), "report_year"])
         .properties(width=430, height=260).facet(column=alt.Column("Line:N", title=None)).resolve_scale(y="independent"))
     mo.vstack([
@@ -465,11 +529,11 @@ def _(alt, bank_scale, headline_fs, mo, pl, short):
 
 
 @app.cell(hide_code=True)
-def _(alt, ba900_h, bank_scale, mo, ov1, pl, rwa_h, short):
+def _(alt, ba900_h, bank_style, mo, ov1, pl, rwa_h, short):
     _r = short(rwa_h.filter(pl.col("metric") == "total_rwa").with_columns((pl.col("value") / 1e3).alias("Rbn")))
     _c1 = alt.Chart(_r.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
         x=alt.X("fiscal_year:O", title="Financial year"), y=alt.Y("Rbn:Q", title="R billion"),
-        color=alt.Color("Bank:N", scale=bank_scale, legend=alt.Legend(orient="top", title=None)),
+        **bank_style(),
         tooltip=["Bank", "fiscal_year", alt.Tooltip("Rbn:Q", format=",.1f"), "line_label", "doc_type", "page"],
     ).properties(width=420, height=250, title="Total RWA, bank entity")
     _ta = ba900_h.filter(pl.col("metric") == "total_assets").select("bank", "month_end", (pl.col("value") / 1e6).alias("ta_rbn"))
@@ -477,7 +541,7 @@ def _(alt, ba900_h, bank_scale, mo, ov1, pl, rwa_h, short):
                  .with_columns((pl.col("Rbn") / pl.col("ta_rbn") * 100).alias("RWA density %")))
     _c2 = alt.Chart(_den.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
         x=alt.X("fiscal_year:O", title="Financial year"), y=alt.Y("RWA density %:Q", title="RWA / BA900 total assets, %"),
-        color=alt.Color("Bank:N", scale=bank_scale, legend=None),
+        **bank_style(legend=False),
         tooltip=["Bank", "fiscal_year", alt.Tooltip("RWA density %:Q", format=".1f")],
     ).properties(width=420, height=250, title="RWA density")
     mo.vstack([
@@ -491,39 +555,58 @@ def _(alt, ba900_h, bank_scale, mo, ov1, pl, rwa_h, short):
 
 
 @app.cell(hide_code=True)
-def _(BANK_SHORT, alt, mo, pl, rwa_h):
+def _(BANK_SHORT, TNP_CATEGORICAL, alt, mo, pl, rwa_h):
     _comp = ["credit_risk_rwa", "counterparty_credit_risk_rwa", "cva_rwa", "equity_risk_rwa", "market_risk_rwa",
              "operational_risk_rwa", "threshold_deductions_rwa", "other_assets_rwa"]
     _o = rwa_h.filter(pl.col("source_table") == "pillar3_ov1", pl.col("metric").is_in(_comp))
+    # Drop bank-years whose extracted components cover less than 85% of total RWA: a missing OV1 line
+    # (e.g. SBSA FY2025, where only the credit-risk 'of which' sub-lines were captured) would understate the bar.
+    _cov = (_o.group_by("bank", "fiscal_year").agg(pl.col("value").sum().alias("parts"))
+            .join(rwa_h.filter(pl.col("metric") == "total_rwa").select("bank", "fiscal_year", pl.col("value").alias("total")),
+                  on=["bank", "fiscal_year"], how="left")
+            .with_columns((pl.col("parts") / pl.col("total")).alias("coverage")))
+    _gaps = _cov.filter(pl.col("coverage") < 0.85).sort("bank", "fiscal_year")
+    _o = _o.join(_gaps.select("bank", "fiscal_year"), on=["bank", "fiscal_year"], how="anti")
+    _gap_txt = ("Left out because a component line was not extracted: " + ", ".join(
+        f"{BANK_SHORT[r['bank']]} FY{r['fiscal_year']} ({r['coverage']:.0%} of total RWA captured)"
+        for r in _gaps.iter_rows(named=True)) + ". ") if not _gaps.is_empty() else ""
+    _order = [c.replace("_rwa", "").replace("_", " ").capitalize().replace("Cva", "CVA") for c in _comp]
     _o = (_o.with_columns(pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"),
-                          pl.col("metric").str.replace("_rwa", "").str.replace_all("_", " ").alias("Risk type"),
-                          (pl.col("value") / 1e3).alias("Rbn")))
-    _order = [c.replace("_rwa", "").replace("_", " ") for c in _comp]
-    _c = alt.Chart(_o.to_pandas()).mark_bar(cornerRadiusEnd=4).encode(
-        y=alt.Y("Risk type:N", sort=_order, title=None), x=alt.X("Rbn:Q", title="R billion"),
-        color=alt.value("#2a78d6"),
-        tooltip=["Bank", "fiscal_year", "Risk type", alt.Tooltip("Rbn:Q", format=",.1f")],
-    ).properties(width=200, height=200).facet(row=alt.Row("Bank:N", title=None), column=alt.Column("fiscal_year:O", title=None))
+                          pl.col("bank").replace_strict({b: i for i, b in enumerate(BANK_SHORT)}).alias("bank_order"),
+                          (pl.col("value") / 1e3).alias("Rbn"))
+          .with_columns(pl.col("metric").replace_strict({c: o for c, o in zip(_comp, _order)}).alias("Risk type"),
+                        pl.col("metric").replace_strict({c: i for i, c in enumerate(_comp)}).alias("risk_order")))
+    _c = (alt.Chart(_o.to_pandas()).mark_bar(stroke="#ffffff", strokeWidth=1).encode(
+        x=alt.X("fiscal_year:O", title=None), y=alt.Y("Rbn:Q", title="R billion"),
+        color=alt.Color("Risk type:N", sort=_order, scale=alt.Scale(domain=_order, range=TNP_CATEGORICAL),
+                        legend=alt.Legend(orient="top", title=None, columns=4, labelLimit=220)),
+        order=alt.Order("risk_order:Q", sort="ascending"),
+        tooltip=["Bank", alt.Tooltip("fiscal_year:O", title="FY"), "Risk type", alt.Tooltip("Rbn:Q", format=",.1f", title="R bn")],
+    ).properties(width=270, height=260)
+        .facet(column=alt.Column("Bank:N", title=None, sort=alt.EncodingSortField("bank_order", op="min")))
+        .resolve_scale(x="independent", y="independent"))
     mo.vstack([
         mo.md("## RWA by risk type: Pillar 3 OV1, bank entity only\n"
               "Available for Capitec Bank (FY2022–FY2025), Nedbank Limited (2016–2018, 2023–2025) and SBSA (2022–2025). "
-              "Absa Bank's year-end Pillar 3 report could not be located, and its AFS gives total RWA only."),
+              "Absa Bank's year-end Pillar 3 report could not be located, and its AFS gives total RWA only. "
+              f"{_gap_txt}Each bank has its own scale; hover for the value of each risk type."),
         mo.ui.altair_chart(_c),
     ])
     return
 
 
 @app.cell(hide_code=True)
-def _(BANK_SHORT, alt, mo, pl, recon):
+def _(BANK_SHORT, alt, bank_style, mo, pl, recon):
     _pref = {"separate": 0, "unspecified": 1, "consolidated": 2}
     _r = recon.filter(pl.col("metric") == "total_assets", pl.col("ba900_rm").is_not_null()).with_columns(pl.col("basis").replace_strict(_pref).alias("bp"))
     _r = _r.join(_r.group_by("bank", "fiscal_year").agg(pl.col("bp").min()), on=["bank", "fiscal_year", "bp"])
     _r = _r.with_columns(pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"),
                          ((pl.col("report_rm") / pl.col("ba900_prior_to_netting_rm") - 1) * 100).alias("diff vs pre-netting %"))
-    _zero = alt.Chart().mark_rule(color="#8a8984", strokeDash=[3, 3]).encode(y=alt.datum(0))
+    _zero = alt.Chart().mark_rule(color="#878c9b", strokeDash=[3, 3]).encode(y=alt.datum(0))
     _c = alt.layer(
         alt.Chart().mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
             x=alt.X("fiscal_year:O", title="Financial year"), y=alt.Y("diff_pct:Q", title="Published minus BA900, % of BA900"),
+            **bank_style(legend=False),
             tooltip=["Bank", "fiscal_year", "basis", alt.Tooltip("report_rm:Q", format=",.0f", title="Published Rm"),
                      alt.Tooltip("ba900_rm:Q", format=",.0f", title="BA900 Rm"), alt.Tooltip("diff_pct:Q", format=".2f")]),
         _zero, data=_r.to_pandas(),
@@ -607,15 +690,15 @@ def _(TIDY, alt, pl):
         "Other and non-financial assets": "Cash, investments and other assets",
     }
     GROUP_COLOURS = {
-        "Residential mortgages": "#2a78d6",
-        "Commercial and farm mortgages": "#eb6834",
-        "Instalment sales and leases": "#1baf7a",
-        "Credit cards": "#eda100",
-        "Overdrafts": "#e87ba4",
-        "Term, public-sector and other loans": "#008300",
-        "Foreign-currency loans": "#6250d6",
-        "Interbank and repo": "#e34948",
-        "Cash, investments and other assets": "#b5b3ad",
+        "Residential mortgages": "#2f55a4",
+        "Commercial and farm mortgages": "#e3a21a",
+        "Instalment sales and leases": "#1f9e89",
+        "Credit cards": "#d65a3a",
+        "Overdrafts": "#5fa2dd",
+        "Term, public-sector and other loans": "#8a56b0",
+        "Foreign-currency loans": "#6f9a2a",
+        "Interbank and repo": "#c74f7f",
+        "Cash, investments and other assets": "#b9bcc6",
     }
     GROUP_ORDER = list(GROUP_COLOURS)
     group_scale = alt.Scale(domain=GROUP_ORDER, range=list(GROUP_COLOURS.values()))
@@ -658,16 +741,16 @@ def _(BANK_SHORT, GROUP_ORDER, alt, group_scale, mo, pl, prod_g):
           .with_columns(pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"),
                         pl.col("bank").replace_strict({b: i for i, b in enumerate(BANK_SHORT)}).alias("bank_order"),
                         (100 * pl.col("Rbn") * 1e3 / pl.col("total_assets_rm")).alias("Share %")))
-    _c = (alt.Chart(_d.to_pandas()).mark_bar(stroke="#fcfcfb", strokeWidth=1).encode(
+    _c = (alt.Chart(_d.to_pandas()).mark_bar(stroke="#ffffff", strokeWidth=1).encode(
         x=alt.X("fiscal_year:O", title=None),
         y=alt.Y("Rbn:Q", title="R billion"),
         color=alt.Color("Product group:N", scale=group_scale, sort=GROUP_ORDER,
-                        legend=alt.Legend(orient="right", title=None, labelLimit=260)),
+                        legend=alt.Legend(orient="top", title=None, columns=5, labelLimit=260)),
         order=alt.Order("group_order:Q", sort="ascending"),
         tooltip=["Bank", alt.Tooltip("fiscal_year:O", title="FY"), "Product group",
                  alt.Tooltip("Rbn:Q", format=",.1f", title="R bn"), alt.Tooltip("Share %:Q", format=".1f")],
-    ).properties(width=330, height=170)
-        .facet(facet=alt.Facet("Bank:N", title=None, sort=alt.EncodingSortField("bank_order", op="min")), columns=2)
+    ).properties(width=235, height=250)
+        .facet(facet=alt.Facet("Bank:N", title=None, sort=alt.EncodingSortField("bank_order", op="min")), columns=4)
         .resolve_scale(x="independent", y="independent"))
     mo.vstack([
         mo.md("## Total assets by product, each financial year-end\n"
@@ -687,7 +770,7 @@ def _(BANK_SHORT, LOAN_GROUPS, alt, loan_scale, mo, pl, prod_g):
           .with_columns(pl.col("bank").replace_strict(BANK_SHORT | {"industry_total": "Industry"}).alias("Bank"),
                         pl.col("bank").replace_strict({b: i for i, b in enumerate([*BANK_SHORT, "industry_total"])}).alias("bank_order"),
                         (100 * pl.col("Rbn") * 1e3 / pl.col("gross_customer_loans_rm")).alias("Share %")))
-    _c = (alt.Chart(_d.to_pandas()).mark_bar(stroke="#fcfcfb", strokeWidth=1).encode(
+    _c = (alt.Chart(_d.to_pandas()).mark_bar(stroke="#ffffff", strokeWidth=1).encode(
         x=alt.X("fiscal_year:O", title=None),
         y=alt.Y("Rbn:Q", stack="normalize", title="Share of gross customer loans", axis=alt.Axis(format="%")),
         color=alt.Color("Product group:N", scale=loan_scale, sort=LOAN_GROUPS,
@@ -708,7 +791,80 @@ def _(BANK_SHORT, LOAN_GROUPS, alt, loan_scale, mo, pl, prod_g):
 
 
 @app.cell(hide_code=True)
-def _(BANK_SHORT, PRODUCTS, alt, bank_scale, fmt, mo, pl, prod):
+def _(BANK_NAMES, GROUP_ORDER, LOAN_GROUPS, alt, group_scale, loan_scale, mo, pl, prod_g):
+    def bank_mix_slide(bank: str):
+        """One bank's product mix over the years: balance sheet by product next to its customer-loan mix."""
+        _d = (prod_g.filter(pl.col("bank") == bank, pl.col("is_fy_end"))
+              .group_by("fiscal_year", "Product group", "group_order", "is_customer_loan")
+              .agg((pl.col("value_rm").sum() / 1e3).alias("Rbn"), pl.col("total_assets_rm").first(),
+                   pl.col("gross_customer_loans_rm").first())
+              .with_columns((100 * pl.col("Rbn") * 1e3 / pl.col("total_assets_rm")).alias("Share of assets %"),
+                            (100 * pl.col("Rbn") * 1e3 / pl.col("gross_customer_loans_rm")).alias("Share of loans %"))
+              .sort("fiscal_year", "group_order"))
+        _tt = [alt.Tooltip("fiscal_year:O", title="FY"), "Product group", alt.Tooltip("Rbn:Q", format=",.1f", title="R bn")]
+        _c1 = alt.Chart(_d.to_pandas()).mark_bar(stroke="#ffffff", strokeWidth=1).encode(
+            x=alt.X("fiscal_year:O", title=None), y=alt.Y("Rbn:Q", title="R billion"),
+            color=alt.Color("Product group:N", scale=group_scale, sort=GROUP_ORDER,
+                            legend=alt.Legend(orient="bottom", title=None, columns=3, labelLimit=260)),
+            order=alt.Order("group_order:Q", sort="ascending"),
+            tooltip=[*_tt, alt.Tooltip("Share of assets %:Q", format=".1f")],
+        ).properties(width=430, height=290, title="Balance sheet by product, R billion (gross of impairments)")
+        _loans = _d.filter(pl.col("is_customer_loan"))
+        _c2 = alt.Chart(_loans.to_pandas()).mark_bar(stroke="#ffffff", strokeWidth=1).encode(
+            x=alt.X("fiscal_year:O", title=None),
+            y=alt.Y("Rbn:Q", stack="normalize", title="Share of gross customer loans", axis=alt.Axis(format="%")),
+            color=alt.Color("Product group:N", scale=loan_scale, sort=LOAN_GROUPS, legend=None),
+            order=alt.Order("group_order:Q", sort="ascending"),
+            tooltip=[*_tt, alt.Tooltip("Share of loans %:Q", format=".1f")],
+        ).properties(width=430, height=290, title="Customer loan mix, share of gross customer loans")
+        # Headline: size, the largest loan product, and the biggest shift in loan mix since the first year
+        _y0, _y1 = _d["fiscal_year"].min(), _d["fiscal_year"].max()
+        _last = _d.filter(pl.col("fiscal_year") == _y1)
+        _ta, _gl = _last["total_assets_rm"][0] / 1e3, _last["gross_customer_loans_rm"][0] / 1e3
+        _l1 = _loans.filter(pl.col("fiscal_year") == _y1).sort("Share of loans %", descending=True).row(0, named=True)
+        _sh = (_loans.filter(pl.col("fiscal_year").is_in([_y0, _y1]))
+               .pivot(on="fiscal_year", index="Product group", values="Share of loans %").fill_null(0))
+        _sh = _sh.with_columns((pl.col(str(_y1)) - pl.col(str(_y0))).alias("chg")).sort(pl.col("chg").abs(), descending=True)
+        _mv = _sh.row(0, named=True)
+        _dir = "up" if _mv["chg"] > 0 else "down"
+        return mo.vstack([
+            mo.md(f"## {BANK_NAMES[bank]}: product mix FY{_y0}–FY{_y1}\n"
+                  f"FY{_y1}: total assets R{_ta:,.0f} billion, of which gross customer loans R{_gl:,.0f} billion. "
+                  f"The largest loan product is {_l1['Product group'].lower()} at {_l1['Share of loans %']:.0f}% of customer loans. "
+                  f"The biggest shift since FY{_y0} is {_mv['Product group'].lower()}, {_dir} "
+                  f"{abs(_mv['chg']):.0f} points to {_mv[str(_y1)]:.0f}% of customer loans. "
+                  "Both charts use financial-year-end balances from BA900 column 5."),
+            mo.hstack([mo.ui.altair_chart(_c1), mo.ui.altair_chart(_c2)], align="start"),
+        ])
+    return (bank_mix_slide,)
+
+
+@app.cell(hide_code=True)
+def _(bank_mix_slide):
+    bank_mix_slide("capitec")
+    return
+
+
+@app.cell(hide_code=True)
+def _(bank_mix_slide):
+    bank_mix_slide("absa")
+    return
+
+
+@app.cell(hide_code=True)
+def _(bank_mix_slide):
+    bank_mix_slide("nedbank")
+    return
+
+
+@app.cell(hide_code=True)
+def _(bank_mix_slide):
+    bank_mix_slide("sbsa")
+    return
+
+
+@app.cell(hide_code=True)
+def _(BANK_SHORT, PRODUCTS, alt, bank_style, fmt, mo, pl, prod):
     def product_slide(product: str):
         """One slide per product: balances, share of the industry and growth, at each financial year-end."""
         _fy = prod.filter(pl.col("is_fy_end"))
@@ -727,7 +883,7 @@ def _(BANK_SHORT, PRODUCTS, alt, bank_scale, fmt, mo, pl, prod):
                             (100 * pl.col("Rm") / pl.col("ind_rm")).alias("Share of industry %"),
                             (100 * pl.col("Rm") / pl.col("total_assets_rm")).alias("Share of own assets %")))
         _enc = dict(x=alt.X("fiscal_year:O", title="Financial year"),
-                    color=alt.Color("Bank:N", scale=bank_scale, legend=alt.Legend(orient="top", title=None)))
+                    **bank_style())
         _tt = ["Bank", alt.Tooltip("fiscal_year:O", title="FY"), alt.Tooltip("Rbn:Q", format=",.1f", title="R bn"),
                alt.Tooltip("Share of industry %:Q", format=".1f"), alt.Tooltip("Share of own assets %:Q", format=".1f")]
         _c1 = alt.Chart(_b.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
@@ -844,7 +1000,7 @@ def _(product_slide):
 
 
 @app.cell(hide_code=True)
-def _(BANK_SHORT, alt, bank_scale, cq, mo, pl):
+def _(BANK_SHORT, alt, bank_style, cq, mo, pl):
     _d = cq.filter(pl.col("bank") != "industry_total", pl.col("clr_pct").is_not_null()).with_columns(
         pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"))
     _tt = ["Bank", alt.Tooltip("fiscal_year:O", title="FY"), alt.Tooltip("clr_pct:Q", format=".2f", title="CLR %"),
@@ -852,16 +1008,15 @@ def _(BANK_SHORT, alt, bank_scale, cq, mo, pl):
            alt.Tooltip("avg_gross_customer_loans_rm:Q", format=",.0f", title="Avg loans Rm"),
            "impairment_line", "impairment_basis"]
 
-    def _line(df, title, legend):
-        _banks = [b for b in bank_scale.domain if b in set(df["Bank"].to_list())]
-        _sc = alt.Scale(domain=_banks, range=[bank_scale.range[bank_scale.domain.index(b)] for b in _banks])
-        return alt.Chart(df.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=40)).encode(
-            x=alt.X("fiscal_year:O", title="Financial year"), y=alt.Y("clr_pct:Q", title="Credit loss ratio, %"),
-            color=alt.Color("Bank:N", scale=_sc, legend=alt.Legend(orient="top", title=None) if legend else None),
-            tooltip=_tt).properties(width=400, height=240, title=title)
-
-    _c1 = _line(_d.filter(pl.col("bank") != "capitec"), "Absa, Nedbank and SBSA", True)
-    _c2 = _line(_d.filter(pl.col("bank") == "capitec"), "Capitec (unsecured lender, own scale)", False)
+    # One plot for all banks. Capitec's ratio is about ten times the others', so the y-axis is logarithmic:
+    # equal distances are equal ratios, and the three larger banks stay readable next to Capitec.
+    _ticks = [0.25, 0.5, 1, 2, 4, 8, 16]
+    _c = alt.Chart(_d.to_pandas()).mark_line(strokeWidth=2, point=alt.OverlayMarkDef(size=45)).encode(
+        x=alt.X("fiscal_year:O", title="Financial year"),
+        y=alt.Y("clr_pct:Q", title="Credit loss ratio, % (log scale)",
+                scale=alt.Scale(type="log", base=2, domain=[0.25, 16]), axis=alt.Axis(values=_ticks)),
+        **bank_style(),
+        tooltip=_tt).properties(width=520, height=330, title="Credit loss ratio by financial year")
     _t = (_d.select("Bank", "fiscal_year", "clr_pct").with_columns(pl.col("clr_pct").round(2))
           .pivot(on="Bank", index="fiscal_year", values="clr_pct").sort("fiscal_year")
           .rename({"fiscal_year": "FY"}))
@@ -871,15 +1026,18 @@ def _(BANK_SHORT, alt, bank_scale, cq, mo, pl):
               "The average uses the BA900 month-ends in the year plus the prior year-end. "
               "The charge comes from the separate statements where they are published. Nedbank publishes consolidated statements only, "
               "so its charge is consolidated while its loans are bank-solo."),
-        mo.hstack([mo.ui.altair_chart(_c1), mo.ui.altair_chart(_c2)]),
         mo.hstack([
+            mo.ui.altair_chart(_c),
+            mo.vstack([
             mo.ui.table(_t, selection=None, show_column_summaries=False, page_size=13),
             mo.md("**Check against reported ratios**\n\n"
                   "- Nedbank's reported CLR on banking advances is within 0.05 points of this measure in every year from 2014 to 2025.\n"
                   "- Capitec's reported CLR is within about 0.2 points, except FY2021 at 0.5 points.\n"
                   "- SBSA's reported ratio is 0.1 to 0.25 points lower, because it uses a wider loan base.\n\n"
-                  "The 2020 rise is COVID-19 provisioning, which shows in Capitec's FY2021 because its year ends in February."),
-        ], widths=[1, 1]),
+                  "The 2020 rise is COVID-19 provisioning, which shows in Capitec's FY2021 because its year ends in February. "
+                  "The y-axis is logarithmic so that Capitec's unsecured book, at about ten times the others' ratio, fits on the same plot."),
+            ]),
+        ], widths=[1.1, 1], align="start"),
     ])
     return
 
@@ -894,7 +1052,7 @@ def _(alt, mo, npl, pl, prod):
           .select("month_end", (-100 * pl.col("value_rm") / pl.col("gross_customer_loans_rm")).alias("value"))
           .with_columns(pl.lit("Impairment allowance, BA900").alias("Measure")))
     _d = pl.concat([_m.select("month_end", "value", "Measure"), _a])
-    _scale = alt.Scale(domain=[*_labels.values(), "Impairment allowance, BA900"], range=["#6250d6", "#e87ba4", "#898781"])
+    _scale = alt.Scale(domain=[*_labels.values(), "Impairment allowance, BA900"], range=["#142457", "#5fa2dd", "#878c9b"])
     _c1 = alt.Chart(_d.to_pandas()).mark_line(strokeWidth=2).encode(
         x=alt.X("month_end:T", title=None), y=alt.Y("value:Q", title="% of loans"),
         color=alt.Color("Measure:N", scale=_scale, legend=alt.Legend(orient="top", title=None, columns=1, labelLimit=300)),
@@ -902,7 +1060,7 @@ def _(alt, mo, npl, pl, prod):
         tooltip=["Measure", alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("value:Q", format=".2f", title="%")],
     ).properties(width=420, height=250, title="Banking industry: NPL ratio and impairments")
     _cov = npl.filter(pl.col("metric") == "specific_coverage_pct")
-    _c2 = alt.Chart(_cov.to_pandas()).mark_line(strokeWidth=2, color="#6250d6").encode(
+    _c2 = alt.Chart(_cov.to_pandas()).mark_line(strokeWidth=2, color="#142457").encode(
         x=alt.X("month_end:T", title=None), y=alt.Y("value:Q", title="% of impaired advances", scale=alt.Scale(zero=False)),
         tooltip=[alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("value:Q", format=".1f", title="Coverage %")],
     ).properties(width=420, height=250, title="Specific impairment coverage of NPLs")
@@ -923,34 +1081,40 @@ def _(alt, mo, npl, pl, prod):
 
 
 @app.cell(hide_code=True)
-def _(BANK_SHORT, alt, mo, npl, pl, prod):
+def _(BANK_COLOURS, BANK_DASH, BANK_SHORT, alt, cq, mo, npl, pl, prod):
     _d = (prod.filter(pl.col("product") == "Credit impairments")
           .select("bank", "month_end", (-100 * pl.col("value_rm") / pl.col("gross_customer_loans_rm")).alias("Ratio %"))
           .with_columns(pl.col("bank").replace_strict(BANK_SHORT | {"industry_total": "Industry allowance"}).alias("Series")))
     _npl = (npl.filter(pl.col("metric") == "npl_ratio_pct")
             .select("month_end", pl.col("value").alias("Ratio %")).with_columns(pl.lit("Industry NPL ratio (BA200)").alias("Series")))
-    _big = pl.concat([_d.filter(pl.col("bank") != "capitec").drop("bank"), _npl])
-    # Banks keep their deck colours; the industry series are neutral grey and violet
-    _scale = alt.Scale(domain=["Absa", "Nedbank", "SBSA", "Industry allowance", "Industry NPL ratio (BA200)"],
-                       range=["#eb6834", "#1baf7a", "#eda100", "#898781", "#6250d6"])
+    _all = pl.concat([_d.drop("bank"), _npl])
+    # Banks keep their brand colours and dashes; the industry series are slate (allowance) and dotted gold (NPLs)
+    _series = ["Capitec", "Absa", "Nedbank", "SBSA", "Industry allowance", "Industry NPL ratio (BA200)"]
+    _scale = alt.Scale(domain=_series, range=[*(BANK_COLOURS[b] for b in _series[:4]), "#878c9b", "#b07d0f"])
+    _dash = alt.Scale(domain=_series, range=[*(BANK_DASH[b] for b in _series[:4]), [1, 0], [2, 2]])
     _tt = ["Series", alt.Tooltip("month_end:T", title="Month"), alt.Tooltip("Ratio %:Q", format=".2f")]
-    _c1 = alt.Chart(_big.to_pandas()).mark_line(strokeWidth=2).encode(
-        x=alt.X("month_end:T", title=None), y=alt.Y("Ratio %:Q", title="% of gross customer loans"),
+    _c = alt.Chart(_all.to_pandas()).mark_line(strokeWidth=2).encode(
+        x=alt.X("month_end:T", title=None),
+        y=alt.Y("Ratio %:Q", title="% of gross customer loans (log scale)",
+                scale=alt.Scale(type="log", base=2, domain=[1, 32]), axis=alt.Axis(values=[1, 2, 4, 8, 16, 32])),
         color=alt.Color("Series:N", scale=_scale, legend=alt.Legend(orient="top", title=None, columns=3, labelLimit=260)),
-        strokeDash=alt.condition(alt.datum.Series == "Industry NPL ratio (BA200)", alt.value([4, 3]), alt.value([1, 0])),
-        tooltip=_tt).properties(width=420, height=250, title="Impairment allowance ratio: Absa, Nedbank, SBSA")
-    _c2 = alt.Chart(_d.filter(pl.col("bank") == "capitec").to_pandas()).mark_line(strokeWidth=2).encode(
-        x=alt.X("month_end:T", title=None), y=alt.Y("Ratio %:Q", title="% of gross customer loans"),
-        color=alt.value("#2a78d6"),
-        tooltip=_tt).properties(width=420, height=250, title="Capitec (own scale)")
+        strokeDash=alt.StrokeDash("Series:N", scale=_dash,
+                                  legend=alt.Legend(orient="top", title=None, columns=3, labelLimit=260)),
+        tooltip=_tt).properties(width=560, height=320, title="Impairment allowance ratio, monthly")
+    _t = (cq.filter(pl.col("bank") != "industry_total", pl.col("allowance_ratio_pct").is_not_null())
+          .with_columns(pl.col("bank").replace_strict(BANK_SHORT).alias("Bank"), pl.col("allowance_ratio_pct").round(1))
+          .pivot(on="Bank", index="fiscal_year", values="allowance_ratio_pct").sort("fiscal_year")
+          .rename({"fiscal_year": "FY"}))
     mo.vstack([
         mo.md("## Bank-level credit quality: BA900 impairment allowance\n"
               "BA900 does not report non-performing loans, but item 194 gives each bank's credit impairment allowance every month. "
               "Divided by gross customer loans, it is the closest bank-level measure that SARB publishes. "
-              "The dashed violet line is the industry NPL ratio from BA200. "
+              "The dotted gold line is the industry NPL ratio from BA200. "
               "An allowance ratio is not an NPL ratio: it also covers performing loans (IFRS 9 stages 1 and 2), and it depends on collateral. "
-              "Capitec's unsecured book carries an allowance of about 20% of loans."),
-        mo.hstack([mo.ui.altair_chart(_c1), mo.ui.altair_chart(_c2)]),
+              "Capitec's unsecured book carries an allowance of about 20% of loans, so the y-axis is logarithmic to keep all banks on one plot. "
+              "The table gives the ratio at each financial year-end, in %."),
+        mo.hstack([mo.ui.altair_chart(_c), mo.ui.table(_t, selection=None, show_column_summaries=False, page_size=13)],
+                  widths=[1.3, 1], align="start"),
     ])
     return
 

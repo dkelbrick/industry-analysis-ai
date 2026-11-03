@@ -20,6 +20,8 @@ uv run python -m bankdata.pipeline           # full refresh; downloads are cache
 uv run marimo run slides/bank_data_extraction.py   # slides (or: marimo edit, then the slides view)
 ```
 
+The slides use a True North Partners theme: `slides/tnp_theme.css` sets the Karla typeface, navy headings and gold accents, and the notebook registers a matching Altair chart theme. The logo is `slides/assets/tnp-logo.jpg`. Bank series use brand colours: Capitec #00b6f1 (its logo's light-blue accent, because its dark blue is too close to SBSA), Absa #af144b, Nedbank #008533 and SBSA #0033aa. Absa and Nedbank clash for red-green colour-blind readers, so line dash and marker shape also identify each bank.
+
 Individual steps: `bankdata.sarb`, `bankdata.ba900`, `bankdata.reports`, `bankdata.extract`, `bankdata.build`, `bankdata.credit`.
 `python -m bankdata.sarb BA200` downloads and tidies a single return.
 

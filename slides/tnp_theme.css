@@ -1,0 +1,95 @@
+/* True North Partners look for the marimo deck.
+   Taken from tnp.eu: Karla typeface, navy #142457 (deep #182141), gold accent #f2b636,
+   slate #878c9b (wordmark grey) and mist #f7f7f7 panels. */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+:root {
+  --tnp-navy: #142457;
+  --tnp-navy-deep: #182141;
+  --tnp-gold: #f2b636;
+  --tnp-slate: #878c9b;
+  --tnp-mist: #f7f7f7;
+  --tnp-ink: #1f2433;
+  --tnp-heading: var(--tnp-navy);
+  --tnp-row: var(--tnp-mist);
+  --marimo-heading-font: "Karla", "Helvetica Neue", Arial, sans-serif;
+  --marimo-text-font: "Karla", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Dark mode keeps the structure but lifts the navy so headings stay legible */
+.dark, .dark-theme, [data-theme="dark"] {
+  --tnp-heading: #c9d3ec;
+  --tnp-ink: #e6e8ee;
+  --tnp-row: #23283a;
+}
+
+body, .markdown, .prose {
+  font-family: var(--marimo-text-font);
+}
+
+.markdown, .prose {
+  color: var(--tnp-ink);
+}
+
+/* Title slide: uppercase navy title on a gold rule, like the tnp.eu section headings */
+.markdown h1, .prose h1 {
+  font-family: var(--marimo-heading-font);
+  color: var(--tnp-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 4px solid var(--tnp-gold);
+  padding-bottom: 0.3em;
+}
+
+/* Slide titles: uppercase navy with a gold bar on the left */
+.markdown h2, .prose h2 {
+  font-family: var(--marimo-heading-font);
+  color: var(--tnp-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-left: 6px solid var(--tnp-gold);
+  padding-left: 0.5em;
+  margin-top: 0;
+}
+
+.markdown h3, .prose h3 {
+  color: var(--tnp-heading);
+  font-weight: 700;
+}
+
+.markdown strong, .prose strong {
+  color: var(--tnp-heading);
+}
+
+.markdown a, .prose a {
+  color: var(--tnp-heading);
+  text-decoration-color: var(--tnp-gold);
+  text-underline-offset: 3px;
+}
+
+/* Markdown tables: navy header row, mist banding */
+.markdown table thead th, .prose table thead th {
+  background: var(--tnp-navy);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+}
+
+.markdown table tbody tr:nth-child(even), .prose table tbody tr:nth-child(even) {
+  background: var(--tnp-row);
+}
+
+.markdown code, .prose code {
+  color: var(--tnp-heading);
+}
+
+/* Brand strip used on the title slide */
+.tnp-strapline {
+  color: var(--tnp-slate);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
