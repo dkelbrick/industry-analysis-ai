@@ -1,0 +1,1124 @@
+bank,fiscal_year,doc_type,source,path,statement,page,ok,reason,table_kind
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,5,false,no total assets,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,53,true,A = E + L (stated total),primary
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,82,true,A = E + L (stated total),review
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,150,false,no total assets,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,175,false,no total assets,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,180,false,no total assets,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,190,false,total assets found but identity not on page,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,195,false,segment / business unit table,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,209,true,A = E + L (stated total),primary
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,216,true,A = E + L (stated total),review
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,174,true,A = E + L (stated total),primary
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,176,false,no total assets,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,sfp,181,false,no total assets,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,53,false,no interest income line,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,54,true,NII = interest income - interest expense,primary
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,55,false,no interest income line,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,209,false,no interest income line,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,210,true,NII = interest income - interest expense,primary
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,211,false,no interest income line,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,5,false,no interest income line,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,84,true,NII = interest income - interest expense,review
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,188,true,interest lines found,primary
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,194,true,interest lines found,primary
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,195,false,segment / business unit table,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,215,true,NII = interest income - interest expense,review
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,income,192,false,interest lines found; no profit line,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,rwa,184,false,no total RWA line,
+absa,2009,annual_report,official,data/reports/absa/annual_report_2009_1cc272c4.pdf,rwa,,false,no validated page among 3 candidates,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,7,false,no total assets,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,78,false,no total assets,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,125,true,A = E + L (stated total),primary
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,159,true,A = E + L (stated total),review
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,221,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,226,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,247,true,A = E + L (stated total),review
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,223,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,225,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,241,true,A = E + L (stated total),primary
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,106,false,no total assets,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,113,false,no total assets,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,sfp,114,false,no total assets,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,125,false,no interest income line,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,126,true,NII = interest income - interest expense,primary
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,241,false,no interest income line,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,242,true,NII = interest income - interest expense,primary
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,219,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,223,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,225,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,income,226,false,segment / business unit table,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,rwa,7,true,total RWA found,primary
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,rwa,8,false,no total RWA line,
+absa,2010,annual_report,official,data/reports/absa/annual_report_2010_687dcb21.pdf,rwa,54,false,no total RWA line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,14,true,A = E + L (stated total),primary
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,132,false,no total assets,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,133,false,no total assets,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,160,true,A = E + L (stated total),primary
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,109,false,total assets found but identity not on page,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,111,false,total assets found but identity not on page,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,134,false,no total assets,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,135,false,no total assets,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,156,false,no total assets,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,sfp,157,false,no total assets,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,14,false,no interest income line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,15,true,NII = interest income - interest expense,primary
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,16,false,no interest income line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,160,false,no interest income line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,161,true,NII = interest income - interest expense,primary
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,162,false,no interest income line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,107,true,interest lines found,primary
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,111,false,balance sheet page,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,174,false,no interest income line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,income,58,false,no interest income line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,rwa,109,false,no total RWA line,
+absa,2012,afs,official,data/reports/absa/afs_2012_86ba1249.pdf,rwa,,false,no validated page among 3 candidates,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,13,true,A = E + L (stated total),primary
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,81,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,82,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,170,true,A = E + L (stated total),primary
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,91,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,92,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,105,false,total assets found but identity not on page,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,138,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,139,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,165,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,sfp,166,false,no total assets,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,13,false,no interest income line,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,14,true,NII = interest income - interest expense,primary
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,15,false,no interest income line,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,170,false,no interest income line,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,171,true,NII = interest income - interest expense,primary
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,172,false,no interest income line,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,75,false,interest lines found; no profit line,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,103,true,interest lines found,review
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,income,72,false,interest lines found; no profit line,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,rwa,105,false,no total RWA line,
+absa,2013,afs,official,data/reports/absa/afs_2013_a5f990f1.pdf,rwa,,false,no validated page among 4 candidates,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,13,true,A = E + L (stated total),primary
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,77,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,78,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,104,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,105,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,148,true,A = E + L (stated total),primary
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,178,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,179,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,86,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,87,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,95,false,total assets found but identity not on page,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,96,false,total assets found but identity not on page,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,97,false,total assets found but identity not on page,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,119,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,120,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,143,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,sfp,144,false,no total assets,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,13,false,no interest income line,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,14,true,NII = interest income - interest expense,primary
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,15,false,no interest income line,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,148,false,no interest income line,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,149,true,NII = interest income - interest expense,primary
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,150,false,no interest income line,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,95,false,balance sheet page,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,96,false,balance sheet page,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,97,false,balance sheet page,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,income,73,false,interest lines found; no profit line,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,rwa,147,true,total RWA found,primary
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,rwa,95,false,no total RWA line,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,rwa,96,false,no total RWA line,
+absa,2014,afs,official,data/reports/absa/afs_2014_e1d2f746.pdf,rwa,97,false,no total RWA line,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,13,true,A = E + L (stated total),primary
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,77,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,78,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,104,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,105,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,157,true,A = E + L (stated total),primary
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,188,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,189,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,86,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,87,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,94,false,no rows,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,95,false,total assets found but identity not on page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,96,false,total assets found but identity not on page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,97,false,total assets found but identity not on page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,119,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,120,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,143,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,sfp,144,false,no total assets,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,13,false,balance sheet page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,14,true,NII = interest income - interest expense,primary
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,15,false,no interest income line,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,157,false,balance sheet page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,158,true,NII = interest income - interest expense,primary
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,159,false,no interest income line,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,94,false,no rows,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,95,false,balance sheet page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,96,false,balance sheet page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,97,false,balance sheet page,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,income,73,false,interest lines found; no profit line,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,rwa,147,true,total RWA found,primary
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,rwa,94,false,no rows,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,rwa,95,false,no total RWA line,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,rwa,96,false,no total RWA line,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,rwa,97,false,no total RWA line,
+absa,2015,afs,official,data/reports/absa/afs_2015_645f002a.pdf,rwa,140,false,no rows,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,18,true,A = E + L (stated total),primary
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,78,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,79,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,108,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,109,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,165,true,A = E + L (stated total),primary
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,196,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,197,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,87,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,88,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,89,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,99,false,total assets found but identity not on page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,100,false,total assets found but identity not on page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,101,false,total assets found but identity not on page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,122,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,123,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,146,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,sfp,147,false,no total assets,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,18,false,balance sheet page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,19,true,NII = interest income - interest expense,primary
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,20,false,no interest income line,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,165,false,balance sheet page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,166,true,NII = interest income - interest expense,primary
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,167,false,no interest income line,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,75,false,interest lines found; no profit line,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,99,false,balance sheet page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,100,false,balance sheet page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,101,false,balance sheet page,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,income,44,false,no rows,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,rwa,99,false,no total RWA line,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,rwa,100,false,no total RWA line,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,rwa,101,false,no total RWA line,
+absa,2016,afs,official,data/reports/absa/afs_2016_77485dba.pdf,rwa,149,true,total RWA found,primary
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,24,true,A = E + L (stated total),primary
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,97,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,98,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,120,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,121,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,122,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,123,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,172,true,A = E + L (stated total),primary
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,204,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,205,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,206,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,207,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,93,false,total assets found but identity not on page,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,95,false,total assets found but identity not on page,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,100,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,101,false,no total assets,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,150,true,A = E + L (stated total),primary
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,sfp,151,true,A = E + L (stated total),review
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,24,false,no interest income line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,25,true,NII = interest income - interest expense,primary
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,26,false,no interest income line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,172,false,no interest income line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,173,true,NII = interest income - interest expense,primary
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,174,false,no interest income line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,82,false,interest lines found; no profit line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,89,false,no interest income line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,93,false,balance sheet page,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,95,false,balance sheet page,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,income,115,false,no interest income line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,rwa,146,false,no total RWA line,
+absa,2021,afs,official,data/reports/absa/afs_unknown_8eeb3e77.pdf,rwa,153,true,total RWA found,primary
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,21,true,A = E + L (stated total),primary
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,102,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,103,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,133,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,134,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,135,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,136,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,195,true,A = E + L (stated total),primary
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,227,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,228,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,229,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,230,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,105,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,106,false,no total assets,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,118,false,total assets found but identity not on page,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,119,false,total assets found but identity not on page,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,168,true,A = E + L (stated total),primary
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,sfp,169,true,A = E + L (stated total),review
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,21,false,balance sheet page,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,22,true,NII = interest income - interest expense,primary
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,23,false,no interest income line,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,195,false,balance sheet page,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,196,true,NII = interest income - interest expense,primary
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,197,false,no interest income line,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,83,false,no interest income line,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,93,false,interest lines found; no profit line,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,118,false,balance sheet page,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,119,false,balance sheet page,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,128,false,no interest income line,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,income,100,false,no interest income line,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,rwa,162,false,no total RWA line,
+absa,2018,afs,official,data/reports/absa/afs_2018_350395fc.pdf,rwa,171,true,total RWA found,primary
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,28,true,A = E + L (stated total),primary
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,99,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,100,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,128,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,129,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,130,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,131,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,162,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,186,true,A = E + L (stated total),primary
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,218,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,219,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,220,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,221,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,102,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,103,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,113,false,total assets found but identity not on page,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,115,false,total assets found but identity not on page,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,sfp,163,false,no total assets,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,28,false,balance sheet page,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,29,true,NII = interest income - interest expense,primary
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,30,false,no interest income line,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,186,false,no interest income line,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,187,true,NII = interest income - interest expense,primary
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,188,false,no interest income line,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,89,false,interest lines found; no profit line,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,97,false,no interest income line,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,113,false,balance sheet page,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,115,false,balance sheet page,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,income,125,false,no interest income line,
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,rwa,166,true,total RWA found,primary
+absa,2020,afs,official,data/reports/absa/afs_unknown_8acdcfa2.pdf,rwa,158,false,no total RWA line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,18,true,A = E + L (stated total),primary
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,94,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,95,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,118,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,119,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,120,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,121,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,178,true,A = E + L (stated total),primary
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,211,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,212,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,213,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,214,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,91,false,total assets found but identity not on page,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,99,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,100,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,152,false,no total assets,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,sfp,153,true,A = E + L (stated total),review
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,18,false,no interest income line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,19,true,NII = interest income - interest expense,primary
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,20,false,no interest income line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,178,false,no interest income line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,179,true,NII = interest income - interest expense,primary
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,180,false,no interest income line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,51,false,segment / business unit table,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,78,false,interest lines found; no profit line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,86,false,no interest income line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,91,false,balance sheet page,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,113,false,no interest income line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,income,92,false,no interest income line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,rwa,148,false,no total RWA line,
+absa,2022,afs,official,data/reports/absa/afs_2022_ce229631.pdf,rwa,155,true,total RWA found,primary
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,19,true,A = E + L (stated total),primary
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,104,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,105,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,128,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,129,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,130,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,131,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,132,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,133,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,134,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,135,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,101,false,segment / business unit table,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,109,false,no total assets,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,169,true,A = E + L (stated total),primary
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,170,true,A = E + L (stated total),primary
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,171,false,total assets found but identity not on page,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,sfp,172,true,A = E + L (stated total),review
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,19,false,balance sheet page,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,20,true,NII = interest income - interest expense,primary
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,21,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,169,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,170,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,171,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,172,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,97,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,101,false,segment / business unit table,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,122,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,81,false,no interest income line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,income,89,false,interest lines found; no profit line,
+absa,2023,afs,official,data/reports/absa/afs_2023_919ed5cf.pdf,rwa,167,true,total RWA found,primary
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,21,true,A = E + L (stated total),primary
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,63,false,no total assets,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,124,false,no total assets,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,125,false,no total assets,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,61,false,no total assets,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,120,false,segment / business unit table,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,121,false,segment / business unit table,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,129,false,no total assets,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,196,true,A = E + L (stated total),primary
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,197,true,A = E + L (stated total),review
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,198,true,A = E + L (stated total),primary
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,sfp,199,true,A = E + L (stated total),review
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,21,false,balance sheet page,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,22,true,NII = interest income - interest expense,primary
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,23,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,196,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,197,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,198,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,199,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,200,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,105,false,interest lines found; no profit line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,115,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,120,false,segment / business unit table,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,121,false,segment / business unit table,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,95,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,122,false,segment / business unit table,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,income,144,false,no interest income line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,rwa,188,false,no total RWA line,
+absa,2024,afs,official,data/reports/absa/afs_2024_4227b63f.pdf,rwa,194,true,total RWA found,primary
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,21,true,A = E + L (stated total),primary
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,65,false,no total assets,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,132,false,no total assets,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,133,false,no total assets,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,128,false,segment / business unit table,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,129,false,segment / business unit table,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,137,false,no total assets,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,213,true,A = E + L (stated total),primary
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,214,true,A = E + L (stated total),review
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,215,true,A = E + L (stated total),primary
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,sfp,216,true,A = E + L (stated total),review
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,21,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,22,true,NII = interest income - interest expense,primary
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,23,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,213,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,214,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,215,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,216,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,217,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,115,false,interest lines found; no profit line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,125,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,128,false,segment / business unit table,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,129,false,segment / business unit table,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,152,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,59,false,NII = interest income - interest expense; no profit line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,105,false,no interest income line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,124,false,interest lines found; no profit line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,income,130,false,segment / business unit table,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,rwa,204,false,no total RWA line,
+absa,2025,afs,official,data/reports/absa/afs_2025_4c662e59.pdf,rwa,211,true,total RWA found,primary
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,sfp,18,true,A = E + L (stated total),review
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,sfp,82,true,A = E + L (stated total),primary
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,sfp,180,false,no total assets,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,sfp,190,false,segment / business unit table,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,sfp,15,false,segment / business unit table,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,sfp,106,false,no total assets,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,sfp,181,false,no total assets,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,82,false,no interest income line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,83,true,NII = interest income - interest expense,primary
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,84,false,no interest income line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,16,false,no interest income line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,19,true,interest lines found,review
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,105,false,no interest income line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,145,false,interest lines found; no profit line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,146,false,interest lines found; no profit line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,income,110,false,no interest income line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,rwa,21,true,total RWA found,review
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,rwa,49,false,no total RWA line,
+sbsa,2010,annual_report,mirror:sharedata,data/reports/sbsa/annual_report_2010_ca49d0d5.pdf,rwa,17,false,no total RWA line,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,22,true,A = E + L (stated total),primary
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,25,true,A = E + L (stated total),review
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,146,false,no total assets,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,149,false,no total assets,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,249,false,segment / business unit table,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,122,true,A = E + L (stated total),primary
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,132,false,segment / business unit table,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,133,false,segment / business unit table,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,sfp,248,false,segment / business unit table,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,22,false,no interest income line,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,122,false,balance sheet page,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,123,true,NII = interest income - interest expense,primary
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,124,false,no interest income line,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,19,true,NII = interest income - interest expense,primary
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,26,true,NII = interest income - interest expense,review
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,185,false,no interest income line,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,152,false,no interest income line,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,income,184,false,no interest income line,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,rwa,28,true,total RWA found,review
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,rwa,74,false,no total RWA line,
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,rwa,76,true,total RWA found,primary
+sbsa,2012,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2012_5e6ded93.pdf,rwa,75,true,total RWA found,primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,23,true,A = E + L (stated total),primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,26,true,A = E + L (stated total),review
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,102,true,A = E + L (stated total),primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,130,true,A = E + L (stated total),primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,159,false,no total assets,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,248,true,A = E + L (stated total),primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,156,false,no total assets,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,sfp,280,false,segment / business unit table,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,23,false,no interest income line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,24,false,no interest income line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,130,false,no interest income line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,131,true,NII = interest income - interest expense,primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,132,false,no interest income line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,6,false,no rows,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,20,true,NII = interest income - interest expense,primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,27,true,NII = interest income - interest expense,review
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,208,false,no interest income line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,246,true,NII = interest income - interest expense,primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,164,false,no interest income line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,166,false,no interest income line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,income,222,false,interest lines found; no profit line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,16,false,no total RWA line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,29,true,total RWA found,review
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,53,false,no total RWA line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,54,true,total RWA found,primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,55,true,total RWA found,primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,52,false,no total RWA line,
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,98,true,total RWA found,primary
+sbsa,2013,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2013_110c33cc.pdf,rwa,284,false,no rows,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,sfp,23,true,A = E + L (stated total),primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,sfp,26,true,A = E + L (stated total),primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,sfp,136,true,A = E + L (stated total),primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,sfp,284,false,segment / business unit table,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,sfp,285,true,A = E + L (stated total),review
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,23,false,no interest income line,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,24,false,no interest income line,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,136,false,balance sheet page,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,137,true,NII = interest income - interest expense,primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,20,true,NII = interest income - interest expense,primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,27,true,NII = interest income - interest expense,primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,214,false,no interest income line,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,income,227,false,interest lines found; no profit line,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,rwa,29,true,total RWA found,primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,rwa,46,false,no rows,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,rwa,48,true,total RWA found,primary
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,rwa,49,false,no total RWA line,
+sbsa,2014,annual_report,official,data/reports/sbsa/annual_report_2014_b4b4a8ca.pdf,rwa,50,true,total RWA found,primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,sfp,22,true,A = E + L (stated total),primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,sfp,26,true,A = E + L (stated total),primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,sfp,144,true,A = E + L (stated total),primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,sfp,163,false,no total assets,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,sfp,52,false,no total assets,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,22,false,no interest income line,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,23,false,no interest income line,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,24,false,no interest income line,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,144,false,balance sheet page,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,145,true,NII = interest income - interest expense,primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,146,false,no interest income line,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,18,false,segment / business unit table,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,27,true,NII = interest income - interest expense,primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,260,false,no rows,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,266,false,no rows,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,168,false,no rows,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,170,false,no rows,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,income,208,false,interest lines found; no profit line,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,rwa,29,true,total RWA found,primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,rwa,48,false,no total RWA line,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,rwa,49,true,total RWA found,primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,rwa,50,false,no total RWA line,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,rwa,51,true,total RWA found,primary
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,rwa,96,false,no rows,
+sbsa,2015,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2015_a8d30fec.pdf,rwa,292,false,no rows,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,sfp,19,true,A = E + L (stated total),primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,sfp,146,true,A = E + L (stated total),primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,sfp,165,false,no total assets,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,sfp,24,true,A = E + L (stated total),primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,sfp,38,false,no total assets,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,19,false,no interest income line,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,20,false,no interest income line,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,21,false,no interest income line,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,146,false,no interest income line,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,147,true,NII = interest income - interest expense,primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,148,false,no interest income line,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,15,true,NII = interest income - interest expense,primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,212,false,interest lines found; no profit line,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,income,25,true,NII = interest income - interest expense,primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,rwa,27,true,total RWA found,primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,rwa,35,false,no total RWA line,
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,rwa,36,true,total RWA found,primary
+sbsa,2016,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2016_08a95ff3.pdf,rwa,83,false,no total RWA line,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,sfp,12,true,A = E + L (stated total),primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,sfp,15,true,A = E + L (stated total),primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,sfp,43,true,A = E + L (stated total),primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,sfp,57,false,no total assets,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,12,false,no interest income line,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,13,false,no interest income line,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,43,false,balance sheet page,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,44,true,NII = interest income - interest expense,primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,45,false,no interest income line,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,16,true,NII = interest income - interest expense,primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,92,false,interest lines found; no profit line,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,9,true,interest lines found,primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,61,false,no rows [right half],
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,62,false,no rows [right half],
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,income,169,false,no rows,
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,rwa,18,true,total RWA found,primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,rwa,113,true,total RWA found,primary
+sbsa,2017,annual_report,mirror:thevault,data/reports/sbsa/annual_report_2017_c84a3206.pdf,rwa,17,false,no total RWA line,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,sfp,20,true,A = E + L (stated total),primary
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,sfp,44,true,A = E + L (stated total),primary
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,sfp,54,false,no total assets,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,sfp,18,false,no total assets,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,sfp,71,false,no total assets,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,20,false,balance sheet page,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,21,true,NII = interest income - interest expense,primary
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,22,false,no interest income line,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,44,false,balance sheet page,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,45,true,NII = interest income - interest expense,primary
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,46,false,no interest income line,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,16,false,no interest income line,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,15,false,no interest income line,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,109,false,interest lines found; no profit line,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,income,116,false,interest lines found; no profit line,
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,rwa,23,true,total RWA found,primary
+sbsa,2018,annual_report,official,data/reports/sbsa/annual_report_2018_c95f98fc.pdf,rwa,143,true,total RWA found,primary
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,18,false,no total assets,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,20,true,A = E + L (stated total),primary
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,56,true,A = E + L (stated total),review
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,57,true,A = E + L (stated total),review
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,58,true,A = E + L (stated total),review
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,59,true,A = E + L (stated total),review
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,60,true,A = E + L (stated total),review
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,72,false,no total assets,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,sfp,46,true,A = E + L (stated total),primary
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,20,false,balance sheet page,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,21,true,NII = interest income - interest expense,primary
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,22,false,no interest income line,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,46,false,no interest income line,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,47,true,NII = interest income - interest expense,primary
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,48,false,no interest income line,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,17,false,no interest income line,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,124,false,interest lines found; no profit line,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,211,false,no rows,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,127,false,no interest income line,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,income,193,false,no rows,
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,rwa,23,true,total RWA found,primary
+sbsa,2019,annual_report,official,data/reports/sbsa/annual_report_2019_eb25442e.pdf,rwa,149,true,total RWA found,primary
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,sfp,20,true,A = E + L (stated total),primary
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,sfp,56,true,A = E + L (stated total),primary
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,sfp,146,false,segment / business unit table,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,sfp,147,false,segment / business unit table,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,20,false,balance sheet page,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,21,true,interest lines found,primary
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,22,false,no interest income line,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,56,false,balance sheet page,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,57,true,NII = interest income - interest expense,primary
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,58,false,no interest income line,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,65,false,no interest income line,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,134,false,interest lines found; no profit line,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,148,false,segment / business unit table,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,149,false,segment / business unit table,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,215,false,no rows,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,225,false,no rows,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,income,137,false,no interest income line,
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,rwa,23,true,total RWA found,primary
+sbsa,2020,annual_report,official,data/reports/sbsa/annual_report_2020_36c1ed92.pdf,rwa,161,true,total RWA found,primary
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,sfp,50,true,A = E + L (stated total),primary
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,sfp,75,false,no total assets,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,sfp,217,true,A = E + L (stated total),primary
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,sfp,60,false,segment / business unit table,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,sfp,135,false,segment / business unit table,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,50,false,balance sheet page,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,51,true,NII = interest income - interest expense,primary
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,52,false,no interest income line,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,217,false,balance sheet page,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,218,true,interest lines found,primary
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,219,false,no interest income line,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,72,false,no interest income line,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,123,false,interest lines found; no profit line,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,135,false,segment / business unit table,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,203,false,no rows,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,209,false,no rows,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,73,false,interest lines found; no profit line,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,126,false,no interest income line,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,income,213,false,no rows,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,rwa,147,false,no total RWA line,
+sbsa,2021,afs,official,data/reports/sbsa/afs_2021_cb7d2716.pdf,rwa,219,true,total RWA found,primary
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,sfp,49,true,A = E + L (stated total),primary
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,sfp,124,false,segment / business unit table [left half],
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,sfp,124,false,no total assets [right half],
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,sfp,195,true,A = E + L (stated total),primary
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,sfp,126,false,no total assets,
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,49,false,balance sheet page,
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,50,true,NII = interest income - interest expense,primary
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,51,false,no interest income line,
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,195,false,balance sheet page,
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,196,true,interest lines found,primary
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,197,false,no interest income line,
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,125,false,segment / business unit table [left half],
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,125,false,no interest income line [right half],
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,116,false,no interest income line,
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,income,192,false,no rows,
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,rwa,198,true,total RWA found,primary
+sbsa,2022,afs,official,data/reports/sbsa/afs_2022_4664cf5d.pdf,rwa,134,false,no total RWA line,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,sfp,92,false,segment / business unit table [left half],
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,sfp,92,false,no total assets [right half],
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,sfp,95,false,no total assets,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,sfp,162,true,A = E + L (stated total),primary
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,sfp,16,true,A = E + L (stated total),primary
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,162,false,balance sheet page,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,163,true,interest lines found,primary
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,164,false,no interest income line,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,16,false,balance sheet page,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,17,true,NII = interest income - interest expense,primary
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,18,false,no interest income line,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,93,false,segment / business unit table [left half],
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,93,false,no interest income line [right half],
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,income,22,false,no interest income line,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,rwa,115,false,no total RWA line,
+sbsa,2023,afs,official,data/reports/sbsa/afs_2023_b121ed3d.pdf,rwa,164,true,total RWA found,primary
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,sfp,35,true,A = E + L (stated total) [left half],primary
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,sfp,35,false,no total assets [right half],
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,income,35,false,no interest income line [left half],
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,income,35,false,no interest income line [right half],
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,income,36,false,no interest income line [left half],
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,income,36,false,no interest income line [right half],
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,income,37,false,no interest income line [left half],
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,income,,false,no validated page among 3 candidates,
+sbsa,2023,annual_report,official,data/reports/sbsa/annual_report_2023_ed4208aa.pdf,rwa,,false,no validated page among 0 candidates,
+sbsa,2024,annual_report,official,data/reports/sbsa/annual_report_2024_2a7ff66f.pdf,sfp,28,false,no total assets [left half],
+sbsa,2024,annual_report,official,data/reports/sbsa/annual_report_2024_2a7ff66f.pdf,sfp,28,false,no total assets [right half],
+sbsa,2024,annual_report,official,data/reports/sbsa/annual_report_2024_2a7ff66f.pdf,sfp,,false,no validated page among 2 candidates,
+sbsa,2024,annual_report,official,data/reports/sbsa/annual_report_2024_2a7ff66f.pdf,income,28,false,no interest income line [left half],
+sbsa,2024,annual_report,official,data/reports/sbsa/annual_report_2024_2a7ff66f.pdf,income,28,false,no interest income line [right half],
+sbsa,2024,annual_report,official,data/reports/sbsa/annual_report_2024_2a7ff66f.pdf,income,,false,no validated page among 2 candidates,
+sbsa,2024,annual_report,official,data/reports/sbsa/annual_report_2024_2a7ff66f.pdf,rwa,,false,no validated page among 1 candidates,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,sfp,95,false,segment / business unit table [left half],
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,sfp,95,false,no total assets [right half],
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,sfp,169,true,A = E + L (stated total),primary
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,sfp,18,true,A = E + L (stated total),primary
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,169,false,balance sheet page,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,170,true,interest lines found,primary
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,171,false,no interest income line,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,18,false,no interest income line,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,19,true,NII = interest income - interest expense,primary
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,20,false,no interest income line,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,75,false,interest lines found; no profit line,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,96,false,segment / business unit table [left half],
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,96,false,no interest income line [right half],
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,87,false,no interest income line,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,income,88,false,interest lines found; no profit line,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,rwa,122,false,no total RWA line,
+sbsa,2025,afs,official,data/reports/sbsa/afs_2025_2b7139fe.pdf,rwa,172,true,total RWA found,primary
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,sfp,93,false,segment / business unit table [left half],
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,sfp,93,false,no total assets [right half],
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,sfp,165,true,A = E + L (stated total),primary
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,sfp,18,true,A = E + L (stated total),primary
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,165,false,balance sheet page,
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,166,true,interest lines found,primary
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,167,false,no interest income line,
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,18,false,no interest income line,
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,19,true,NII = interest income - interest expense,primary
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,20,false,no interest income line,
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,94,false,segment / business unit table [left half],
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,94,false,no interest income line [right half],
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,income,87,false,no interest income line,
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,rwa,118,false,no total RWA line,
+sbsa,2024,afs,official,data/reports/sbsa/afs_2024_8917f4d0.pdf,rwa,168,true,total RWA found,primary
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,sfp,9,true,A = E + L (stated total),review
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,sfp,19,true,A = E + L (stated total),primary
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,sfp,91,false,no total assets,
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,sfp,102,false,no total assets,
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,income,19,false,no interest income line,
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,income,7,true,NII = interest income - interest expense,review
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,income,18,true,NII = interest income - interest expense,primary
+nedbank,2014,annual_report,official,data/reports/nedbank/annual_report_2014_82a233d8.pdf,rwa,4,true,total RWA found,primary
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,sfp,9,true,A = E + L (stated total),review
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,sfp,19,true,A = E + L (stated total),primary
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,sfp,91,false,no total assets,
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,sfp,102,false,no total assets,
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,income,25,false,balance sheet page,
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,income,19,false,no interest income line,
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,income,7,true,NII = interest income - interest expense,review
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,income,18,true,NII = interest income - interest expense,primary
+nedbank,2015,annual_report,official,data/reports/nedbank/annual_report_2015_f2c39119.pdf,rwa,4,true,total RWA found,primary
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,sfp,11,true,A = E + L (stated total),review
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,sfp,33,true,A = E + L (stated total),primary
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,sfp,114,false,no total assets,
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,sfp,115,false,no total assets,
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,sfp,142,false,no total assets,
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,income,33,false,balance sheet page,
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,income,35,false,no interest income line,
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,income,25,false,no interest income line,
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,income,9,true,NII = interest income - interest expense,review
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,income,24,true,NII = interest income - interest expense,primary
+nedbank,2016,annual_report,official,data/reports/nedbank/annual_report_2016_40ccdbad.pdf,rwa,6,true,total RWA found,primary
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,sfp,11,true,A = E + L (stated total),review
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,sfp,33,true,A = E + L (stated total),review
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,sfp,118,false,no total assets,
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,sfp,119,false,no total assets,
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,income,25,false,no interest income line,
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,income,9,true,NII = interest income - interest expense,review
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,income,24,true,NII = interest income - interest expense,primary
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,income,33,false,balance sheet page,
+nedbank,2017,annual_report,official,data/reports/nedbank/annual_report_2017_f9cabd65.pdf,rwa,6,true,total RWA found,primary
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,sfp,8,true,A = E + L (stated total),primary
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,sfp,19,false,no total assets,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,sfp,36,false,no total assets,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,sfp,126,false,no total assets,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,sfp,38,false,segment / business unit table,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,income,8,false,no interest income line,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,income,9,false,no interest income line,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,income,25,false,no interest income line,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,income,6,true,NII = interest income - interest expense,primary
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,income,24,true,NII = interest income - interest expense,primary
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,income,40,false,interest lines found; no profit line,
+nedbank,2018,annual_report,official,data/reports/nedbank/annual_report_2018_83a75a90.pdf,rwa,5,true,total RWA found,primary
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,sfp,9,true,A = E + L (stated total),review
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,sfp,35,false,segment / business unit table,
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,sfp,136,false,no total assets,
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,sfp,137,false,no total assets,
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,income,25,false,no interest income line,
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,income,7,true,NII = interest income - interest expense,review
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,income,24,true,NII = interest income - interest expense,primary
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,income,35,false,segment / business unit table,
+nedbank,2019,afs,official,data/reports/nedbank/afs_2019_11e9c7f3.pdf,rwa,5,true,total RWA found,primary
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,sfp,8,true,A = E + L (stated total),primary
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,sfp,27,true,A = E + L (stated total),primary
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,sfp,34,false,no total assets,
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,sfp,170,false,no total assets,
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,income,8,false,no interest income line,
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,income,9,false,no interest income line,
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,income,27,false,no interest income line,
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,income,6,true,NII = interest income - interest expense,primary
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,income,26,true,NII = interest income - interest expense,primary
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,income,207,false,no interest income line,
+nedbank,2020,afs,official,data/reports/nedbank/afs_2020_5ffe7c7f.pdf,rwa,5,true,total RWA found,primary
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,sfp,23,true,A = E + L (stated total),primary
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,sfp,174,false,no total assets,
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,sfp,230,true,A = E + L (stated total),primary
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,income,23,false,no interest income line,
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,income,22,true,NII = interest income - interest expense,primary
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,income,30,false,interest lines found; no profit line,
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,income,228,true,NII = interest income - interest expense,primary
+nedbank,2021,afs,official,data/reports/nedbank/afs_2021_6cd76f2f.pdf,rwa,4,true,total RWA found,primary
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,sfp,170,false,no total assets,
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,sfp,226,true,A = E + L (stated total),primary
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,sfp,4,false,no total assets,
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,sfp,34,false,no total assets,
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,income,25,false,no interest income line,
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,income,24,true,interest lines found,primary
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,income,32,false,no interest income line,
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,income,224,true,NII = interest income - interest expense,primary
+nedbank,2022,afs,official,data/reports/nedbank/afs_2022_4cbf3ef6.pdf,rwa,4,true,total RWA found,primary
+nedbank,2023,afs,official,data/reports/nedbank/afs_2023_4a4f4d52.pdf,sfp,23,true,A = E + L (stated total),primary
+nedbank,2023,afs,official,data/reports/nedbank/afs_2023_4a4f4d52.pdf,sfp,166,false,no total assets,
+nedbank,2023,afs,official,data/reports/nedbank/afs_2023_4a4f4d52.pdf,sfp,222,true,A = E + L (stated total),primary
+nedbank,2023,afs,official,data/reports/nedbank/afs_2023_4a4f4d52.pdf,income,23,false,no interest income line,
+nedbank,2023,afs,official,data/reports/nedbank/afs_2023_4a4f4d52.pdf,income,22,true,interest lines found,primary
+nedbank,2023,afs,official,data/reports/nedbank/afs_2023_4a4f4d52.pdf,income,220,true,NII = interest income - interest expense,primary
+nedbank,2023,afs,official,data/reports/nedbank/afs_2023_4a4f4d52.pdf,rwa,4,true,total RWA found,primary
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,sfp,156,false,no total assets,
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,sfp,166,false,no total assets,
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,sfp,226,true,A = E + L (stated total),primary
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,sfp,102,false,no total assets,
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,income,25,false,no interest income line,
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,income,24,true,interest lines found,primary
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,income,57,false,no interest income line,
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,income,224,true,NII = interest income - interest expense,primary
+nedbank,2024,afs,official,data/reports/nedbank/afs_2024_26609c9a.pdf,rwa,4,true,total RWA found,primary
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,sfp,100,false,no total assets,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,sfp,99,false,no total assets,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,sfp,160,true,A = E + L (stated total),primary
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,income,160,false,no interest income line,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,income,161,false,no interest income line,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,income,,false,no validated page among 3 candidates,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,rwa,42,true,total RWA found [left half],primary
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,rwa,42,false,no total RWA line [right half],
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,rwa,49,false,no total RWA line,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,rwa,50,false,no total RWA line,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,rwa,52,false,no total RWA line,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,rwa,113,false,no total RWA line,
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,rwa,157,true,total RWA found,primary
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,ov1,49,true,OV1 total and operational risk found,primary
+nedbank,2024,pillar3,official,data/reports/nedbank/pillar3_2024_a00b741e.pdf,ov1,50,true,OV1 total and operational risk found,primary
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,sfp,104,false,no total assets,
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,sfp,66,true,A = E + L (stated total),primary
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,income,66,false,balance sheet page,
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,income,67,true,NII = interest income - interest expense,primary
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,income,68,false,no interest income line,
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,income,98,false,no interest income line,
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,rwa,40,false,no total RWA line,
+capitec,2014,annual_report,official,data/reports/capitec/annual_report_2014_20876e70.pdf,rwa,104,true,total RWA found,primary
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,sfp,113,false,no total assets,
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,sfp,73,true,A = E + L (stated total),primary
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,income,73,false,balance sheet page,
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,income,74,true,NII = interest income - interest expense,primary
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,income,75,false,no interest income line,
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,income,106,false,no interest income line,
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,rwa,44,false,no total RWA line,
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,rwa,113,true,total RWA found,primary
+capitec,2015,annual_report,official,data/reports/capitec/annual_report_2015_c158ceb9.pdf,rwa,50,false,no total RWA line,
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,sfp,7,true,A = E + L (stated total),primary
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,sfp,46,false,no total assets,
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,income,7,false,balance sheet page,
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,income,8,true,NII = interest income - interest expense,primary
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,income,9,false,no interest income line,
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,income,33,true,NII = interest income - interest expense,primary
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,income,39,false,no interest income line,
+capitec,2016,afs,official,data/reports/capitec/afs_2016_8cc9a837.pdf,rwa,46,true,total RWA found,primary
+capitec,2017,annual_report,official,data/reports/capitec/annual_report_2017_03fef673.pdf,sfp,40,true,A = E + L (stated total),primary
+capitec,2017,annual_report,official,data/reports/capitec/annual_report_2017_03fef673.pdf,income,40,false,balance sheet page,
+capitec,2017,annual_report,official,data/reports/capitec/annual_report_2017_03fef673.pdf,income,41,true,interest lines found,primary
+capitec,2017,annual_report,official,data/reports/capitec/annual_report_2017_03fef673.pdf,income,42,false,no interest income line,
+capitec,2017,annual_report,official,data/reports/capitec/annual_report_2017_03fef673.pdf,income,66,true,interest lines found,primary
+capitec,2017,annual_report,official,data/reports/capitec/annual_report_2017_03fef673.pdf,rwa,19,false,no total RWA line,
+capitec,2017,annual_report,official,data/reports/capitec/annual_report_2017_03fef673.pdf,rwa,,false,no validated page among 4 candidates,
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,sfp,45,false,no total assets,
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,sfp,61,true,A = E + L (stated total),primary
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,sfp,84,false,no total assets,
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,income,61,false,balance sheet page,
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,income,62,true,interest lines found,primary
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,income,63,false,no interest income line,
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,income,107,true,interest lines found,primary
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,income,117,false,no interest income line,
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,income,134,false,no interest income line,
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,rwa,45,true,total RWA found,primary
+capitec,2019,annual_report,official,data/reports/capitec/annual_report_2019_403220a5.pdf,rwa,34,false,no total RWA line,
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,sfp,152,true,A = E + L (stated total),primary
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,sfp,97,false,no total assets,
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,income,152,false,balance sheet page,
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,income,153,true,interest lines found,primary
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,income,154,false,no interest income line,
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,income,236,false,no interest income line,
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,rwa,98,false,no total RWA line,
+capitec,2020,annual_report,official,data/reports/capitec/annual_report_2020_2291d03e.pdf,rwa,97,true,total RWA found,primary
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,sfp,115,false,no total assets,
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,sfp,152,true,A = E + L (stated total),primary
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,income,152,false,balance sheet page,
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,income,153,true,interest lines found,primary
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,income,154,false,no interest income line,
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,income,180,false,no rows,
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,income,234,false,no interest income line,
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,income,249,false,no interest income line,
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,rwa,115,true,total RWA found,primary
+capitec,2021,annual_report,official,data/reports/capitec/annual_report_2021_03e4d324.pdf,rwa,158,false,no rows,
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,sfp,50,false,no total assets [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,sfp,50,false,no total assets [right half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,sfp,73,true,A = E + L (stated total) [left half],primary
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,sfp,73,false,no total assets [right half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,sfp,123,false,segment / business unit table [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,sfp,123,false,no total assets [right half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,73,false,no interest income line [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,73,true,interest lines found [right half],primary
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,74,false,no interest income line [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,75,false,no interest income line [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,143,false,interest lines found; no profit line [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,143,false,no interest income line [right half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,96,false,no interest income line [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,122,false,segment / business unit table [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,income,122,false,no interest income line [right half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,rwa,50,true,total RWA found [left half],primary
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,rwa,50,false,no total RWA line [right half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,rwa,75,false,no total RWA line [left half],
+capitec,2023,annual_report,official,data/reports/capitec/annual_report_2023_7db970d3.pdf,rwa,159,false,no total RWA line [right half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,sfp,13,true,A = E + L (stated total) [left half],primary
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,sfp,13,false,no total assets [right half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,13,false,no interest income line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,13,true,interest lines found [right half],primary
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,14,false,no interest income line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,15,false,no interest income line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,21,false,no interest income line [right half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,86,false,interest lines found; no profit line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,86,false,no interest income line [right half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,53,false,no interest income line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,54,false,no interest income line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,54,false,interest lines found; no profit line [right half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,65,false,no interest income line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,65,false,no interest income line [right half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,income,69,false,segment / business unit table [right half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,rwa,15,false,no total RWA line [left half],
+capitec,2024,afs,official,data/reports/capitec/afs_2024_c8968b9e.pdf,rwa,,false,no validated page among 1 candidates,
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,sfp,24,true,A = E + L (stated total),primary
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,income,24,false,no interest income line,
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,income,25,true,NII = interest income - interest expense,primary
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,income,26,false,no interest income line,
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,income,113,false,interest lines found; no profit line,
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,income,188,false,interest lines found; no profit line,
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,income,108,false,no interest income line,
+capitec,2025,afs,official,data/reports/capitec/afs_2025_a63fa7e5.pdf,rwa,,false,no validated page among 1 candidates,
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,sfp,24,true,A = E + L (stated total),primary
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,income,24,false,balance sheet page,
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,income,25,true,NII = interest income - interest expense,primary
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,income,26,false,no interest income line,
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,income,101,false,interest lines found; no profit line,
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,income,167,false,interest lines found; no profit line,
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,income,133,false,no interest income line,
+capitec,2026,afs,official,data/reports/capitec/afs_2026_cf67cd74.pdf,rwa,,false,no validated page among 1 candidates,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,sfp,6,false,no total assets,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,sfp,9,false,no total assets,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,sfp,37,true,A = E + L (stated total),primary
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,sfp,38,true,A = E + L (stated total),review
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,income,37,false,no interest income line,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,income,38,false,no interest income line,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,income,,false,no validated page among 3 candidates,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,3,true,total RWA found,primary
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,4,true,total RWA found,primary
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,6,true,total RWA found,primary
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,7,false,no total RWA line,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,8,false,no total RWA line,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,33,false,no total RWA line,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,36,false,no total RWA line,
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,32,true,total RWA found,primary
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,rwa,35,true,total RWA found,primary
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,ov1,7,true,OV1 total and operational risk found,primary
+capitec,2025,pillar3,official,data/reports/capitec/pillar3_2025_3677a991.pdf,ov1,8,true,OV1 total and operational risk found,primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,sfp,6,false,no total assets,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,sfp,9,false,no total assets,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,sfp,37,true,A = E + L (stated total),primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,sfp,38,true,A = E + L (stated total),review
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,income,37,false,no interest income line,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,income,38,false,no interest income line,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,income,,false,no validated page among 3 candidates,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,3,true,total RWA found,primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,4,true,total RWA found,primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,6,true,total RWA found,primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,7,false,no total RWA line,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,8,false,no total RWA line,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,33,false,no total RWA line,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,36,false,no total RWA line,
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,32,true,total RWA found,primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,rwa,35,true,total RWA found,primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,ov1,7,true,OV1 total and operational risk found,primary
+capitec,2024,pillar3,official,data/reports/capitec/pillar3_2024_233c50a2.pdf,ov1,8,true,OV1 total and operational risk found,primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,sfp,6,false,no total assets,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,sfp,9,false,no total assets,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,sfp,35,true,A = E + L (stated total),primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,sfp,36,true,A = E + L (stated total),review
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,income,35,false,no interest income line,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,income,36,false,no interest income line,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,income,,false,no validated page among 3 candidates,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,3,true,total RWA found,primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,4,true,total RWA found,primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,6,true,total RWA found,primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,7,false,no total RWA line,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,8,false,no total RWA line,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,31,false,no total RWA line,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,34,false,no total RWA line,
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,30,true,total RWA found,primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,rwa,33,true,total RWA found,primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,ov1,7,true,OV1 total and operational risk found,primary
+capitec,2023,pillar3,official,data/reports/capitec/pillar3_2023_0061091b.pdf,ov1,8,true,OV1 total and operational risk found,primary
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,sfp,25,true,A = E + L (stated total),primary
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,sfp,164,false,no total assets,
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,sfp,174,false,no total assets,
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,sfp,232,true,A = E + L (stated total),primary
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,sfp,105,false,no total assets,
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,income,25,false,no interest income line,
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,income,24,true,interest lines found,primary
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,income,57,false,no interest income line,
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,income,230,true,NII = interest income - interest expense,primary
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,income,206,false,no interest income line,
+nedbank,2025,afs,official,data/reports/nedbank/afs_2025_5ee84e33.pdf,rwa,4,true,total RWA found,primary
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,sfp,63,true,A = E + L (stated total),primary
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,sfp,107,false,no total assets,
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,income,63,false,balance sheet page,
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,income,64,true,interest lines found,primary
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,income,65,false,no interest income line,
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,income,93,true,interest lines found,primary
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,income,119,false,no interest income line,
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,rwa,107,true,total RWA found,primary
+capitec,2018,annual_report,official,data/reports/capitec/annual_report_2018_57a2d7e2.pdf,rwa,38,false,no total RWA line,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,sfp,34,false,no total assets,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,sfp,83,false,no total assets,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,sfp,101,false,no total assets,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,sfp,,false,no validated page among 6 candidates,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,income,,false,no validated page among 0 candidates,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,rwa,34,true,total RWA found,primary
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,rwa,35,false,no total RWA line,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,rwa,36,false,no total RWA line,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,rwa,100,false,no total RWA line,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,rwa,88,false,no total RWA line,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,rwa,102,false,no total RWA line,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,ov1,36,false,not an OV1 table,
+nedbank,2016,pillar3,official,data/reports/nedbank/pillar3_2016_eb95915f.pdf,ov1,,false,no validated page among 1 candidates,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,sfp,92,false,no total assets,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,sfp,88,false,no total assets,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,sfp,,false,no validated page among 6 candidates,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,income,,false,no validated page among 0 candidates,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,rwa,38,false,no total RWA line,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,rwa,93,false,no total RWA line,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,rwa,103,false,no total RWA line,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,rwa,104,false,no total RWA line,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,rwa,,false,no validated page among 10 candidates,
+nedbank,2017,pillar3,official,data/reports/nedbank/pillar3_2017_52be0b31.pdf,ov1,38,true,OV1 total and operational risk found,primary
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,sfp,85,false,no total assets,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,sfp,91,false,no total assets,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,sfp,84,false,no total assets,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,sfp,103,false,no total assets,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,sfp,,false,no validated page among 8 candidates,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,income,,false,no validated page among 0 candidates,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,rwa,38,true,total RWA found,primary
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,rwa,46,false,no total RWA line,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,rwa,47,false,no total RWA line,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,rwa,92,false,no total RWA line,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,rwa,103,false,no total RWA line,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,rwa,104,false,no total RWA line,
+nedbank,2018,pillar3,official,data/reports/nedbank/pillar3_2018_16a688b9.pdf,ov1,46,true,OV1 total and operational risk found,primary
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,sfp,114,false,no total assets,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,sfp,124,false,no total assets,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,sfp,169,true,A = E + L (stated total),primary
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,sfp,171,true,A = E + L (stated total),primary
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,sfp,55,false,no total assets,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,sfp,113,false,no total assets,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,income,169,false,no interest income line,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,income,170,false,no interest income line,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,income,171,false,no interest income line,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,income,,false,no validated page among 3 candidates,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,42,false,no rows [left half],
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,42,false,no total RWA line [right half],
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,46,true,total RWA found [left half],primary
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,46,false,no total RWA line [right half],
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,54,false,no total RWA line,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,55,false,no total RWA line,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,56,false,no total RWA line,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,60,false,no total RWA line,
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,rwa,166,true,total RWA found,primary
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,ov1,54,true,OV1 total and operational risk found,primary
+nedbank,2025,pillar3,official,data/reports/nedbank/pillar3_2025_d7b8561c.pdf,ov1,55,true,OV1 total and operational risk found,primary
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,sfp,,false,no validated page among 1 candidates,
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,income,,false,no validated page among 0 candidates,
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,51,false,no total RWA line,
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,57,true,total RWA found,primary
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,64,false,no total RWA line,
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,66,false,no total RWA line,
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,111,false,no total RWA line,
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,114,true,total RWA found,primary
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,118,false,no total RWA line,
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,63,true,total RWA found,primary
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,rwa,117,true,total RWA found,primary
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,ov1,58,true,OV1 total and operational risk found,primary
+sbsa,2023,pillar3,official,data/reports/sbsa/pillar3_2023_7f7e403a.pdf,ov1,115,true,OV1 total and operational risk found,primary
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,sfp,69,false,no total assets,
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,sfp,121,false,no total assets,
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,sfp,,false,no validated page among 3 candidates,
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,income,,false,no validated page among 1 candidates,
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,rwa,59,true,total RWA found,primary
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,rwa,66,false,no total RWA line,
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,rwa,68,false,no total RWA line,
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,rwa,113,false,no total RWA line,
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,rwa,116,true,total RWA found,primary
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,rwa,65,true,total RWA found,primary
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,rwa,119,true,total RWA found,primary
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,ov1,60,true,OV1 total and operational risk found,primary
+sbsa,2024,pillar3,official,data/reports/sbsa/pillar3_2024_ae5bafc3.pdf,ov1,117,true,OV1 total and operational risk found,primary
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,sfp,74,false,no total assets,
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,sfp,,false,no validated page among 2 candidates,
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,income,,false,no validated page among 1 candidates,
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,rwa,54,false,no total RWA line,
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,rwa,61,true,total RWA found,primary
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,rwa,71,false,no total RWA line,
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,rwa,135,true,total RWA found,primary
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,rwa,70,true,total RWA found,primary
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,rwa,138,true,total RWA found,primary
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,ov1,62,true,OV1 total and operational risk found,primary
+sbsa,2025,pillar3,official,data/reports/sbsa/pillar3_2025_d953dad8.pdf,ov1,136,true,OV1 total and operational risk found,primary

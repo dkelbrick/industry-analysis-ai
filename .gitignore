@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+data/raw/
+data/reports/
+*.pyc
+data/tidy/ba900.csv
+data/tidy/ba900_internal_checks.csv
+*.html
+__marimo__/
